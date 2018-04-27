@@ -23,11 +23,10 @@
 [ext_resource path="res://gfx/PNG/Environment/ground_wood_small.png" type="Texture" id=21]
 [ext_resource path="res://gfx/PNG/Environment/ground_wood_small_broken.png" type="Texture" id=22]
 
-[node name="Tiles" type="Node2D" index="0"]
+[node name="Tiles" type="Node2D"]
 
 [node name="ground_cake" type="Sprite" parent="." index="0"]
 
-editor/display_folded = true
 position = Vector2( 200, 100 )
 texture = ExtResource( 1 )
 __meta__ = {
@@ -37,8 +36,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_cake" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -53,7 +52,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_cake_broken" type="Sprite" parent="." index="1"]
 
-editor/display_folded = true
 position = Vector2( 650, 100 )
 texture = ExtResource( 2 )
 __meta__ = {
@@ -63,8 +61,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_cake_broken" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -79,7 +77,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_grass" type="Sprite" parent="." index="2"]
 
-editor/display_folded = true
 position = Vector2( 1050, 100 )
 texture = ExtResource( 3 )
 __meta__ = {
@@ -89,8 +86,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_grass" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -105,7 +102,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_grass_broken" type="Sprite" parent="." index="3"]
 
-editor/display_folded = true
 position = Vector2( 200, 250 )
 texture = ExtResource( 4 )
 __meta__ = {
@@ -115,8 +111,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_grass_broken" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -131,7 +127,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_grass_sand" type="Sprite" parent="." index="4"]
 
-editor/display_folded = true
 position = Vector2( 650, 250 )
 texture = ExtResource( 5 )
 __meta__ = {
@@ -141,8 +136,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_grass_sand" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -157,7 +152,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_grass_sand2" type="Sprite" parent="." index="5"]
 
-editor/display_folded = true
 position = Vector2( 1050, 250 )
 texture = ExtResource( 6 )
 __meta__ = {
@@ -167,8 +161,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_grass_sand2" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -183,7 +177,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_snow" type="Sprite" parent="." index="6"]
 
-editor/display_folded = true
 position = Vector2( 200, 400 )
 texture = ExtResource( 7 )
 __meta__ = {
@@ -193,8 +186,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_snow" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -209,7 +202,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_snow_broken" type="Sprite" parent="." index="7"]
 
-editor/display_folded = true
 position = Vector2( 650, 400 )
 texture = ExtResource( 8 )
 __meta__ = {
@@ -219,8 +211,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_snow_broken" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -235,7 +227,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_stone" type="Sprite" parent="." index="8"]
 
-editor/display_folded = true
 position = Vector2( 1050, 400 )
 texture = ExtResource( 9 )
 __meta__ = {
@@ -245,8 +236,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_stone" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -261,7 +252,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_stone_broken" type="Sprite" parent="." index="9"]
 
-editor/display_folded = true
 position = Vector2( 200, 550 )
 texture = ExtResource( 10 )
 __meta__ = {
@@ -271,8 +261,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_stone_broken" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -287,7 +277,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_wood" type="Sprite" parent="." index="10"]
 
-editor/display_folded = true
 position = Vector2( 200, 550 )
 texture = ExtResource( 11 )
 __meta__ = {
@@ -297,8 +286,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_wood" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -313,7 +302,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_wood_broken" type="Sprite" parent="." index="11"]
 
-editor/display_folded = true
 position = Vector2( 650, 550 )
 texture = ExtResource( 12 )
 __meta__ = {
@@ -323,8 +311,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_wood_broken" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -339,7 +327,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 [node name="ground_cake_small" type="Sprite" parent="." index="12"]
 
-editor/display_folded = true
 position = Vector2( 1450, 100 )
 texture = ExtResource( 13 )
 __meta__ = {
@@ -349,8 +336,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_cake_small" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -365,7 +352,6 @@ polygon = PoolVector2Array( 98.7451, -40.9693, 86.5276, -50.7433, -86.1475, -49.
 
 [node name="ground_cake_broken_small" type="Sprite" parent="." index="13"]
 
-editor/display_folded = true
 position = Vector2( 1450, 250 )
 texture = ExtResource( 14 )
 __meta__ = {
@@ -375,8 +361,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_cake_broken_small" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -391,7 +377,6 @@ polygon = PoolVector2Array( 98.7451, -40.9693, 86.5276, -50.7433, -86.1475, -49.
 
 [node name="ground_grass_small" type="Sprite" parent="." index="14"]
 
-editor/display_folded = true
 position = Vector2( 1700, 100 )
 texture = ExtResource( 15 )
 __meta__ = {
@@ -401,8 +386,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_grass_small" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -417,7 +402,6 @@ polygon = PoolVector2Array( 98.7451, -40.9693, 86.5276, -50.7433, -86.1475, -49.
 
 [node name="ground_grass_broken_small" type="Sprite" parent="." index="15"]
 
-editor/display_folded = true
 position = Vector2( 1700, 250 )
 texture = ExtResource( 16 )
 __meta__ = {
@@ -427,8 +411,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_grass_broken_small" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -443,7 +427,6 @@ polygon = PoolVector2Array( 98.7451, -40.9693, 86.5276, -50.7433, -86.1475, -49.
 
 [node name="ground_sand_small" type="Sprite" parent="." index="16"]
 
-editor/display_folded = true
 position = Vector2( 1950, 100 )
 texture = ExtResource( 17 )
 __meta__ = {
@@ -453,8 +436,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_sand_small" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -469,7 +452,6 @@ polygon = PoolVector2Array( 98.7451, -40.9693, 86.5276, -50.7433, -86.1475, -49.
 
 [node name="ground_sand_broken_small2" type="Sprite" parent="." index="17"]
 
-editor/display_folded = true
 position = Vector2( 1950, 250 )
 texture = ExtResource( 18 )
 __meta__ = {
@@ -479,8 +461,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_sand_broken_small2" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -495,7 +477,6 @@ polygon = PoolVector2Array( 98.7451, -40.9693, 86.5276, -50.7433, -86.1475, -49.
 
 [node name="ground_stone_small" type="Sprite" parent="." index="18"]
 
-editor/display_folded = true
 position = Vector2( 1450, 400 )
 texture = ExtResource( 19 )
 __meta__ = {
@@ -505,8 +486,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_stone_small" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -521,7 +502,6 @@ polygon = PoolVector2Array( 98.7451, -40.9693, 86.5276, -50.7433, -86.1475, -49.
 
 [node name="ground_stone_broken_small" type="Sprite" parent="." index="19"]
 
-editor/display_folded = true
 position = Vector2( 1450, 550 )
 texture = ExtResource( 20 )
 __meta__ = {
@@ -531,8 +511,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_stone_broken_small" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -547,7 +527,6 @@ polygon = PoolVector2Array( 98.7451, -40.9693, 86.5276, -50.7433, -86.1475, -49.
 
 [node name="ground_wood_small" type="Sprite" parent="." index="20"]
 
-editor/display_folded = true
 position = Vector2( 1700, 400 )
 texture = ExtResource( 21 )
 __meta__ = {
@@ -557,8 +536,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_wood_small" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
@@ -573,7 +552,6 @@ polygon = PoolVector2Array( 98.7451, -40.9693, 86.5276, -50.7433, -86.1475, -49.
 
 [node name="ground_wood_broken_small" type="Sprite" parent="." index="21"]
 
-editor/display_folded = true
 position = Vector2( 1700, 550 )
 texture = ExtResource( 22 )
 __meta__ = {
@@ -583,8 +561,8 @@ __meta__ = {
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_wood_broken_small" index="0"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 11
 constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0

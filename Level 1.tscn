@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://platforms.tres" type="TileSet" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Coin.tscn" type="PackedScene" id=3]
 
 [node name="Level 1" type="Node2D" index="0"]
 
@@ -28,7 +29,13 @@ tile_data = PoolIntArray( 29, 0, 0, 131072, 0, 0, 262166, 0, 0, 393222, 0, 0, 52
 [node name="Player" parent="." index="1" instance=ExtResource( 2 )]
 
 position = Vector2( 511.967, 267.647 )
-gravity = 25
+gravity = 40
 jump_height = -1250
+
+[node name="Coin" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 704.815, 360.76 )
+
+[connection signal="Coin_Pickup" from="Coin" to="Player" method="_on_Coin_Coin_Pickup"]
 
 

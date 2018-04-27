@@ -1,13 +1,14 @@
 extends KinematicBody2D
 
 export var speed = 500
-export var gravity = 25
+export var gravity = 40
 export var jump_height = -1250
 var motion = Vector2()
 var up = Vector2(0,-1)
 export var friction = 0.25
 onready var animation = $Animation
 var current_animation = "idle"
+var coin_count = 0
 
 func _ready():
 	pass
@@ -43,3 +44,7 @@ func jump():
 		if Input.is_action_pressed("ui_up"):
 			motion.y = jump_height
 			current_animation = "jump"
+
+func _on_Coin_Coin_Pickup():
+	coin_count += 1
+	print (str(coin_count) + " coins")

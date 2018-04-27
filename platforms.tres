@@ -43,10 +43,50 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 custom_solver_bias = 0.0
 points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
 
-[sub_resource type="ConvexPolygonShape2D" id=13]
+[sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
 points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+
+custom_solver_bias = 0.0
+points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+
+custom_solver_bias = 0.0
+points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+
+custom_solver_bias = 0.0
+points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+
+custom_solver_bias = 0.0
+points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+
+custom_solver_bias = 0.0
+points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+
+custom_solver_bias = 0.0
+points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+
+custom_solver_bias = 0.0
+points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+
+custom_solver_bias = 0.0
+points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
 
 [sub_resource type="ConvexPolygonShape2D" id=14]
 
@@ -61,29 +101,24 @@ points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843,
 [sub_resource type="ConvexPolygonShape2D" id=16]
 
 custom_solver_bias = 0.0
-points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
 
 [sub_resource type="ConvexPolygonShape2D" id=17]
 
 custom_solver_bias = 0.0
-points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
 
 [sub_resource type="ConvexPolygonShape2D" id=18]
 
 custom_solver_bias = 0.0
-points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
 
 [sub_resource type="ConvexPolygonShape2D" id=19]
 
 custom_solver_bias = 0.0
-points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
 
 [sub_resource type="ConvexPolygonShape2D" id=20]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
-
-[sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
 points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
@@ -91,44 +126,9 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 [sub_resource type="ConvexPolygonShape2D" id=21]
 
 custom_solver_bias = 0.0
-points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
+points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
 
 [sub_resource type="ConvexPolygonShape2D" id=22]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( 102.003, -19.7921, 75.939, 46.9973, 68.6084, 51.8843, -77.188, 38.8522, -99.9941, -18.9776, -98.3651, -43.4128, -86.1475, -49.9288, 86.5276, -50.7433, 98.7451, -40.9693 )
-
-[sub_resource type="ConvexPolygonShape2D" id=6]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
-
-[sub_resource type="ConvexPolygonShape2D" id=7]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
-
-[sub_resource type="ConvexPolygonShape2D" id=8]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
-
-[sub_resource type="ConvexPolygonShape2D" id=9]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
-
-[sub_resource type="ConvexPolygonShape2D" id=10]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
-
-[sub_resource type="ConvexPolygonShape2D" id=11]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
-
-[sub_resource type="ConvexPolygonShape2D" id=12]
 
 custom_solver_bias = 0.0
 points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
@@ -174,7 +174,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 5 ),
+"shape": SubResource( 13 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 190, 47 )
 } ]
 3/name = "ground_grass_broken"
@@ -188,7 +188,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 6 ),
+"shape": SubResource( 16 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 190, 47 )
 } ]
 4/name = "ground_grass_sand"
@@ -202,7 +202,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 4/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 7 ),
+"shape": SubResource( 17 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 190, 47 )
 } ]
 5/name = "ground_grass_sand2"
@@ -216,7 +216,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 5/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 8 ),
+"shape": SubResource( 18 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 190, 47 )
 } ]
 6/name = "ground_snow"
@@ -230,7 +230,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 6/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 9 ),
+"shape": SubResource( 19 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 190, 47 )
 } ]
 7/name = "ground_snow_broken"
@@ -244,7 +244,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 7/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 10 ),
+"shape": SubResource( 20 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 190, 47 )
 } ]
 8/name = "ground_stone"
@@ -258,7 +258,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 8/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 11 ),
+"shape": SubResource( 21 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 190, 47 )
 } ]
 9/name = "ground_stone_broken"
@@ -272,7 +272,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 9/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 12 ),
+"shape": SubResource( 22 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 190, 47 )
 } ]
 10/name = "ground_wood"
@@ -314,7 +314,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 12/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 13 ),
+"shape": SubResource( 5 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 100.5, 50 )
 } ]
 13/name = "ground_cake_broken_small"
@@ -328,7 +328,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 13/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 14 ),
+"shape": SubResource( 6 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 100, 50 )
 } ]
 14/name = "ground_grass_small"
@@ -342,7 +342,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 14/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 15 ),
+"shape": SubResource( 7 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 100.5, 50 )
 } ]
 15/name = "ground_grass_broken_small"
@@ -356,7 +356,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 15/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 16 ),
+"shape": SubResource( 8 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 100, 50 )
 } ]
 16/name = "ground_sand_small"
@@ -370,7 +370,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 16/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 17 ),
+"shape": SubResource( 9 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 100.5, 50 )
 } ]
 17/name = "ground_sand_broken_small2"
@@ -384,7 +384,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 17/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 18 ),
+"shape": SubResource( 10 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 100, 50 )
 } ]
 18/name = "ground_stone_small"
@@ -398,7 +398,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 18/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 19 ),
+"shape": SubResource( 11 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 100, 50 )
 } ]
 19/name = "ground_stone_broken_small"
@@ -412,7 +412,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 19/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 20 ),
+"shape": SubResource( 12 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 100, 50 )
 } ]
 20/name = "ground_wood_small"
@@ -426,7 +426,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 20/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 21 ),
+"shape": SubResource( 14 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 100, 50 )
 } ]
 21/name = "ground_wood_broken_small"
@@ -440,7 +440,7 @@ points = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.840
 21/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 22 ),
+"shape": SubResource( 15 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 100, 50 )
 } ]
 
