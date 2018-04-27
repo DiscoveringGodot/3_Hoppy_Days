@@ -39,7 +39,7 @@ custom_solver_bias = 0.0
 radius = 60.0
 height = 47.674
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -55,7 +55,6 @@ friction = 0.25
 
 frames = SubResource( 1 )
 animation = "idle"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]

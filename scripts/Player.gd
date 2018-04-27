@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 export var speed = 500
 export var gravity = 25
-export var jump_height = -900
+export var jump_height = -1250
 var motion = Vector2()
 var up = Vector2(0,-1)
 export var friction = 0.25

@@ -3,7 +3,7 @@
 [ext_resource path="res://platforms.tres" type="TileSet" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 
-[node name="Level 1" type="Node2D"]
+[node name="Level 1" type="Node2D" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -23,12 +23,12 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 131072, 0, 0, 196622, 0, 0, 393222, 0, 0, 524288, 0, 0, 524301, 0, 0 )
+tile_data = PoolIntArray( 29, 0, 0, 131072, 0, 0, 262166, 0, 0, 393222, 0, 0, 524288, 1, 0, 524301, 0, 0, 851990, 1, 0 )
 
 [node name="Player" parent="." index="1" instance=ExtResource( 2 )]
 
 position = Vector2( 511.967, 267.647 )
 gravity = 25
-jump_height = -900
+jump_height = -1250
 
 
