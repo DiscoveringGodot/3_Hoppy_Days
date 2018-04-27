@@ -1,20 +1,14 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://platforms.tres" type="TileSet" id=2]
+[ext_resource path="res://platforms.tres" type="TileSet" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 
-[node name="Level 1" type="Node2D" index="0"]
+[node name="Level 1" type="Node2D"]
 
-[node name="Player" parent="." index="0" instance=ExtResource( 1 )]
-
-position = Vector2( 511.967, 267.647 )
-gravity = 25
-jump_height = -700
-
-[node name="TileMap" type="TileMap" parent="." index="1"]
+[node name="TileMap" type="TileMap" parent="." index="0"]
 
 mode = 0
-tile_set = ExtResource( 2 )
+tile_set = ExtResource( 1 )
 cell_size = Vector2( 64, 64 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -29,6 +23,12 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 393222, 0, 0 )
+tile_data = PoolIntArray( 131072, 0, 0, 196622, 0, 0, 393222, 0, 0, 524288, 0, 0, 524301, 0, 0 )
+
+[node name="Player" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 511.967, 267.647 )
+gravity = 25
+jump_height = -900
 
 

@@ -14,6 +14,12 @@ config/name="Hoppy Days Prototype"
 run/main_scene="res://Level 1.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/vsync/use_vsync=false
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
