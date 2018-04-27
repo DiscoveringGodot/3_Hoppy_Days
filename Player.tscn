@@ -1,12 +1,13 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://gfx/PNG/Players/bunny2_jump.png" type="Texture" id=2]
 [ext_resource path="res://gfx/PNG/Players/bunny2_hurt.png" type="Texture" id=3]
 [ext_resource path="res://gfx/PNG/Players/bunny2_walk1.png" type="Texture" id=4]
 [ext_resource path="res://gfx/PNG/Players/bunny2_walk2.png" type="Texture" id=5]
 [ext_resource path="res://gfx/PNG/Players/bunny2_ready.png" type="Texture" id=6]
 [ext_resource path="res://gfx/PNG/Players/bunny2_stand.png" type="Texture" id=7]
+
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -45,7 +46,7 @@ collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.001
 script = ExtResource( 1 )
-speed = 250
+speed = 500
 gravity = 50
 jump_height = 70
 friction = 0.25
@@ -54,7 +55,6 @@ friction = 0.25
 
 frames = SubResource( 1 )
 animation = "idle"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
