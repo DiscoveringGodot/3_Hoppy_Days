@@ -10,13 +10,11 @@ onready var animation = $Animation
 var current_animation = "idle"
 var coin_count = 0
 
-func _ready():
-	pass
-
 func _physics_process(delta):
 	fall()
 	run()
 	jump()
+	check_for_ground()
 	move_and_slide(motion,up)
 	animation.animation = current_animation
 
@@ -43,7 +41,10 @@ func jump():
 	if is_on_floor() == true:
 		if Input.is_action_pressed("ui_up"):
 			motion.y = jump_height
-			current_animation = "jump"
+
+func check_for_ground():
+	if not $CollisionRay.is_colliding():
+		current_animation = "jump"
 
 func _on_Coin_Coin_Pickup():
 	coin_count += 1

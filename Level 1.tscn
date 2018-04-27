@@ -4,7 +4,7 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Coin.tscn" type="PackedScene" id=3]
 
-[node name="Level 1" type="Node2D" index="0"]
+[node name="Level 1" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -28,7 +28,7 @@ tile_data = PoolIntArray( 29, 0, 0, 131072, 0, 0, 262166, 0, 0, 393222, 0, 0, 52
 
 [node name="Player" parent="." index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 511.967, 267.647 )
+position = Vector2( 511.967, 280.915 )
 gravity = 40
 jump_height = -1250
 
