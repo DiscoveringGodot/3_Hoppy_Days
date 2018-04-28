@@ -44,8 +44,6 @@ _sections_unfolded = [ "Collision", "Pickable", "Z Index" ]
 
 position = Vector2( 511.967, 280.915 )
 collision_layer = 15
-collision_mask = 15
-_sections_unfolded = [ "Collision" ]
 jump_height = -1250
 
 [node name="NPC_Cloud" parent="." index="4" instance=ExtResource( 5 )]
@@ -54,6 +52,6 @@ position = Vector2( 1417.37, -98.184 )
 
 [connection signal="Coin_Pickup" from="Coin" to="Player" method="_on_Coin_Coin_Pickup"]
 
-[connection signal="body_shape_entered" from="SpikesTop" to="Player" method="_on_SpikesTop_body_shape_entered"]
+[connection signal="body_shape_entered" from="SpikesTop" to="Player" method="take_damage"]
 
 

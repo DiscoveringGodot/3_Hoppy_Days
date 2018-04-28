@@ -11,13 +11,12 @@ func _physics_process(delta):
 	if $Sprite/RayCast2D.is_colliding():
 		if body.name == "Player":
 			fire()
+		else:
+			return
 
 func fire():
 	if timeout == false:
-		print("where is it?")
-		var mypos = self.position
-		get_parent().add_child(lightning.instance(), true)
-		lightning.set_position(position)
+		$Sprite/RayCast2D.add_child(lightning.instance(), true)
 		$Timer.start()
 		timeout = true
 	

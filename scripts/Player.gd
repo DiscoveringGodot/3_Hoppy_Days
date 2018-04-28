@@ -52,15 +52,13 @@ func _on_Coin_Coin_Pickup():
 	if coin_count > 99:
 		lives +=1
 
-func _take_damage():
+func take_damage(body_id, body, body_shape, area_shape):
+	#if body == self:
 	motion.y = jump_height
+	print ("ow")
 	lives -= 1
 	if lives == 0:
 		_end_game()
 
 func _end_game():
 	pass
-	
-func _on_SpikesTop_body_shape_entered(body_id, body, body_shape, area_shape):
-	if body == self:
-		_take_damage()
