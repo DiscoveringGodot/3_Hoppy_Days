@@ -3,7 +3,8 @@ extends KinematicBody2D
 const SPEED = 700
 const GRAVITY = 40
 const FRICTION = 0.25
-export var jump_height = -1250
+const JUMP_HEIGHT = -1250
+const JUMP_BOOST = 2
 var motion = Vector2()
 var current_animation = "idle"
 var coin_count = 0
@@ -19,6 +20,8 @@ func _physics_process(delta):
 	check_for_ground()
 	move_and_slide(motion,Vector2(0,-1))
 	$Animation.animation = current_animation
+	if get_position().y  > 2500:
+		_end_game()
 
 func fall():
 	if is_on_floor() == false:
@@ -42,7 +45,7 @@ func run():
 func jump():
 	if is_on_floor() == true:
 		if Input.is_action_pressed("ui_up"):
-			motion.y = jump_height
+			motion.y = JUMP_HEIGHT
 
 func check_for_ground():
 	if not $CollisionRay.is_colliding():
@@ -58,7 +61,7 @@ func _on_Coin_Coin_Pickup():
 
 func take_damage(body_id, body, body_shape, area_shape):
 	if body == self:
-		motion.y = jump_height
+		motion.y = JUMP_HEIGHT
 		emit_signal("life_down")
 		lives -= 1
 	if lives < 0:
@@ -66,3 +69,7 @@ func take_damage(body_id, body, body_shape, area_shape):
 
 func _end_game():
 	get_tree().change_scene("res://EndGame.tscn")
+
+func _on_JumpPad_body_shape_entered(body_id, body, body_shape, area_shape):
+	if body == self:
+		motion.y = JUMP_HEIGHT * JUMP_BOOST

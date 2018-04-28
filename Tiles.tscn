@@ -23,7 +23,7 @@
 [ext_resource path="res://gfx/PNG/Environment/ground_wood_small.png" type="Texture" id=21]
 [ext_resource path="res://gfx/PNG/Environment/ground_wood_small_broken.png" type="Texture" id=22]
 
-[node name="Tiles" type="Node2D" index="0"]
+[node name="Tiles" type="Node2D"]
 
 [node name="ground_cake" type="Sprite" parent="." index="0"]
 
@@ -96,7 +96,6 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ground_grass/StaticBody2d" index="0"]
 
-visible = false
 build_mode = 0
 polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.8406, 189.952, -19.1455, 158.611, 35.9713, -152.096, 47.3188, -165.065, 44.617, -189.921, -13.7419, -189.381, -36.437, -182.356, -45.0827 )
 
@@ -329,9 +328,6 @@ polygon = PoolVector2Array( -174.251, -46.7038, 172.12, -46.7038, 186.71, -41.84
 
 position = Vector2( 1450, 100 )
 texture = ExtResource( 13 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="StaticBody2d" type="StaticBody2D" parent="ground_cake_small" index="0"]
 
@@ -346,9 +342,8 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ground_cake_small/StaticBody2d" index="0"]
 
-visible = false
 build_mode = 0
-polygon = PoolVector2Array( 98.7451, -40.9693, 86.5276, -50.7433, -86.1475, -49.9288, -98.3651, -43.4128, -99.9941, -18.9776, -77.188, 38.8522, 68.6084, 51.8843, 75.939, 46.9973, 102.003, -19.7921 )
+polygon = PoolVector2Array( 98.7451, -40.9693, 86.5251, -50.0742, -79.313, -50.0824, -98.3651, -43.4128, -99.9941, -18.9776, -77.188, 38.8522, 68.6084, 51.8843, 75.939, 46.9973, 102.003, -19.7921 )
 
 [node name="ground_cake_broken_small" type="Sprite" parent="." index="13"]
 

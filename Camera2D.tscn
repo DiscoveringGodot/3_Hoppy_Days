@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://GUI.gd" type="Script" id=1]
+[ext_resource path="res://scripts/GUI.gd" type="Script" id=1]
 [ext_resource path="res://gfx/PNG/Background/bg_layer1.png" type="Texture" id=2]
 [ext_resource path="res://gfx/PNG/Background/bg_layer2.png" type="Texture" id=3]
 [ext_resource path="res://gfx/PNG/Background/bg_layer3.png" type="Texture" id=4]
@@ -9,6 +9,7 @@
 [ext_resource path="res://candles_.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://gfx/PNG/HUD/lifes.png" type="Texture" id=8]
 [ext_resource path="res://gfx/PNG/HUD/coin_bronze.png" type="Texture" id=9]
+[ext_resource path="res://sound/happy.ogg" type="AudioStream" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -24,10 +25,10 @@ anchor_mode = 1
 rotating = false
 current = true
 zoom = Vector2( 1.5, 1.5 )
-limit_left = -10000000
+limit_left = -100
 limit_top = -10000000
 limit_right = 10000000
-limit_bottom = 10000000
+limit_bottom = 2000
 limit_smoothed = false
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
@@ -43,7 +44,7 @@ editor_draw_screen = true
 editor_draw_limits = false
 editor_draw_drag_margin = false
 script = ExtResource( 1 )
-_sections_unfolded = [ "Smoothing" ]
+_sections_unfolded = [ "Limit", "Smoothing" ]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." index="0"]
 
@@ -256,5 +257,13 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 texture = ExtResource( 9 )
 stretch_mode = 0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GUI" index="1"]
+
+stream = ExtResource( 10 )
+volume_db = 0.0
+autoplay = true
+mix_target = 0
+bus = "Master"
 
 
