@@ -1,37 +1,38 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://gfx/PNG/Players/bunny2_hurt.png" type="Texture" id=2]
-[ext_resource path="res://gfx/PNG/Players/bunny2_walk1.png" type="Texture" id=3]
-[ext_resource path="res://gfx/PNG/Players/bunny2_walk2.png" type="Texture" id=4]
-[ext_resource path="res://gfx/PNG/Players/bunny2_jump.png" type="Texture" id=5]
+[ext_resource path="res://gfx/PNG/Players/bunny2_jump.png" type="Texture" id=2]
+[ext_resource path="res://gfx/PNG/Players/bunny2_hurt.png" type="Texture" id=3]
+[ext_resource path="res://gfx/PNG/Players/bunny2_walk1.png" type="Texture" id=4]
+[ext_resource path="res://gfx/PNG/Players/bunny2_walk2.png" type="Texture" id=5]
 [ext_resource path="res://gfx/PNG/Players/bunny2_ready.png" type="Texture" id=6]
 [ext_resource path="res://gfx/PNG/Players/bunny2_stand.png" type="Texture" id=7]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=8]
 [ext_resource path="res://sound/happy.ogg" type="AudioStream" id=9]
+[ext_resource path="res://sound/coin_SFX.wav" type="AudioStream" id=10]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
 "name": "hurt",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "walk",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ) ],
-"loop": true,
-"name": "jump",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "idle",
-"speed": 2.0
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -40,15 +41,13 @@ custom_solver_bias = 0.0
 radius = 60.0
 height = 47.674
 
-[node name="Player" type="KinematicBody2D" index="0"]
+[node name="Player" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.001
 script = ExtResource( 1 )
-speed = 700
-gravity = 50
 jump_height = -1200
 friction = 0.25
 
@@ -56,6 +55,7 @@ friction = 0.25
 
 frames = SubResource( 1 )
 animation = "idle"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
@@ -77,7 +77,17 @@ attenuation = 1.0
 bus = "Master"
 area_mask = 1
 
-[node name="CollisionRay" type="RayCast2D" parent="." index="3"]
+[node name="Coin_sfx" type="AudioStreamPlayer2D" parent="." index="3"]
+
+stream = ExtResource( 10 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="CollisionRay" type="RayCast2D" parent="." index="4"]
 
 position = Vector2( 0, 60.5842 )
 enabled = true

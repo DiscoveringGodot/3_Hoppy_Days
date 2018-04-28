@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/mushroom_red.png"
 source_md5="df42ef4a1887d0513bfb2318b7512ff1"
 
 dest_files=[ "res://.import/mushroom_red.png-e418e8050429fc1407c6bfb00205d065.stex" ]
-dest_md5="50fdb322c7d9de563f0c5ae1737a3f19"
+dest_md5="b0486ad64b3fdf8ab179e30425584811"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/ground_wood_small_broken.png"
 source_md5="d2dcafed90d6947b2ff12411235b8179"
 
 dest_files=[ "res://.import/ground_wood_small_broken.png-b05c6d8c89943b976aa92164e8b06ed4.stex" ]
-dest_md5="005b655b1faed191f4be9137c26a65e5"
+dest_md5="35e5abdb2eb9bdde468b91699363683e"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

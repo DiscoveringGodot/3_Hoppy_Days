@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/ground_cake.png"
 source_md5="0b08bd895af59d6d806e3e764f13d50f"
 
 dest_files=[ "res://.import/ground_cake.png-d7d530c687145d6bd08f2dc34f675d0a.stex" ]
-dest_md5="2c2fb61d9a2884341960fe965a0922a7"
+dest_md5="9c1bd63315b53b85fef6d388f92a1641"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/ground_grass_broken.png"
 source_md5="461d49302dad746c6a401c305c382a7c"
 
 dest_files=[ "res://.import/ground_grass_broken.png-552c44318caea3fb6dd7825eefbbcff3.stex" ]
-dest_md5="486fbb09c1ddb2ad4dbf2964f2449c6a"
+dest_md5="04eb62b868e1189eb0c1791dbf0e3d20"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

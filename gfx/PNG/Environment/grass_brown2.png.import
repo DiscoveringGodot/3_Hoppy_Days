@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/grass_brown2.png"
 source_md5="15bb24a01dfdc66e78ffe55fb89a7054"
 
 dest_files=[ "res://.import/grass_brown2.png-75661205a44e6590d4bfa4a98ca85368.stex" ]
-dest_md5="34c0aaf6ff6f48cb37916335792b0ba9"
+dest_md5="8b5da9321bdcfb5ffa14f0ebf817a1b5"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

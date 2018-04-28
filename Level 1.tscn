@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://platforms.tres" type="TileSet" id=1]
-[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Coin.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Coin.tscn" type="PackedScene" id=2]
+[ext_resource path="res://SpikesTop.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
 
-[node name="Level 1" type="Node2D"]
+[node name="Level 1" type="Node2D" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -26,16 +27,28 @@ occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 29, 0, 0, 131072, 0, 0, 262166, 0, 0, 393222, 0, 0, 524288, 1, 0, 524301, 0, 0, 851990, 1, 0 )
 
-[node name="Player" parent="." index="1" instance=ExtResource( 2 )]
-
-position = Vector2( 511.967, 280.915 )
-gravity = 40
-jump_height = -1250
-
-[node name="Coin" parent="." index="2" instance=ExtResource( 3 )]
+[node name="Coin" parent="." index="1" instance=ExtResource( 2 )]
 
 position = Vector2( 704.815, 360.76 )
 
+[node name="SpikesTop" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 1100.24, 488.118 )
+collision_layer = 9
+collision_mask = 9
+script = null
+_sections_unfolded = [ "Collision", "Pickable", "Z Index" ]
+
+[node name="Player" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 511.967, 280.915 )
+collision_layer = 15
+collision_mask = 15
+_sections_unfolded = [ "Collision" ]
+jump_height = -1250
+
 [connection signal="Coin_Pickup" from="Coin" to="Player" method="_on_Coin_Coin_Pickup"]
+
+[connection signal="body_shape_entered" from="SpikesTop" to="Player" method="_on_SpikesTop_body_shape_entered"]
 
 

@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/ground_wood_small.png"
 source_md5="e3bca44652e958d7f232b65d8c675680"
 
 dest_files=[ "res://.import/ground_wood_small.png-74e9ea3d28372265df429fa7f560b4a4.stex" ]
-dest_md5="da950328a770640d2d48f6f79f9be508"
+dest_md5="58bf3939bd7cb6b8e3a7ef66fe3e3276"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

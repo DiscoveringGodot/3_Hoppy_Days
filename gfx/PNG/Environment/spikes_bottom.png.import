@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/spikes_bottom.png"
 source_md5="ce0474409a6380f77c0ca4f6d8fcbef1"
 
 dest_files=[ "res://.import/spikes_bottom.png-8606ac84d4b69e18b624c38f624aae66.stex" ]
-dest_md5="2b32e351b863a9693cf00ec7ad2ad945"
+dest_md5="c4d070aeb2b0ecb5e3754abe3ec89ed7"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

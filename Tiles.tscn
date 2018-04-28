@@ -23,7 +23,7 @@
 [ext_resource path="res://gfx/PNG/Environment/ground_wood_small.png" type="Texture" id=21]
 [ext_resource path="res://gfx/PNG/Environment/ground_wood_small_broken.png" type="Texture" id=22]
 
-[node name="Tiles" type="Node2D"]
+[node name="Tiles" type="Node2D" index="0"]
 
 [node name="ground_cake" type="Sprite" parent="." index="0"]
 

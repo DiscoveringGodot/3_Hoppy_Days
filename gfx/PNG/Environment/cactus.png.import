@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/cactus.png"
 source_md5="18384bf35644adab2300aae310ba6ef0"
 
 dest_files=[ "res://.import/cactus.png-3c9e0ec5b67b34295736564ba39c5225.stex" ]
-dest_md5="a3b32b9a99e453f6acab60f427bba1ee"
+dest_md5="84f48335a681c0f458b681271a34b5b1"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

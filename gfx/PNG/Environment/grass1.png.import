@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/grass1.png"
 source_md5="eaec358fc580cc91227e3532f10814cc"
 
 dest_files=[ "res://.import/grass1.png-814f23587f34c2e0b1a82d93b43972aa.stex" ]
-dest_md5="b55a6e9f962915eccf2fdfc816df71f9"
+dest_md5="f62d95ff3c555280deb2dd07f4f226e0"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/ground_snow_broken.png"
 source_md5="6b497d0118c47347707ae03a270658d1"
 
 dest_files=[ "res://.import/ground_snow_broken.png-d1ebcfaa2d18166b2189c752a4775c6e.stex" ]
-dest_md5="dc67cf156c538ab5305712e088bb9fa5"
+dest_md5="f2d5a36626c1e680ffdd2da35463a455"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

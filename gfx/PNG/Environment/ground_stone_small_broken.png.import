@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/ground_stone_small_broken.png"
 source_md5="042f4d88eae9b9318931eb01d281c032"
 
 dest_files=[ "res://.import/ground_stone_small_broken.png-16cb07c5e30267d3a8278fd2e5ef9757.stex" ]
-dest_md5="1aca0a2d6be99cb14942e39674b9fd99"
+dest_md5="69462f9eda8d49909f1b99a268ea6a7d"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

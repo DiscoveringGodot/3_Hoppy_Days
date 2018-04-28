@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/ground_grass_small.png"
 source_md5="916c2660f1a8332a760077e7a25e6a38"
 
 dest_files=[ "res://.import/ground_grass_small.png-148af701c08843bf461c8c516c346b11.stex" ]
-dest_md5="bb1836a833801822a79031f8562b25ca"
+dest_md5="e3da034d69f771743d07863ed547d204"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/ground_snow_small.png"
 source_md5="656d485840450f4615a9fbb453521e82"
 
 dest_files=[ "res://.import/ground_snow_small.png-2872a0f0ee564f12be510537af66eb94.stex" ]
-dest_md5="a5dec9cbe26886fb039dbea746dcfa89"
+dest_md5="23033dcb38c978a887c7fde398e58bd6"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

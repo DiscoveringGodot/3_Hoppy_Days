@@ -10,7 +10,7 @@ source_file="res://gfx/PNG/Environment/ground_sand_broken.png"
 source_md5="7bec43073ab4899c7ac6ded11bd2b745"
 
 dest_files=[ "res://.import/ground_sand_broken.png-4324b2ed240a555eb7fa17b7b1cb64fd.stex" ]
-dest_md5="a4852d6f0945e8c978d159bbf92778de"
+dest_md5="9b4e7ecf06a7b9f209676fa0cc8dd62d"
 
 [params]
 
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
