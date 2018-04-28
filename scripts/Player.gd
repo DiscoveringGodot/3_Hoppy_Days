@@ -53,12 +53,12 @@ func _on_Coin_Coin_Pickup():
 		lives +=1
 
 func take_damage(body_id, body, body_shape, area_shape):
-	#if body == self:
-	motion.y = jump_height
-	print ("ow")
-	lives -= 1
-	if lives == 0:
-		_end_game()
+	if body == self:
+		motion.y = jump_height
+		print ("ow")
+		lives -= 1
+		if lives == 0:
+			_end_game()
 
 func _end_game():
 	pass
