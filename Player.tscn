@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://gfx/PNG/Players/bunny2_ready.png" type="Texture" id=2]
@@ -7,9 +7,8 @@
 [ext_resource path="res://gfx/PNG/Players/bunny2_walk1.png" type="Texture" id=5]
 [ext_resource path="res://gfx/PNG/Players/bunny2_walk2.png" type="Texture" id=6]
 [ext_resource path="res://gfx/PNG/Players/bunny2_jump.png" type="Texture" id=7]
-[ext_resource path="res://Camera2D.tscn" type="PackedScene" id=8]
-[ext_resource path="res://sound/happy.ogg" type="AudioStream" id=9]
-[ext_resource path="res://sound/coin_SFX.wav" type="AudioStream" id=10]
+[ext_resource path="res://sound/happy.ogg" type="AudioStream" id=8]
+[ext_resource path="res://sound/coin_SFX.wav" type="AudioStream" id=9]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -65,11 +64,9 @@ position = Vector2( 0, 16.5 )
 shape = SubResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Camera2D" parent="CollisionShape2D" index="0" instance=ExtResource( 8 )]
-
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="." index="2"]
 
-stream = ExtResource( 9 )
+stream = ExtResource( 8 )
 volume_db = 0.0
 autoplay = true
 max_distance = 2000.0
@@ -79,7 +76,7 @@ area_mask = 1
 
 [node name="Coin_sfx" type="AudioStreamPlayer2D" parent="." index="3"]
 
-stream = ExtResource( 10 )
+stream = ExtResource( 9 )
 volume_db = 0.0
 autoplay = false
 max_distance = 2000.0

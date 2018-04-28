@@ -1,15 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://platforms.tres" type="TileSet" id=1]
 [ext_resource path="res://Coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://SpikesTop.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://NPCs/NPC_Cloud.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Camera2D.tscn" type="PackedScene" id=5]
+[ext_resource path="res://NPCs/NPC_Cloud.tscn" type="PackedScene" id=6]
 
-[node name="Level 1" type="Node2D"]
+[node name="Level 1" type="Node2D" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
+position = Vector2( 0, -2.51758 )
 mode = 0
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 64, 64 )
@@ -46,12 +48,20 @@ position = Vector2( 511.967, 280.915 )
 collision_layer = 15
 jump_height = -1250
 
-[node name="NPC_Cloud" parent="." index="4" instance=ExtResource( 5 )]
+[node name="Camera2D" parent="Player" index="5" instance=ExtResource( 5 )]
+
+[node name="NPC_Cloud" parent="." index="4" instance=ExtResource( 6 )]
 
 position = Vector2( 1417.37, -98.184 )
 
 [connection signal="Coin_Pickup" from="Coin" to="Player" method="_on_Coin_Coin_Pickup"]
 
 [connection signal="body_shape_entered" from="SpikesTop" to="Player" method="take_damage"]
+
+[connection signal="coin_up" from="Player" to="Player/Camera2D" method="_on_Player_coin_up"]
+
+[connection signal="life_down" from="Player" to="Player/Camera2D" method="_on_Player_life_down"]
+
+[connection signal="life_up" from="Player" to="Player/Camera2D" method="_on_Player_life_up"]
 
 

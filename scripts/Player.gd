@@ -8,6 +8,9 @@ var motion = Vector2()
 var current_animation = "idle"
 var coin_count = 0
 var lives = 3
+signal life_up
+signal life_down
+signal coin_up
 
 func _physics_process(delta):
 	fall()
@@ -48,17 +51,18 @@ func check_for_ground():
 func _on_Coin_Coin_Pickup():
 	coin_count += 1
 	$Coin_sfx.play()
-	print (str(coin_count) + " coins")
+	emit_signal("coin_up")
 	if coin_count > 99:
 		lives +=1
+		emit_signal("life_up")
 
 func take_damage(body_id, body, body_shape, area_shape):
 	if body == self:
 		motion.y = jump_height
-		print ("ow")
+		emit_signal("life_down")
 		lives -= 1
-		if lives == 0:
+	if lives < 0:
 			_end_game()
 
 func _end_game():
-	pass
+	get_tree().change_scene("res://EndGame.tscn")
