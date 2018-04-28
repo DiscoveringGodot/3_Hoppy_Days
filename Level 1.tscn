@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://platforms.tres" type="TileSet" id=1]
 [ext_resource path="res://Coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://SpikesTop.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://NPCs/NPC_Cloud.tscn" type="PackedScene" id=5]
 
 [node name="Level 1" type="Node2D" index="0"]
 
@@ -29,7 +30,7 @@ tile_data = PoolIntArray( 29, 0, 0, 131072, 0, 0, 262166, 0, 0, 393222, 0, 0, 52
 
 [node name="Coin" parent="." index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 704.815, 360.76 )
+position = Vector2( 705.815, 360.76 )
 
 [node name="SpikesTop" parent="." index="2" instance=ExtResource( 3 )]
 
@@ -46,6 +47,10 @@ collision_layer = 15
 collision_mask = 15
 _sections_unfolded = [ "Collision" ]
 jump_height = -1250
+
+[node name="NPC_Cloud" parent="." index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 1417.37, -98.184 )
 
 [connection signal="Coin_Pickup" from="Coin" to="Player" method="_on_Coin_Coin_Pickup"]
 

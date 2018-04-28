@@ -38,14 +38,14 @@ func run():
 
 func jump():
 	if is_on_floor() == true:
-		if Input.is_action_pressed("ui_UP"):
+		if Input.is_action_pressed("ui_up"):
 			motion.y = jump_height
 
 func check_for_ground():
 	if not $CollisionRay.is_colliding():
 		current_animation = "jump"
 
-func _on_Coin_Coin_PickUP():
+func _on_Coin_Coin_Pickup():
 	coin_count += 1
 	$Coin_sfx.play()
 	print (str(coin_count) + " coins")

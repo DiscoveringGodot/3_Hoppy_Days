@@ -10,8 +10,8 @@ func _process(delta):
 	if taken == false: 
 		for body in bodies:
 			if body.name == "Player":
-				tween.interpolate_property($AnimatedSprite, "scale", Vector2(1,1), Vector2(0,0), 0.3, Tween.TRANS_QUAD, Tween.EASE_IN, 0)
-				tween.start()
+				$Tween.interpolate_property($AnimatedSprite, "scale", Vector2(1,1), Vector2(0,0), 0.3, Tween.TRANS_QUAD, Tween.EASE_IN, 0)
+				$Tween.start()
 				emit_signal("Coin_Pickup")
 				taken = true
 

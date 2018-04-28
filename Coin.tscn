@@ -6,7 +6,6 @@
 [ext_resource path="res://gfx/PNG/Items/bronze_3.png" type="Texture" id=4]
 [ext_resource path="res://gfx/PNG/Items/bronze_4.png" type="Texture" id=5]
 
-
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
@@ -21,7 +20,7 @@ animations = [ {
 custom_solver_bias = 0.0
 radius = 43.0
 
-[node name="Coin" type="Area2D" index="0"]
+[node name="Coin" type="Area2D"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -41,7 +40,7 @@ __meta__ = {
 
 frames = SubResource( 1 )
 animation = "default"
-frame = 2
+frame = 4
 playing = true
 _sections_unfolded = [ "Transform" ]
 
