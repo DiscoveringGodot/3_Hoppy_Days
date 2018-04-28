@@ -1,6 +1,7 @@
 extends Node2D
 
 var timeout = false
+var lightning = preload("res://NPCs/Lightning.tscn")
 
 func _ready():
 	$Sprite/AnimationPlayer.current_animation = "float"
@@ -13,9 +14,12 @@ func _physics_process(delta):
 
 func fire():
 	if timeout == false:
+		print("where is it?")
+		var mypos = self.position
+		get_parent().add_child(lightning.instance(), true)
+		lightning.set_position(position)
 		$Timer.start()
 		timeout = true
-		print ("PEWPEW!")
 	
 
 func _on_Timer_timeout():
