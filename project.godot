@@ -50,6 +50,11 @@ texture={
 2d_physics/layer_3="Pickup"
 2d_physics/layer_4="Enemies"
 
+[physics]
+
+common/physics_fps=90
+
 [rendering]
 
+quality/2d/use_pixel_snap=true
 environment/default_environment="res://default_env.tres"

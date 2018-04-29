@@ -8,7 +8,7 @@
 [ext_resource path="res://NPCs/NPC_Cloud.tscn" type="PackedScene" id=6]
 [ext_resource path="res://JumpPad.tscn" type="PackedScene" id=7]
 
-[node name="Level 1" type="Node2D" index="0"]
+[node name="Level 1" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 

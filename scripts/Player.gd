@@ -3,11 +3,12 @@ extends KinematicBody2D
 const SPEED = 700
 const GRAVITY = 40
 const FRICTION = 0.25
-const JUMP_HEIGHT = -1250
+const JUMP_HEIGHT = -1750
 const JUMP_BOOST = 2
 var motion = Vector2()
 var current_animation = "idle"
 var coin_count = 0
+var coin_target = 20 #how many coins for an extra life?
 var lives = 3
 signal life_up
 signal life_down
@@ -24,7 +25,7 @@ func _physics_process(delta):
 		_end_game()
 
 func fall():
-	if is_on_floor() == false:
+	if is_on_floor() == false || $HeadRay.is_colliding():
 		motion.y += GRAVITY
 	else:
 		motion.y = 0
@@ -55,8 +56,9 @@ func _on_Coin_Coin_Pickup():
 	coin_count += 1
 	$Coin_sfx.play()
 	emit_signal("coin_up")
-	if coin_count > 99:
+	if coin_count >= coin_target:
 		lives +=1
+		coin_count = 0
 		emit_signal("life_up")
 
 func take_damage(body_id, body, body_shape, area_shape):

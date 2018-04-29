@@ -17,3 +17,5 @@ func _physics_process(delta):
 				queue_free()
 			else:
 				queue_free()
+	if not $VisibilityNotifier2D.is_on_screen():
+		queue_free()
