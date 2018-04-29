@@ -5,7 +5,7 @@
 [ext_resource path="res://gfx/PNG/Background/bg_layer2.png" type="Texture" id=3]
 [ext_resource path="res://gfx/PNG/Background/bg_layer3.png" type="Texture" id=4]
 [ext_resource path="res://gfx/PNG/Background/bg_layer4.png" type="Texture" id=5]
-[ext_resource path="res://gfx/UI/bannerHanging.png" type="Texture" id=6]
+[ext_resource path="res://gfx/PNG/HUD/bannerHanging.png" type="Texture" id=6]
 [ext_resource path="res://candles_.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://gfx/PNG/HUD/lifes.png" type="Texture" id=8]
 [ext_resource path="res://gfx/PNG/HUD/coin_bronze.png" type="Texture" id=9]
@@ -218,7 +218,7 @@ scroll_active = true
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts", "custom_styles" ]
 
 [node name="BunnyLogo" type="TextureRect" parent="GUI/Banner" index="2"]
 
