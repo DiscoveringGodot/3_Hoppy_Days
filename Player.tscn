@@ -54,6 +54,7 @@ _sections_unfolded = [ "Collision", "collision" ]
 
 frames = SubResource( 1 )
 animation = "idle"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
@@ -91,7 +92,7 @@ collision_mask = 3
 [node name="Jump_sfx" type="AudioStreamPlayer" parent="." index="5"]
 
 stream = ExtResource( 9 )
-volume_db = 0.0
+volume_db = -5.0
 autoplay = false
 mix_target = 0
 bus = "Master"
@@ -99,7 +100,7 @@ bus = "Master"
 [node name="Pain_sfx" type="AudioStreamPlayer" parent="." index="6"]
 
 stream = ExtResource( 10 )
-volume_db = 0.0
+volume_db = -5.0
 autoplay = false
 mix_target = 0
 bus = "Master"

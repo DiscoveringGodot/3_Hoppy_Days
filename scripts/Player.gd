@@ -79,3 +79,7 @@ func _end_game():
 func _on_JumpPad_body_shape_entered(body_id, body, body_shape, area_shape):
 	if body == self:
 		motion.y = JUMP_HEIGHT * JUMP_BOOST
+
+
+func _on_Portal_body_shape_entered(body_id, body, body_shape, area_shape):
+	_end_game() #create a victory screen or level 2
