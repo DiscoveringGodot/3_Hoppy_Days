@@ -19,7 +19,7 @@ use_filter = false
 font_data = ExtResource( 7 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Camera2D" type="Camera2D"]
+[node name="Camera2D" type="Camera2D" index="0"]
 
 anchor_mode = 1
 rotating = false
@@ -154,9 +154,6 @@ size_flags_vertical = 1
 texture = ExtResource( 6 )
 stretch_mode = 0
 _sections_unfolded = [ "Rect" ]
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="LivesText" type="RichTextLabel" parent="GUI/Banner" index="0"]
 
@@ -218,7 +215,7 @@ scroll_active = true
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts", "custom_styles" ]
+_sections_unfolded = [ "Grow Direction", "Rect", "custom_colors", "custom_fonts", "custom_styles" ]
 
 [node name="BunnyLogo" type="TextureRect" parent="GUI/Banner" index="2"]
 
@@ -237,7 +234,19 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 texture = ExtResource( 8 )
-stretch_mode = 0
+expand = true
+stretch_mode = 4
+_sections_unfolded = [ "Anchor", "Grow Direction", "Rect" ]
+
+[node name="LifeTween" type="Tween" parent="GUI/Banner/BunnyLogo" index="0"]
+
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+_sections_unfolded = [ "playback" ]
 
 [node name="CoinLogo" type="TextureRect" parent="GUI/Banner" index="3"]
 
@@ -256,7 +265,19 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 texture = ExtResource( 9 )
-stretch_mode = 0
+expand = true
+stretch_mode = 4
+_sections_unfolded = [ "Anchor", "Rect", "Size Flags" ]
+
+[node name="CoinTween" type="Tween" parent="GUI/Banner/CoinLogo" index="0"]
+
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+_sections_unfolded = [ "playback" ]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GUI" index="1"]
 

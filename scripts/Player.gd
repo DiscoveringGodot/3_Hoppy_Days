@@ -10,6 +10,7 @@ var current_animation = "idle"
 var coin_count = 0
 var coin_target = 20 #how many coins for an extra life?
 var lives = 3
+
 signal life_up
 signal life_down
 signal coin_up
@@ -49,7 +50,6 @@ func jump():
 			motion.y = JUMP_HEIGHT
 			$Jump_sfx.play()
 
-
 func check_for_ground():
 	if not $CollisionRay.is_colliding():
 		current_animation = "jump"
@@ -79,7 +79,6 @@ func _end_game():
 func _on_JumpPad_body_shape_entered(body_id, body, body_shape, area_shape):
 	if body == self:
 		motion.y = JUMP_HEIGHT * JUMP_BOOST
-
 
 func _on_Portal_body_shape_entered(body_id, body, body_shape, area_shape):
 	_end_game() #create a victory screen or level 2

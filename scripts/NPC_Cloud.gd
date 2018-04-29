@@ -19,7 +19,6 @@ func fire():
 		$Sprite/RayCast2D.add_child(lightning.instance(), true)
 		$Timer.start()
 		timeout = true
-	
 
 func _on_Timer_timeout():
 	timeout = false
