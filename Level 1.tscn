@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://platforms.tres" type="TileSet" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -6,10 +6,11 @@
 [ext_resource path="res://SpikesTop.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Coin.tscn" type="PackedScene" id=5]
 [ext_resource path="res://NPCs/NPC_Cloud.tscn" type="PackedScene" id=6]
-[ext_resource path="res://JumpPad.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Portal.tscn" type="PackedScene" id=8]
+[ext_resource path="res://NPCs/NPC_SpkieMan.tscn" type="PackedScene" id=7]
+[ext_resource path="res://JumpPad.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Portal.tscn" type="PackedScene" id=9]
 
-[node name="Level 1" type="Node2D"]
+[node name="Level 1" type="Node2D" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -209,8 +210,6 @@ position = Vector2( 5662.12, -615.756 )
 
 [node name="NPCs" type="Node2D" parent="." index="4"]
 
-editor/display_folded = true
-
 [node name="NPC_Cloud" parent="NPCs" index="0" instance=ExtResource( 6 )]
 
 position = Vector2( 1417.37, -98.184 )
@@ -219,21 +218,29 @@ position = Vector2( 1417.37, -98.184 )
 
 position = Vector2( 3770.13, -587.711 )
 
+[node name="NPC_SpkieMan" parent="NPCs" index="2" instance=ExtResource( 7 )]
+
+position = Vector2( 1600.45, 755.259 )
+
+[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan/Area2D" index="1"]
+
+frame = 1
+
 [node name="JumpPads" type="Node2D" parent="." index="5"]
 
-[node name="JumpPad" parent="JumpPads" index="0" instance=ExtResource( 7 )]
+[node name="JumpPad" parent="JumpPads" index="0" instance=ExtResource( 8 )]
 
 position = Vector2( 2366.08, 813.406 )
 collision_layer = 2
 _sections_unfolded = [ "Collision" ]
 
-[node name="JumpPad2" parent="JumpPads" index="1" instance=ExtResource( 7 )]
+[node name="JumpPad2" parent="JumpPads" index="1" instance=ExtResource( 8 )]
 
 position = Vector2( 4423.5, 807.827 )
 collision_layer = 2
 _sections_unfolded = [ "Collision" ]
 
-[node name="Portal" parent="." index="6" instance=ExtResource( 8 )]
+[node name="Portal" parent="." index="6" instance=ExtResource( 9 )]
 
 position = Vector2( 7331.85, -95.6841 )
 
@@ -321,6 +328,8 @@ position = Vector2( 7331.85, -95.6841 )
 
 [connection signal="Coin_Pickup" from="Coins/Coin38" to="Player" method="_on_Coin_Coin_Pickup"]
 
+[connection signal="body_shape_entered" from="NPCs/NPC_SpkieMan/Area2D" to="Player" method="take_damage"]
+
 [connection signal="body_shape_entered" from="JumpPads/JumpPad" to="Player" method="_on_JumpPad_body_shape_entered"]
 
 [connection signal="body_shape_entered" from="JumpPads/JumpPad2" to="Player" method="_on_JumpPad_body_shape_entered"]
@@ -328,3 +337,4 @@ position = Vector2( 7331.85, -95.6841 )
 [connection signal="body_shape_entered" from="Portal" to="Player" method="_on_Portal_body_shape_entered"]
 
 
+[editable path="NPCs/NPC_SpkieMan"]

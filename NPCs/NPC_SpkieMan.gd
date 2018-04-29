@@ -1,7 +1,4 @@
-extends KinematicBody2D
-
-const SPEED = 350
+extends Node2D
 
 func _ready():
-	pass
-
+	$AnimationPlayer.play("Spikeman")
