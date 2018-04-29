@@ -52,6 +52,8 @@ _sections_unfolded = [ "Collision", "Pickable", "Z Index" ]
 
 [node name="Coins" type="Node2D" parent="." index="3"]
 
+editor/display_folded = true
+
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 5 )]
 
 position = Vector2( 705.815, 360.76 )

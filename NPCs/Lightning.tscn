@@ -19,7 +19,7 @@ custom_solver_bias = 0.0
 radius = 24.4478
 height = 77.4797
 
-[node name="Lightning" type="Area2D" index="0"]
+[node name="Lightning" type="Area2D"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -37,6 +37,7 @@ _sections_unfolded = [ "Collision", "Z Index" ]
 
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
