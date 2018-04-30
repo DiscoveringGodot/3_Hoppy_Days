@@ -1,10 +1,12 @@
 extends KinematicBody2D
 
+# nice job grouping. Worth creating a coding standard for order at the top.
 const SPEED = 700
 const GRAVITY = 40
 const FRICTION = 0.25
 const JUMP_HEIGHT = -1750
 const JUMP_BOOST = 2
+
 var motion = Vector2()
 var current_animation = "idle"
 var coin_count = 0
@@ -22,7 +24,7 @@ func _physics_process(delta):
 	check_for_ground()
 	move_and_slide(motion,Vector2(0,-1))
 	$Animation.animation = current_animation
-	if get_position().y  > 2500:
+	if get_position().y  > 2500: # take out magic number
 		_end_game()
 
 func fall():
