@@ -31,7 +31,7 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( -589739, 4, 0, -393146, 2, 0, -327582, 4, 0, -196562, 2, 0, -196526, 5, 0, -131031, 1, 0, 29, 0, 0, 110, 5, 0, 65610, 5, 0, 65626, 4, 0, 131072, 0, 0, 262166, 0, 0, 262206, 2, 0, 262222, 5, 0, 327779, 5, 0, 393222, 0, 0, 524288, 1, 0, 524301, 0, 0, 524341, 2, 0, 524375, 5, 0, 589926, 4, 0, 720941, 3, 0, 851990, 1, 0, 852001, 0, 0, 852033, 2, 0 )
+tile_data = PoolIntArray( -851913, 0, 0, -589739, 4, 0, -393146, 2, 0, -327582, 4, 0, -196562, 2, 0, -196526, 5, 0, -131031, 1, 0, 29, 0, 0, 110, 5, 0, 65610, 5, 0, 65626, 4, 0, 131072, 0, 0, 262166, 0, 0, 262206, 2, 0, 262222, 5, 0, 327779, 5, 0, 393222, 0, 0, 524288, 1, 0, 524301, 0, 0, 524341, 2, 0, 524375, 5, 0, 589926, 4, 0, 720941, 3, 0, 851990, 1, 0, 852001, 0, 0, 852033, 2, 0 )
 
 [node name="Player" parent="." index="1" instance=ExtResource( 2 )]
 
@@ -220,13 +220,12 @@ position = Vector2( 3770.13, -587.711 )
 
 [node name="NPC_SpkieMan" parent="NPCs" index="2" instance=ExtResource( 7 )]
 
+editor/display_folded = true
 position = Vector2( 1600.45, 755.259 )
 
-[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan/Area2D" index="1"]
-
-frame = 1
-
 [node name="JumpPads" type="Node2D" parent="." index="5"]
+
+editor/display_folded = true
 
 [node name="JumpPad" parent="JumpPads" index="0" instance=ExtResource( 8 )]
 
