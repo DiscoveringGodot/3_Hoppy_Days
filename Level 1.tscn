@@ -97,8 +97,6 @@ _sections_unfolded = [ "Collision", "Pickable", "Z Index" ]
 
 [node name="Coins" type="Node2D" parent="." index="3"]
 
-editor/display_folded = true
-
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 5 )]
 
 position = Vector2( 705.815, 360.76 )
@@ -269,10 +267,6 @@ position = Vector2( 1600.45, 755.259 )
 
 editor/display_folded = true
 
-[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan/Area2D" index="1"]
-
-frame = 0
-
 [node name="NPC_SpkieMan2" parent="NPCs" index="3" instance=ExtResource( 7 )]
 
 position = Vector2( 2802.8, -206 )
@@ -280,10 +274,6 @@ position = Vector2( 2802.8, -206 )
 [node name="Area2D" parent="NPCs/NPC_SpkieMan2" index="0"]
 
 editor/display_folded = true
-
-[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan2/Area2D" index="1"]
-
-frame = 0
 
 [node name="AnimationPlayer" parent="NPCs/NPC_SpkieMan2" index="1"]
 
@@ -306,6 +296,12 @@ _sections_unfolded = [ "Collision" ]
 [node name="Portal" parent="." index="6" instance=ExtResource( 9 )]
 
 position = Vector2( 7331.85, -95.6841 )
+
+[connection signal="coin_up" from="Player" to="Player/Camera2D" method="_on_Player_coin_up"]
+
+[connection signal="life_down" from="Player" to="Player/Camera2D" method="_on_Player_life_down"]
+
+[connection signal="life_up" from="Player" to="Player/Camera2D" method="_on_Player_life_up"]
 
 [connection signal="body_shape_entered" from="Spikes/SpikesTop" to="Player" method="take_damage"]
 

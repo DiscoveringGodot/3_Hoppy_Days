@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const SPEED = 700
+const SPEED = 1000
 const GRAVITY = 40
 const JUMP_HEIGHT = -1750
 const JUMP_BOOST = 2
@@ -33,16 +33,16 @@ func fall():
 
 func run():
 	input = float(Input.is_action_pressed("ui_right")) - float(Input.is_action_pressed("ui_left"))
-	if input == 0:
-		current_animation = "idle"
-	elif input >0:
+	current_animation = "walk"
+	if input >0:
 		$Animation.flip_h = false
-		current_animation = "walk"
-	else:
+		motion.x = SPEED*input
+	elif input <0:
 		$Animation.flip_h = true
-		current_animation = "walk"
-
-	motion.x = SPEED*input
+		motion.x = SPEED*input
+	else:
+		current_animation = "idle"
+		motion.x = lerp(motion.x,0,0.2)
 
 func jump():
 	if is_on_floor() == true:
