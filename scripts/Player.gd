@@ -2,10 +2,10 @@ extends KinematicBody2D
 
 const SPEED = 700
 const GRAVITY = 40
-const FRICTION = 0.25
 const JUMP_HEIGHT = -1750
 const JUMP_BOOST = 2
 var motion = Vector2()
+var input = 0.0
 var current_animation = "idle"
 var coin_count = 0
 var coin_target = 20 #how many coins for an extra life?
@@ -26,29 +26,29 @@ func _physics_process(delta):
 		_end_game()
 
 func fall():
-	if is_on_floor() == false || $HeadRay.is_colliding():
+	if is_on_floor() == false:
 		motion.y += GRAVITY
 	else:
 		motion.y = 0
 
 func run():
-	if Input.is_action_pressed("ui_right"):
-		motion.x = SPEED
-		current_animation = "walk"
-		$Animation.flip_h = false
-	elif Input.is_action_pressed("ui_left"):
-		motion.x = -SPEED
-		current_animation = "walk"
-		$Animation.flip_h = true
-	else:
-		motion.x = lerp (motion.x, 0, FRICTION)
+	input = float(Input.is_action_pressed("ui_right")) - float(Input.is_action_pressed("ui_left"))
+	if input == 0:
 		current_animation = "idle"
+	elif input >0:
+		$Animation.flip_h = false
+		current_animation = "walk"
+	else:
+		$Animation.flip_h = true
+		current_animation = "walk"
+
+	motion.x = SPEED*input
 
 func jump():
 	if is_on_floor() == true:
-		if Input.is_action_pressed("ui_up"):
-			motion.y = JUMP_HEIGHT
-			$Jump_sfx.play()
+			if Input.is_action_pressed("ui_up"):
+				motion.y = JUMP_HEIGHT
+				$Jump_sfx.play()
 
 func check_for_ground():
 	if not $CollisionRay.is_colliding():
