@@ -97,6 +97,8 @@ _sections_unfolded = [ "Collision", "Pickable", "Z Index" ]
 
 [node name="Coins" type="Node2D" parent="." index="3"]
 
+editor/display_folded = true
+
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 5 )]
 
 position = Vector2( 705.815, 360.76 )
@@ -267,6 +269,10 @@ position = Vector2( 1600.45, 755.259 )
 
 editor/display_folded = true
 
+[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan/Area2D" index="1"]
+
+frame = 0
+
 [node name="NPC_SpkieMan2" parent="NPCs" index="3" instance=ExtResource( 7 )]
 
 position = Vector2( 2802.8, -206 )
@@ -274,6 +280,10 @@ position = Vector2( 2802.8, -206 )
 [node name="Area2D" parent="NPCs/NPC_SpkieMan2" index="0"]
 
 editor/display_folded = true
+
+[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan2/Area2D" index="1"]
+
+frame = 0
 
 [node name="AnimationPlayer" parent="NPCs/NPC_SpkieMan2" index="1"]
 

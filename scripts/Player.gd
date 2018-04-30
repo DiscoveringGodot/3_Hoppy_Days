@@ -1,11 +1,10 @@
 extends KinematicBody2D
 
-const SPEED = 1000
+const SPEED = 750
 const GRAVITY = 40
 const JUMP_HEIGHT = -1750
 const JUMP_BOOST = 2
 var motion = Vector2()
-var input = 0.0
 var current_animation = "idle"
 var coin_count = 0
 var coin_target = 20 #how many coins for an extra life?
@@ -32,7 +31,7 @@ func fall():
 		motion.y = 0
 
 func run():
-	input = float(Input.is_action_pressed("ui_right")) - float(Input.is_action_pressed("ui_left"))
+	var input = float(Input.is_action_pressed("ui_right")) - float(Input.is_action_pressed("ui_left"))
 	current_animation = "walk"
 	if input >0:
 		$Animation.flip_h = false
