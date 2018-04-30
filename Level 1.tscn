@@ -223,6 +223,10 @@ position = Vector2( 3770.13, -587.711 )
 editor/display_folded = true
 position = Vector2( 1600.45, 755.259 )
 
+[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan/Area2D" index="1"]
+
+frame = 0
+
 [node name="JumpPads" type="Node2D" parent="." index="5"]
 
 editor/display_folded = true

@@ -12,10 +12,10 @@ func _physics_process(delta):
 	global_position.x = xpos
 	var bodies = get_overlapping_bodies()
 	for body in bodies:
-			if body.name == "Player":
-				emit_signal("body_shape_entered",0,body,0,0 )
-				queue_free()
-			else:
-				queue_free()
+		if body.name == "Player":
+			emit_signal("body_shape_entered",0,body,0,0 )
+			queue_free()
+		else:
+			queue_free()
 	if not $VisibilityNotifier2D.is_on_screen():
 		queue_free()

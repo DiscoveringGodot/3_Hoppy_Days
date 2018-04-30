@@ -46,7 +46,7 @@ func run():
 
 func jump():
 	if is_on_floor() == true:
-		if Input.is_action_pressed("ui_up"):
+		if Input.is_action_pressed("ui_up"): # suggest binding spacebar as well as up-arrow to jump
 			motion.y = JUMP_HEIGHT
 			$Jump_sfx.play()
 

@@ -10,13 +10,17 @@ func _process(delta):
 		return
 		
 	var bodies = get_overlapping_bodies()
-	for body in bodies: # look for alternative to searching all bodies every frame
+	for body in bodies: # look for alternative to searching all bodies every frame. Is there a collision message / signal?
 		if body.name == "Player":
-			# find some way of breaking-out the line below...
-			$Tween.interpolate_property($AnimatedSprite, "scale", Vector2(1,1), Vector2(0,0), 0.3, Tween.TRANS_QUAD, Tween.EASE_IN, 0)
-			$Tween.start()
+			tween()
 			emit_signal("Coin_Pickup")
 			taken = true
+
+func tween():
+	$Tween.interpolate_property(
+		$AnimatedSprite, "scale", Vector2(1,1), Vector2(0,0),
+		0.3, Tween.TRANS_QUAD, Tween.EASE_IN, 0)
+	$Tween.start()
 
 func _on_Tween_tween_completed(object, key):
 	queue_free() # nice habit
