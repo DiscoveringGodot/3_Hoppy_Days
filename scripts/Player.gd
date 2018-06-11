@@ -6,6 +6,7 @@ const JUMP_SPEED = -1750
 const JUMP_BOOST = 2
 const FLOOR_DIRECTION = Vector2(0,-1)
 const LEVEL_HEIGHT = 2500
+const FRICTION = 0.2
 
 var motion = Vector2()
 var current_animation = "idle"
@@ -36,17 +37,16 @@ func fall(delta):
 		motion.y = 0
 
 func run():
-	var input = float(Input.is_action_pressed("ui_right")) - float(Input.is_action_pressed("ui_left"))
 	current_animation = "walk"
-	if input >0:
+	if Input.is_action_pressed("ui_right") && not Input.is_action_pressed("ui_left"):
 		$Animation.flip_h = false
-		motion.x = SPEED*input
-	elif input <0:
+		motion.x = SPEED
+	elif Input.is_action_pressed("ui_left") && not Input.is_action_pressed("ui_right"):
 		$Animation.flip_h = true
-		motion.x = SPEED*input
+		motion.x = -SPEED
 	else:
 		current_animation = "idle"
-		motion.x = lerp(motion.x,0,0.2)
+		motion.x = lerp(motion.x, 0, FRICTION)
 
 func jump():
 	if is_on_floor() == true:
