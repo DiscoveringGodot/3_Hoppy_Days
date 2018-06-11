@@ -1,9 +1,12 @@
 extends KinematicBody2D
 
 const SPEED = 750
-const GRAVITY = 40
-const JUMP_HEIGHT = -1750
+const GRAVITY = 3600
+const JUMP_SPEED = -1750
 const JUMP_BOOST = 2
+const FLOOR_DIRECTION = Vector2(0,-1)
+const LEVEL_HEIGHT = 2500
+
 var motion = Vector2()
 var current_animation = "idle"
 var coin_count = 0
@@ -15,18 +18,20 @@ signal life_down
 signal coin_up
 
 func _physics_process(delta):
-	fall()
+	fall(delta)
 	run()
 	jump()
 	check_for_ground()
-	move_and_slide(motion,Vector2(0,-1))
-	$Animation.animation = current_animation
-	if get_position().y  > 2500:
+	move_and_slide(motion, FLOOR_DIRECTION)
+	if get_position().y > LEVEL_HEIGHT:
 		_end_game()
+		
+func _process(delta):
+		$Animation.animation = current_animation  # here or in process
 
-func fall():
+func fall(delta):
 	if is_on_floor() == false:
-		motion.y += GRAVITY
+		motion.y += GRAVITY * delta  # frame-rate independant
 	else:
 		motion.y = 0
 
@@ -46,7 +51,7 @@ func run():
 func jump():
 	if is_on_floor() == true:
 			if Input.is_action_pressed("ui_up"):
-				motion.y = JUMP_HEIGHT
+				motion.y = JUMP_SPEED
 				$Jump_sfx.play()
 
 func check_for_ground():
@@ -64,7 +69,7 @@ func _on_Coin_Coin_Pickup():
 
 func take_damage(body_id, body, body_shape, area_shape):
 	if body == self:
-		motion.y = JUMP_HEIGHT
+		motion.y = JUMP_SPEED
 		emit_signal("life_down")
 		$Pain_sfx.play()
 		lives -= 1
@@ -77,7 +82,7 @@ func _end_game():
 
 func _on_JumpPad_body_shape_entered(body_id, body, body_shape, area_shape):
 	if body == self:
-		motion.y = JUMP_HEIGHT * JUMP_BOOST
+		motion.y = JUMP_SPEED * JUMP_BOOST
 
 func _on_Portal_body_shape_entered(body_id, body, body_shape, area_shape):
 	_end_game() #create a victory screen or level 2
