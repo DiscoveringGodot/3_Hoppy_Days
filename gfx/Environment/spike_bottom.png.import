@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spike_bottom.png-ce7a2db7307c20f186543c82cb95bf32.stex"
+path="res://.import/spike_bottom.png-a30befd0b4affc2861b67e93b946d0b9.stex"
 
 [deps]
 
-source_file="res://gfx/Environment/spike_bottom.png"
+source_file="res://GFX/Environment/spike_bottom.png"
 source_md5="4a1cc490238f5192676e6c74b755715d"
 
-dest_files=[ "res://.import/spike_bottom.png-ce7a2db7307c20f186543c82cb95bf32.stex" ]
+dest_files=[ "res://.import/spike_bottom.png-a30befd0b4affc2861b67e93b946d0b9.stex" ]
 dest_md5="f575e7504bf7c795135c391ef48228e7"
 
 [params]

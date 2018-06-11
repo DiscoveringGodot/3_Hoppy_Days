@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/carrots.png-b613ec087c7c59e297bafcdd2ee95531.stex"
+path="res://.import/carrots.png-75aaea1c90e2bba05afb5021542afa12.stex"
 
 [deps]
 
-source_file="res://gfx/HUD/carrots.png"
+source_file="res://GFX/HUD/carrots.png"
 source_md5="225840b1449d57af7f3d96678485c35d"
 
-dest_files=[ "res://.import/carrots.png-b613ec087c7c59e297bafcdd2ee95531.stex" ]
+dest_files=[ "res://.import/carrots.png-75aaea1c90e2bba05afb5021542afa12.stex" ]
 dest_md5="d9d1789c0d65d351b5ddce5698451a83"
 
 [params]

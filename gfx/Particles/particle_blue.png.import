@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/particle_blue.png-9728dd4a7d28f100ca80b0b0b66a3685.stex"
+path="res://.import/particle_blue.png-1579fef6bdd305d9600500c9c45694e9.stex"
 
 [deps]
 
-source_file="res://gfx/Particles/particle_blue.png"
+source_file="res://GFX/Particles/particle_blue.png"
 source_md5="8a24eac85d5f150c365234cdc661bc56"
 
-dest_files=[ "res://.import/particle_blue.png-9728dd4a7d28f100ca80b0b0b66a3685.stex" ]
+dest_files=[ "res://.import/particle_blue.png-1579fef6bdd305d9600500c9c45694e9.stex" ]
 dest_md5="769427c1834e7a97844c5462d6ff8972"
 
 [params]

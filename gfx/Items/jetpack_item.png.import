@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jetpack_item.png-32362556326f004d6eebf0d56697ae31.stex"
+path="res://.import/jetpack_item.png-ed4a2f5a91f753d245cd8979e6511eaa.stex"
 
 [deps]
 
-source_file="res://gfx/Items/jetpack_item.png"
+source_file="res://GFX/Items/jetpack_item.png"
 source_md5="d8339ec4e8c74d6d6eca9578fc8f60ea"
 
-dest_files=[ "res://.import/jetpack_item.png-32362556326f004d6eebf0d56697ae31.stex" ]
+dest_files=[ "res://.import/jetpack_item.png-ed4a2f5a91f753d245cd8979e6511eaa.stex" ]
 dest_md5="ac5fc5442c41187ce516230adc7fc600"
 
 [params]

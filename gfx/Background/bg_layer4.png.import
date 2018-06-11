@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bg_layer4.png-ded731223c432bee26598ae494fd7981.stex"
+path="res://.import/bg_layer4.png-48eed7d92c25be4ad4ec1fbe53c35c82.stex"
 
 [deps]
 
-source_file="res://gfx/Background/bg_layer4.png"
+source_file="res://GFX/Background/bg_layer4.png"
 source_md5="fce1d7a886cb662c0a4fd67441a82452"
 
-dest_files=[ "res://.import/bg_layer4.png-ded731223c432bee26598ae494fd7981.stex" ]
+dest_files=[ "res://.import/bg_layer4.png-48eed7d92c25be4ad4ec1fbe53c35c82.stex" ]
 dest_md5="a61e04f7eb81ca55b08cff9115adf58e"
 
 [params]

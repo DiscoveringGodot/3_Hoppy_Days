@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bronze_1.png-5ee733d8ad69f8116fbf563a9f97f49f.stex"
+path="res://.import/bronze_1.png-8a9b2b803b2c4a4ef410cb581296beca.stex"
 
 [deps]
 
-source_file="res://gfx/Items/bronze_1.png"
+source_file="res://GFX/Items/bronze_1.png"
 source_md5="6e3bd6f2c6fbe1ff746a9694e0af526b"
 
-dest_files=[ "res://.import/bronze_1.png-5ee733d8ad69f8116fbf563a9f97f49f.stex" ]
+dest_files=[ "res://.import/bronze_1.png-8a9b2b803b2c4a4ef410cb581296beca.stex" ]
 dest_md5="8b32ffcde8bf295f4d5d9c0dd1c60747"
 
 [params]

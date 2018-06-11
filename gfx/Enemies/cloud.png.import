@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cloud.png-b52f03d4977766218df80e24e4532499.stex"
+path="res://.import/cloud.png-bc57d24b2461560a181c3f06195f3d60.stex"
 
 [deps]
 
-source_file="res://gfx/Enemies/cloud.png"
+source_file="res://GFX/Enemies/cloud.png"
 source_md5="27b15fbe5c12147f4c206a49fd7ed13a"
 
-dest_files=[ "res://.import/cloud.png-b52f03d4977766218df80e24e4532499.stex" ]
+dest_files=[ "res://.import/cloud.png-bc57d24b2461560a181c3f06195f3d60.stex" ]
 dest_md5="8ead988b38b0c095cffdc0de91407316"
 
 [params]

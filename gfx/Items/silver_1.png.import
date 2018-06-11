@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/silver_1.png-c27cccdee07a8fa5620d11fbe055ec6c.stex"
+path="res://.import/silver_1.png-b215402c62ebc49e5f592f51ca574f54.stex"
 
 [deps]
 
-source_file="res://gfx/Items/silver_1.png"
+source_file="res://GFX/Items/silver_1.png"
 source_md5="68c91af8f47712f6adb9fa2a1be6ddee"
 
-dest_files=[ "res://.import/silver_1.png-c27cccdee07a8fa5620d11fbe055ec6c.stex" ]
+dest_files=[ "res://.import/silver_1.png-b215402c62ebc49e5f592f51ca574f54.stex" ]
 dest_md5="9769cea8d18130fa51f1534e3f27f543"
 
 [params]

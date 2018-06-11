@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ground_stone_small_broken.png-807ec3938b10583196c5bf0c69edb6bb.stex"
+path="res://.import/ground_stone_small_broken.png-44002baa570a38e08df6feb5ce61a7cd.stex"
 
 [deps]
 
-source_file="res://gfx/Environment/ground_stone_small_broken.png"
+source_file="res://GFX/Environment/ground_stone_small_broken.png"
 source_md5="042f4d88eae9b9318931eb01d281c032"
 
-dest_files=[ "res://.import/ground_stone_small_broken.png-807ec3938b10583196c5bf0c69edb6bb.stex" ]
+dest_files=[ "res://.import/ground_stone_small_broken.png-44002baa570a38e08df6feb5ce61a7cd.stex" ]
 dest_md5="69462f9eda8d49909f1b99a268ea6a7d"
 
 [params]

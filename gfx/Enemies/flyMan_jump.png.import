@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flyMan_jump.png-e403dd7fae21adc25202fdb1ed91ae68.stex"
+path="res://.import/flyMan_jump.png-2012944e21c4dc0f0a818c5d5a85ec9b.stex"
 
 [deps]
 
-source_file="res://gfx/Enemies/flyMan_jump.png"
+source_file="res://GFX/Enemies/flyMan_jump.png"
 source_md5="39233b66d5c4256ea2effb98c048a72b"
 
-dest_files=[ "res://.import/flyMan_jump.png-e403dd7fae21adc25202fdb1ed91ae68.stex" ]
+dest_files=[ "res://.import/flyMan_jump.png-2012944e21c4dc0f0a818c5d5a85ec9b.stex" ]
 dest_md5="61386f578a94a2f9e342b3ec1c50561d"
 
 [params]

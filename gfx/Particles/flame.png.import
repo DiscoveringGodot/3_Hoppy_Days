@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flame.png-bea6e2eacd5d14fca5f10ab5b0b244cc.stex"
+path="res://.import/flame.png-aa725b8582420778cd071e7d63d2d8d2.stex"
 
 [deps]
 
-source_file="res://gfx/Particles/flame.png"
+source_file="res://GFX/Particles/flame.png"
 source_md5="489a4bfb7ac40577d4be966bde2add1a"
 
-dest_files=[ "res://.import/flame.png-bea6e2eacd5d14fca5f10ab5b0b244cc.stex" ]
+dest_files=[ "res://.import/flame.png-aa725b8582420778cd071e7d63d2d8d2.stex" ]
 dest_md5="bdb7b01cf7b4215c2cd8cbda1615861f"
 
 [params]

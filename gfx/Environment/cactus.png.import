@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cactus.png-311855b3993cfad562c429ac17b76cbc.stex"
+path="res://.import/cactus.png-9bf91e8761d559508740e9e5e9292671.stex"
 
 [deps]
 
-source_file="res://gfx/Environment/cactus.png"
+source_file="res://GFX/Environment/cactus.png"
 source_md5="18384bf35644adab2300aae310ba6ef0"
 
-dest_files=[ "res://.import/cactus.png-311855b3993cfad562c429ac17b76cbc.stex" ]
+dest_files=[ "res://.import/cactus.png-9bf91e8761d559508740e9e5e9292671.stex" ]
 dest_md5="84f48335a681c0f458b681271a34b5b1"
 
 [params]

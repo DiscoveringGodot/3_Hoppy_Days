@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spikeBall_2.png-25b44947ed3fdd21c5bfbcc65dca8d3c.stex"
+path="res://.import/spikeBall_2.png-080dfc42e34dbead98ac648ab6e48b6f.stex"
 
 [deps]
 
-source_file="res://gfx/Enemies/spikeBall_2.png"
+source_file="res://GFX/Enemies/spikeBall_2.png"
 source_md5="113a4b59cd256acd9c16b991062ccda4"
 
-dest_files=[ "res://.import/spikeBall_2.png-25b44947ed3fdd21c5bfbcc65dca8d3c.stex" ]
+dest_files=[ "res://.import/spikeBall_2.png-080dfc42e34dbead98ac648ab6e48b6f.stex" ]
 dest_md5="976739674dc8a14c06f3785a66a51a65"
 
 [params]

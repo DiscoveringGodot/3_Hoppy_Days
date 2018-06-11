@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/powerup_bunny.png-8d02c4571bd9d25602cad00a5d818c91.stex"
+path="res://.import/powerup_bunny.png-f8e536f08166f6b909fb13a36f0d52f4.stex"
 
 [deps]
 
-source_file="res://gfx/Items/powerup_bunny.png"
+source_file="res://GFX/Items/powerup_bunny.png"
 source_md5="42f94f79f00fe52acf9bdc130b04af86"
 
-dest_files=[ "res://.import/powerup_bunny.png-8d02c4571bd9d25602cad00a5d818c91.stex" ]
+dest_files=[ "res://.import/powerup_bunny.png-f8e536f08166f6b909fb13a36f0d52f4.stex" ]
 dest_md5="92ebcbe2de1166f6a5291a89daa7e837"
 
 [params]
