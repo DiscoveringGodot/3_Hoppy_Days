@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/happy.ogg-2930ce5d37eeda05ac6fd70821613cf0.oggstr"
+
+[deps]
+
+source_file="res://SFX/happy.ogg"
+source_md5="9ab830987cba953851c449f438d0a1e3"
+
+dest_files=[ "res://.import/happy.ogg-2930ce5d37eeda05ac6fd70821613cf0.oggstr" ]
+dest_md5="f349a3652bab01d0b80fe9be49733313"
+
+[params]
+
+loop=true
+loop_offset=0

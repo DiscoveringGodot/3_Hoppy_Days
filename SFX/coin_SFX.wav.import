@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/coin_SFX.wav-bc0b68d2c1fd36982fde041f1f1161e5.sample"
+
+[deps]
+
+source_file="res://SFX/coin_SFX.wav"
+source_md5="57b651390b4bed7a8cd7042c1e9dfe81"
+
+dest_files=[ "res://.import/coin_SFX.wav-bc0b68d2c1fd36982fde041f1f1161e5.sample" ]
+dest_md5="8bd6bfbec571ac733aead87c778cf553"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

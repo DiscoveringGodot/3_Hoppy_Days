@@ -1,0 +1,290 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://scripts/GUI.gd" type="Script" id=1]
+[ext_resource path="res://gfx/Background/bg_layer1.png" type="Texture" id=2]
+[ext_resource path="res://gfx/Background/bg_layer2.png" type="Texture" id=3]
+[ext_resource path="res://gfx/Background/bg_layer3.png" type="Texture" id=4]
+[ext_resource path="res://gfx/Background/bg_layer4.png" type="Texture" id=5]
+[ext_resource path="res://gfx/HUD/bannerHanging.png" type="Texture" id=6]
+[ext_resource path="res://Fonts/candles_.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://gfx/HUD/lifes.png" type="Texture" id=8]
+[ext_resource path="res://gfx/HUD/coin_bronze.png" type="Texture" id=9]
+[ext_resource path="res://SFX/happy.ogg" type="AudioStream" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 30
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 7 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Camera2D" type="Camera2D"]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1.5, 1.5 )
+limit_left = -100
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 2000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+smoothing_speed = 10.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+script = ExtResource( 1 )
+_sections_unfolded = [ "Limit", "Smoothing" ]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="0"]
+
+layer = -1
+offset = Vector2( 1024, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 1024, 0 )
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = true
+_sections_unfolded = [ "Scroll" ]
+
+[node name="ParallaxLayer1" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
+
+editor/display_folded = true
+motion_scale = Vector2( 0.5, 0.5 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 2048, 0 )
+_sections_unfolded = [ "Motion", "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer1" index="0"]
+
+texture = ExtResource( 2 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground" index="1"]
+
+editor/display_folded = true
+position = Vector2( -0.902466, -250 )
+motion_scale = Vector2( 0.6, 0.6 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 2048, 0 )
+_sections_unfolded = [ "Motion", "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Animation" ]
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground" index="2"]
+
+editor/display_folded = true
+position = Vector2( 0, -170 )
+motion_scale = Vector2( 0.7, 0.7 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 2048, 0 )
+_sections_unfolded = [ "Motion", "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3" index="0"]
+
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Animation" ]
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground" index="3"]
+
+motion_scale = Vector2( 0.9, 0.9 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 2048, 0 )
+_sections_unfolded = [ "Motion", "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer4" index="0"]
+
+texture = ExtResource( 5 )
+region_rect = Rect2( 754, 65, 9, 3 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="GUI" type="CanvasLayer" parent="." index="1"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="Banner" type="TextureRect" parent="GUI" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1434.0
+margin_top = 58.0
+margin_right = 1702.0
+margin_bottom = 117.0
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 6 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="LivesText" type="RichTextLabel" parent="GUI/Banner" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 222.0
+margin_top = 13.0
+margin_right = 263.0
+margin_bottom = 55.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.958112, 0.972656, 0.786484, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "3"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="CoinText" type="RichTextLabel" parent="GUI/Banner" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 99.0
+margin_top = 16.0
+margin_right = 162.0
+margin_bottom = 61.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.956863, 0.972549, 0.784314, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "00"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Grow Direction", "Rect", "custom_colors", "custom_fonts", "custom_styles" ]
+
+[node name="BunnyLogo" type="TextureRect" parent="GUI/Banner" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 163.0
+margin_top = -9.0
+margin_right = 215.0
+margin_bottom = 62.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 4
+_sections_unfolded = [ "Anchor", "Grow Direction", "Rect" ]
+
+[node name="LifeTween" type="Tween" parent="GUI/Banner/BunnyLogo" index="0"]
+
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+_sections_unfolded = [ "playback" ]
+
+[node name="CoinLogo" type="TextureRect" parent="GUI/Banner" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 31.0
+margin_top = -2.0
+margin_right = 91.0
+margin_bottom = 59.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 4
+_sections_unfolded = [ "Anchor", "Rect", "Size Flags" ]
+
+[node name="CoinTween" type="Tween" parent="GUI/Banner/CoinLogo" index="0"]
+
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+_sections_unfolded = [ "playback" ]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GUI" index="1"]
+
+stream = ExtResource( 10 )
+volume_db = 0.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+

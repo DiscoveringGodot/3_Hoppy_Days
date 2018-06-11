@@ -1,9 +1,12 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://NPCs/NPC_SpkieMan.gd" type="Script" id=1]
-[ext_resource path="res://gfx/PNG/Enemies/spikeMan_walk1.png" type="Texture" id=2]
-[ext_resource path="res://gfx/PNG/Enemies/spikeMan_walk2.png" type="Texture" id=3]
-[ext_resource path="res://gfx/PNG/Enemies/spikeMan_stand.png" type="Texture" id=4]
+[ext_resource path="res://scripts/NPC_SpkieMan.gd" type="Script" id=1]
+[ext_resource path="res://gfx/Enemies/spikeMan_walk1.png" type="Texture" id=2]
+[ext_resource path="res://gfx/Enemies/spikeMan_walk2.png" type="Texture" id=3]
+[ext_resource path="res://gfx/Enemies/spikeMan_stand.png" type="Texture" id=4]
+
+
+
 
 [sub_resource type="CapsuleShape2D" id=2]
 
