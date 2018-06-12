@@ -19,7 +19,7 @@ signal life_down
 signal coin_up
 
 func _physics_process(delta):
-	fall(delta)
+	fall(delta)  # frame-rate independant
 	run()
 	jump()
 	check_for_ground()
@@ -28,11 +28,11 @@ func _physics_process(delta):
 		_end_game()
 		
 func _process(delta):
-		$Animation.animation = current_animation  # here or in process
+	$Animation.animation = current_animation  # here or in process
 
 func fall(delta):
 	if is_on_floor() == false:
-		motion.y += GRAVITY * delta  # frame-rate independant
+		motion.y += GRAVITY * delta
 	else:
 		motion.y = 0
 
@@ -49,13 +49,12 @@ func run():
 		motion.x = lerp(motion.x, 0, FRICTION)
 
 func jump():
-	if is_on_floor() == true:
-			if Input.is_action_pressed("ui_up"):
-				motion.y = JUMP_SPEED
-				$Jump_sfx.play()
+	if is_on_floor() == true && Input.is_action_pressed("ui_up"):
+		motion.y = JUMP_SPEED
+		$Jump_sfx.play()
 
 func check_for_ground():
-	if not $CollisionRay.is_colliding():
+	if not is_on_floor():
 		current_animation = "jump"
 
 func _on_Coin_Coin_Pickup():
@@ -73,9 +72,8 @@ func take_damage(body_id, body, body_shape, area_shape):
 		emit_signal("life_down")
 		$Pain_sfx.play()
 		lives -= 1
-		
 	if lives < 0:
-			_end_game()
+		_end_game()
 
 func _end_game():
 	get_tree().change_scene("res://EndGame.tscn")
