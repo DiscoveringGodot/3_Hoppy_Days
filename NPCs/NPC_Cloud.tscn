@@ -3,7 +3,6 @@
 [ext_resource path="res://scripts/NPC_Cloud.gd" type="Script" id=1]
 [ext_resource path="res://gfx/Enemies/cloud.png" type="Texture" id=2]
 
-
 [sub_resource type="Animation" id=1]
 
 resource_name = "float"
@@ -23,7 +22,7 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( -400, 0 ), Vector2( -400, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 400, 0 ), Vector2( 400, 0 ) ]
 }
 
-[node name="NPC_Cloud" type="Node2D"]
+[node name="NPC_Cloud" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]

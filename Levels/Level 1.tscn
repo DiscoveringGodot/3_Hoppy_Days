@@ -264,10 +264,6 @@ position = Vector2( 1600.45, 755.259 )
 
 editor/display_folded = true
 
-[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan/Area2D" index="1"]
-
-frame = 0
-
 [node name="NPC_SpkieMan2" parent="NPCs" index="3" instance=ExtResource( 7 )]
 
 position = Vector2( 2802.8, -206 )
@@ -275,10 +271,6 @@ position = Vector2( 2802.8, -206 )
 [node name="Area2D" parent="NPCs/NPC_SpkieMan2" index="0"]
 
 editor/display_folded = true
-
-[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan2/Area2D" index="1"]
-
-frame = 0
 
 [node name="AnimationPlayer" parent="NPCs/NPC_SpkieMan2" index="1"]
 
@@ -307,80 +299,6 @@ position = Vector2( 7331.85, -95.6841 )
 [connection signal="life_up" from="Player" to="Player/Camera2D" method="_on_Player_life_up"]
 
 [connection signal="body_shape_entered" from="Spikes/SpikesTop" to="Player" method="take_damage"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin2" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin3" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin4" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin5" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin6" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin7" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin8" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin9" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin10" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin11" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin12" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin13" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin14" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin15" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin16" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin17" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin18" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin19" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin20" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin21" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin22" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin23" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin24" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin25" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin26" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin27" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin28" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin29" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin30" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin31" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin32" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin33" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin34" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin35" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin36" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin37" to="Player" method="_on_Coin_Coin_Pickup"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin38" to="Player" method="_on_Coin_Coin_Pickup"]
 
 [connection signal="body_shape_entered" from="NPCs/NPC_SpkieMan/Area2D" to="Player" method="take_damage"]
 
