@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ground_grass_small_broken.png-15d30fd5a77f4f5523fbcbd0625b4f68.stex"
+path="res://.import/ground_grass_small_broken.png-8be928de4d10e4364d2f44fbc1930e11.stex"
 
 [deps]
 
-source_file="res://GFX/Environment/ground_grass_small_broken.png"
-source_md5="38caea2b360bbe665ad6a2679a269451"
-
-dest_files=[ "res://.import/ground_grass_small_broken.png-15d30fd5a77f4f5523fbcbd0625b4f68.stex" ]
-dest_md5="18419be9fb8bff6722a312251ecf67a0"
+source_file="res://gfx/Environment/ground_grass_small_broken.png"
+dest_files=[ "res://.import/ground_grass_small_broken.png-8be928de4d10e4364d2f44fbc1930e11.stex" ]
 
 [params]
 

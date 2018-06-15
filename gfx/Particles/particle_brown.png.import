@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/particle_brown.png-d03c0150e007150456c28fd1ac4f2531.stex"
+path="res://.import/particle_brown.png-67514524c3ba6249bc21334bddd0537f.stex"
 
 [deps]
 
-source_file="res://GFX/Particles/particle_brown.png"
-source_md5="428febbf36492df3494cdd7f2d6b9be0"
-
-dest_files=[ "res://.import/particle_brown.png-d03c0150e007150456c28fd1ac4f2531.stex" ]
-dest_md5="fece49e7b13484586727dc33bf4d5184"
+source_file="res://gfx/Particles/particle_brown.png"
+dest_files=[ "res://.import/particle_brown.png-67514524c3ba6249bc21334bddd0537f.stex" ]
 
 [params]
 

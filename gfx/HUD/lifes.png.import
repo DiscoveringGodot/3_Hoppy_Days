@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lifes.png-1a97fcf11369489acce97668ad75928c.stex"
+path="res://.import/lifes.png-3691a1c54ae98b3a7d2f5ea4cce4f141.stex"
 
 [deps]
 
-source_file="res://GFX/HUD/lifes.png"
-source_md5="4fbf6387029d58328a39857145e0fb4f"
-
-dest_files=[ "res://.import/lifes.png-1a97fcf11369489acce97668ad75928c.stex" ]
-dest_md5="00df0aaeb1469d7723670c41f691ba1a"
+source_file="res://gfx/HUD/lifes.png"
+dest_files=[ "res://.import/lifes.png-3691a1c54ae98b3a7d2f5ea4cce4f141.stex" ]
 
 [params]
 

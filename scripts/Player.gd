@@ -28,7 +28,7 @@ func _physics_process(delta):
 		_end_game()
 		
 func _process(delta):
-	$Animation.animation = current_animation  # here or in process
+	$Animation.animation = current_animation  
 
 func fall(delta):
 	if is_on_floor() == false:
@@ -37,12 +37,14 @@ func fall(delta):
 		motion.y = 0
 
 func run():
-	current_animation = "walk"
+	
 	if Input.is_action_pressed("ui_right") && not Input.is_action_pressed("ui_left"):
 		$Animation.flip_h = false
+		current_animation = "walk"
 		motion.x = SPEED
 	elif Input.is_action_pressed("ui_left") && not Input.is_action_pressed("ui_right"):
 		$Animation.flip_h = true
+		current_animation = "walk"
 		motion.x = -SPEED
 	else:
 		current_animation = "idle"
@@ -54,7 +56,7 @@ func jump():
 		$Jump_sfx.play()
 
 func check_for_ground():
-	if not is_on_floor():
+	if not $RayCast2D.is_colliding():
 		current_animation = "jump"
 
 func _on_Coin_Coin_Pickup():
@@ -76,7 +78,7 @@ func take_damage(body_id, body, body_shape, area_shape):
 		_end_game()
 
 func _end_game():
-	get_tree().change_scene("res://EndGame.tscn")
+	get_tree().change_scene("res://Levels/EndGame.tscn")
 
 func _on_JumpPad_body_shape_entered(body_id, body, body_shape, area_shape):
 	if body == self:

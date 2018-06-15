@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/powerup_jetpack.png-253bf04cb8344a1d893d64cd23af10d2.stex"
+path="res://.import/powerup_jetpack.png-40cfce2bf5035a543f10d6cd70dfe992.stex"
 
 [deps]
 
-source_file="res://GFX/Items/powerup_jetpack.png"
-source_md5="723ca3abdb5ab62488b7571ec7e09c71"
-
-dest_files=[ "res://.import/powerup_jetpack.png-253bf04cb8344a1d893d64cd23af10d2.stex" ]
-dest_md5="0683e44674a1d38aae74733468b5a5a5"
+source_file="res://gfx/Items/powerup_jetpack.png"
+dest_files=[ "res://.import/powerup_jetpack.png-40cfce2bf5035a543f10d6cd70dfe992.stex" ]
 
 [params]
 

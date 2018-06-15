@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/powerup_bubble.png-3a32d34e5d9e38f7fb24bcf385829433.stex"
+path="res://.import/powerup_bubble.png-46c98e663ca211a4cc4761d804bb757a.stex"
 
 [deps]
 
-source_file="res://GFX/Items/powerup_bubble.png"
-source_md5="0a18bc29071d28158c2763ba8007f333"
-
-dest_files=[ "res://.import/powerup_bubble.png-3a32d34e5d9e38f7fb24bcf385829433.stex" ]
-dest_md5="e7c0b0925ce89803cc4227900d7f2f32"
+source_file="res://gfx/Items/powerup_bubble.png"
+dest_files=[ "res://.import/powerup_bubble.png-46c98e663ca211a4cc4761d804bb757a.stex" ]
 
 [params]
 

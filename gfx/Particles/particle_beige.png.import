@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/particle_beige.png-31680610ae753920fbdd1b557cf17f67.stex"
+path="res://.import/particle_beige.png-dc182dc315bf93a42668dda423914ba0.stex"
 
 [deps]
 
-source_file="res://GFX/Particles/particle_beige.png"
-source_md5="553cfcef20e73c0906db31a6dd4f417b"
-
-dest_files=[ "res://.import/particle_beige.png-31680610ae753920fbdd1b557cf17f67.stex" ]
-dest_md5="8f7bcd6bae1c2ee3e67b42124a136bad"
+source_file="res://gfx/Particles/particle_beige.png"
+dest_files=[ "res://.import/particle_beige.png-dc182dc315bf93a42668dda423914ba0.stex" ]
 
 [params]
 

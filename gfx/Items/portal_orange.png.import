@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/portal_orange.png-0f5be5c73032d96670c823abc612fd84.stex"
+path="res://.import/portal_orange.png-c6256174cf69d309958c686f88af8c06.stex"
 
 [deps]
 
-source_file="res://GFX/Items/portal_orange.png"
-source_md5="7a36cf510787c8be1e2d8438b0d8e93b"
-
-dest_files=[ "res://.import/portal_orange.png-0f5be5c73032d96670c823abc612fd84.stex" ]
-dest_md5="688f9f19c46ac21ac58524ec827a7372"
+source_file="res://gfx/Items/portal_orange.png"
+dest_files=[ "res://.import/portal_orange.png-c6256174cf69d309958c686f88af8c06.stex" ]
 
 [params]
 

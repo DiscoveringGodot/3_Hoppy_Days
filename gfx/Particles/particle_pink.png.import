@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/particle_pink.png-8cc67c873b8170d3f9769057a1d021a8.stex"
+path="res://.import/particle_pink.png-9ca0040971a1fa7b8ef2add430e9b2e2.stex"
 
 [deps]
 
-source_file="res://GFX/Particles/particle_pink.png"
-source_md5="16b739dd36a3910ebfbab262efdd2360"
-
-dest_files=[ "res://.import/particle_pink.png-8cc67c873b8170d3f9769057a1d021a8.stex" ]
-dest_md5="fdc87645b55de6d837e0fc427d000acd"
+source_file="res://gfx/Particles/particle_pink.png"
+dest_files=[ "res://.import/particle_pink.png-9ca0040971a1fa7b8ef2add430e9b2e2.stex" ]
 
 [params]
 

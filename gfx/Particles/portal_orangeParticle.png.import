@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/portal_orangeParticle.png-981a505b2b8585fa890302f2132d9e9a.stex"
+path="res://.import/portal_orangeParticle.png-62dc5fa36f7da01fab6b19709d615c0a.stex"
 
 [deps]
 
-source_file="res://GFX/Particles/portal_orangeParticle.png"
-source_md5="9bfd67cd06f9fda8d3b70082330af23f"
-
-dest_files=[ "res://.import/portal_orangeParticle.png-981a505b2b8585fa890302f2132d9e9a.stex" ]
-dest_md5="250e0a216aa601f72c16dcfc6ace7616"
+source_file="res://gfx/Particles/portal_orangeParticle.png"
+dest_files=[ "res://.import/portal_orangeParticle.png-62dc5fa36f7da01fab6b19709d615c0a.stex" ]
 
 [params]
 

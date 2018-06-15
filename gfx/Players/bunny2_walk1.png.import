@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bunny2_walk1.png-47c6e8fc19ae2b31a550f377b5b72f4d.stex"
+path="res://.import/bunny2_walk1.png-5378546dcb682ece86847c065518eca9.stex"
 
 [deps]
 
-source_file="res://GFX/Players/bunny2_walk1.png"
-source_md5="bd07a40bf4af8d5693e27870a623ffda"
-
-dest_files=[ "res://.import/bunny2_walk1.png-47c6e8fc19ae2b31a550f377b5b72f4d.stex" ]
-dest_md5="314aefe5925b7a45a7affe0589e339f9"
+source_file="res://gfx/Players/bunny2_walk1.png"
+dest_files=[ "res://.import/bunny2_walk1.png-5378546dcb682ece86847c065518eca9.stex" ]
 
 [params]
 

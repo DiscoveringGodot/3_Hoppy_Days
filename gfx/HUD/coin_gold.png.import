@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coin_gold.png-15dd4d318e26abdde49c8d05b2839e02.stex"
+path="res://.import/coin_gold.png-6e4b3573d3a6cbfe20044034fd7b0907.stex"
 
 [deps]
 
-source_file="res://GFX/HUD/coin_gold.png"
-source_md5="c222abaca9774fdc466964faf2d0398b"
-
-dest_files=[ "res://.import/coin_gold.png-15dd4d318e26abdde49c8d05b2839e02.stex" ]
-dest_md5="92f5c23972932812bbe3de8f18004591"
+source_file="res://gfx/HUD/coin_gold.png"
+dest_files=[ "res://.import/coin_gold.png-6e4b3573d3a6cbfe20044034fd7b0907.stex" ]
 
 [params]
 

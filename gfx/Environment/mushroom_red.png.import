@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mushroom_red.png-cb0d64961845ecebbb9f24d2d0d05d0c.stex"
+path="res://.import/mushroom_red.png-8862d01abea514c1e2974590332e3ceb.stex"
 
 [deps]
 
-source_file="res://GFX/Environment/mushroom_red.png"
-source_md5="df42ef4a1887d0513bfb2318b7512ff1"
-
-dest_files=[ "res://.import/mushroom_red.png-cb0d64961845ecebbb9f24d2d0d05d0c.stex" ]
-dest_md5="b0486ad64b3fdf8ab179e30425584811"
+source_file="res://gfx/Environment/mushroom_red.png"
+dest_files=[ "res://.import/mushroom_red.png-8862d01abea514c1e2974590332e3ceb.stex" ]
 
 [params]
 

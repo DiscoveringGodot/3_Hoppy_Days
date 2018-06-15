@@ -3,8 +3,8 @@
 [ext_resource path="res://scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://gfx/Players/bunny2_ready.png" type="Texture" id=2]
 [ext_resource path="res://gfx/Players/bunny2_stand.png" type="Texture" id=3]
-[ext_resource path="res://gfx/Players/bunny2_hurt.png" type="Texture" id=4]
-[ext_resource path="res://gfx/Players/bunny2_jump.png" type="Texture" id=5]
+[ext_resource path="res://gfx/Players/bunny2_jump.png" type="Texture" id=4]
+[ext_resource path="res://gfx/Players/bunny2_hurt.png" type="Texture" id=5]
 [ext_resource path="res://gfx/Players/bunny2_walk1.png" type="Texture" id=6]
 [ext_resource path="res://gfx/Players/bunny2_walk2.png" type="Texture" id=7]
 [ext_resource path="res://SFX/coin_SFX.wav" type="AudioStream" id=8]
@@ -21,12 +21,12 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
-"name": "hurt",
+"name": "jump",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
-"name": "jump",
+"name": "hurt",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
@@ -66,6 +66,7 @@ _sections_unfolded = [ "Transform" ]
 
 stream = ExtResource( 8 )
 volume_db = -5.0
+pitch_scale = 1.0
 autoplay = false
 mix_target = 0
 bus = "Master"
@@ -74,6 +75,7 @@ bus = "Master"
 
 stream = ExtResource( 9 )
 volume_db = -5.0
+pitch_scale = 1.0
 autoplay = false
 mix_target = 0
 bus = "Master"
@@ -82,8 +84,17 @@ bus = "Master"
 
 stream = ExtResource( 10 )
 volume_db = -5.0
+pitch_scale = 1.0
 autoplay = false
 mix_target = 0
 bus = "Master"
+
+[node name="RayCast2D" type="RayCast2D" parent="." index="5"]
+
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 0, 105 )
+collision_mask = 1
+_sections_unfolded = [ "Transform" ]
 
 

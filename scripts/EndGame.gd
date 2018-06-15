@@ -1,4 +1,4 @@
 extends Node2D
 
 func _on_TextureButton_pressed():
-	get_tree().change_scene("res://Level 1.tscn") # any way to avoid hard-coded string reference?
+	get_tree().change_scene("res://Levels/Level 1.tscn") # any way to avoid hard-coded string reference?

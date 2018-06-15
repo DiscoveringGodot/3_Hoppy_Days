@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bannerHanging.png-1eabc8458446846ac3ecce3d92c1cbbe.stex"
+path="res://.import/bannerHanging.png-4e0b18a41f5edf9ed4866b27baccc00f.stex"
 
 [deps]
 
-source_file="res://GFX/HUD/bannerHanging.png"
-source_md5="a3414063aae711aa70d333ad76f76dd4"
-
-dest_files=[ "res://.import/bannerHanging.png-1eabc8458446846ac3ecce3d92c1cbbe.stex" ]
-dest_md5="09c0f9c978e292b98aef032272a1b85c"
+source_file="res://gfx/HUD/bannerHanging.png"
+dest_files=[ "res://.import/bannerHanging.png-4e0b18a41f5edf9ed4866b27baccc00f.stex" ]
 
 [params]
 

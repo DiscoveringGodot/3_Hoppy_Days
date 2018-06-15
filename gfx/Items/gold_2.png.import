@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gold_2.png-0bd0dbe6042e23d92166b9bea1d01191.stex"
+path="res://.import/gold_2.png-241faad501ebd78a1579cf06faf4d944.stex"
 
 [deps]
 
-source_file="res://GFX/Items/gold_2.png"
-source_md5="5459782269248701e0763e87e5cb58f2"
-
-dest_files=[ "res://.import/gold_2.png-0bd0dbe6042e23d92166b9bea1d01191.stex" ]
-dest_md5="2e2bb403a82e4b9ab9fd55dd20ff30c9"
+source_file="res://gfx/Items/gold_2.png"
+dest_files=[ "res://.import/gold_2.png-241faad501ebd78a1579cf06faf4d944.stex" ]
 
 [params]
 

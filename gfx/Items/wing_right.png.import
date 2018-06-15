@@ -2,15 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wing_right.png-9902200a3a29eccd4bca8fae297279bc.stex"
+path="res://.import/wing_right.png-43a25b94f72dcfbc3cfedc0c19330f17.stex"
 
 [deps]
 
-source_file="res://GFX/Items/wing_right.png"
-source_md5="0beed7cefed4043047eda5cd474211f3"
-
-dest_files=[ "res://.import/wing_right.png-9902200a3a29eccd4bca8fae297279bc.stex" ]
-dest_md5="b7c7611eb6dd482321aba5894bab2b53"
+source_file="res://gfx/Items/wing_right.png"
+dest_files=[ "res://.import/wing_right.png-43a25b94f72dcfbc3cfedc0c19330f17.stex" ]
 
 [params]
 
