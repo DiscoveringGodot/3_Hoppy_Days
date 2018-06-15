@@ -59,7 +59,7 @@ func check_for_ground():
 	if not $RayCast2D.is_colliding():
 		current_animation = "jump"
 
-func _on_Coin_Coin_Pickup():
+func _on_coin_pickup(body):
 	coin_count += 1
 	$Coin_sfx.play()
 	emit_signal("coin_up")

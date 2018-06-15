@@ -2,25 +2,18 @@ extends Area2D
 
 signal Coin_Pickup
 
-var taken = false # may not be needed if we destroy the coin once it's hit
-#onready var tween = get_node("Tween") # not being used, delete
+var taken = false # ensure the coin doesn't increment while despawning
 
-func _process(delta):
-	if taken == true: # reduces indentation 
-		return
-		
+func _ready():
+	$AnimationPlayer.play("idle")
+	connect("body_entered", get_parent().get_parent().get_node("Player"), "_on_coin_pickup")
+
+func _physics_process(delta):
 	var bodies = get_overlapping_bodies()
-	for body in bodies: # look for alternative to searching all bodies every frame. Is there a collision message / signal?
-		if body.name == "Player":
-			tween()
-			emit_signal("Coin_Pickup")
+	for body in bodies:
+		if not taken:
 			taken = true
+			$AnimationPlayer.play("die")
 
-func tween():
-	$Tween.interpolate_property(
-		$AnimatedSprite, "scale", Vector2(1,1), Vector2(0,0),
-		0.3, Tween.TRANS_QUAD, Tween.EASE_IN, 0)
-	$Tween.start()
-
-func _on_Tween_tween_completed(object, key):
-	queue_free() # nice habit
+func die():
+	queue_free()

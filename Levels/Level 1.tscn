@@ -53,7 +53,7 @@ tracks/2/keys = {
 "values": [ "walk", "stand", "walk", "stand", "walk" ]
 }
 
-[node name="Level 1" type="Node2D" index="0"]
+[node name="Level 1" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -70,16 +70,16 @@ cell_clip_uv = false
 collision_use_kinematic = false
 collision_friction = 1.0
 collision_bounce = 0.0
-collision_layer = 1
+collision_layer = 2
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( -982981, 0, 0, -589739, 4, 0, -393146, 2, 0, -327582, 4, 0, -196562, 2, 0, -196526, 5, 0, -131031, 1, 0, 29, 0, 0, 110, 5, 0, 65610, 5, 0, 65626, 4, 0, 131072, 0, 0, 262166, 0, 0, 262206, 2, 0, 262222, 5, 0, 327779, 5, 0, 393222, 0, 0, 524288, 1, 0, 524301, 0, 0, 524341, 2, 0, 524375, 5, 0, 589926, 4, 0, 720941, 3, 0, 851990, 1, 0, 852001, 0, 0, 852033, 2, 0 )
+_sections_unfolded = [ "Collision" ]
 
 [node name="Player" parent="." index="1" instance=ExtResource( 2 )]
 
 position = Vector2( 511.967, 280.915 )
-collision_layer = 15
 
 [node name="Camera2D" parent="Player" index="4" instance=ExtResource( 3 )]
 
@@ -88,14 +88,11 @@ collision_layer = 15
 [node name="SpikesTop" parent="Spikes" index="0" instance=ExtResource( 4 )]
 
 position = Vector2( 1100.24, 488.118 )
-collision_layer = 9
-collision_mask = 9
+collision_mask = 8
 script = null
 _sections_unfolded = [ "Collision", "Pickable", "Z Index" ]
 
 [node name="Coins" type="Node2D" parent="." index="3"]
-
-editor/display_folded = true
 
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 5 )]
 
@@ -293,13 +290,11 @@ anims/Spikeman = SubResource( 1 )
 
 position = Vector2( 2366.08, 813.406 )
 collision_layer = 2
-_sections_unfolded = [ "Collision" ]
 
 [node name="JumpPad2" parent="JumpPads" index="1" instance=ExtResource( 8 )]
 
 position = Vector2( 4423.5, 807.827 )
 collision_layer = 2
-_sections_unfolded = [ "Collision" ]
 
 [node name="Portal" parent="." index="6" instance=ExtResource( 9 )]
 
@@ -312,8 +307,6 @@ position = Vector2( 7331.85, -95.6841 )
 [connection signal="life_up" from="Player" to="Player/Camera2D" method="_on_Player_life_up"]
 
 [connection signal="body_shape_entered" from="Spikes/SpikesTop" to="Player" method="take_damage"]
-
-[connection signal="Coin_Pickup" from="Coins/Coin" to="Player" method="_on_Coin_Coin_Pickup"]
 
 [connection signal="Coin_Pickup" from="Coins/Coin2" to="Player" method="_on_Coin_Coin_Pickup"]
 

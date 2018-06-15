@@ -21,7 +21,6 @@ window/size/resizable=false
 window/size/test_width=1920
 window/size/test_height=1080
 window/dpi/allow_hidpi=true
-window/vsync/use_vsync=false
 window/stretch/mode="viewport"
 
 [importer_defaults]
@@ -75,4 +74,5 @@ common/physics_fps=90
 
 [rendering]
 
+quality/intended_usage/framebuffer_allocation=0
 quality/2d/use_pixel_snap=true
