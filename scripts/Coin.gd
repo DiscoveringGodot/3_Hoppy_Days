@@ -15,5 +15,5 @@ func _physics_process(delta):
 			taken = true
 			$AnimationPlayer.play("die")
 
-func die():
+func die():  # called by AnimationPlayer node
 	queue_free()

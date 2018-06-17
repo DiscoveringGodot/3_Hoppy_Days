@@ -53,7 +53,7 @@ tracks/2/keys = {
 "values": [ "walk", "stand", "walk", "stand", "walk" ]
 }
 
-[node name="Level 1" type="Node2D"]
+[node name="Level 1" type="Node2D" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -258,19 +258,29 @@ position = Vector2( 3770.13, -587.711 )
 
 [node name="NPC_SpkieMan" parent="NPCs" index="2" instance=ExtResource( 7 )]
 
+editor/display_folded = true
 position = Vector2( 1600.45, 755.259 )
 
 [node name="Area2D" parent="NPCs/NPC_SpkieMan" index="0"]
 
 editor/display_folded = true
 
+[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan/Area2D" index="1"]
+
+frame = 0
+
 [node name="NPC_SpkieMan2" parent="NPCs" index="3" instance=ExtResource( 7 )]
 
+editor/display_folded = true
 position = Vector2( 2802.8, -206 )
 
 [node name="Area2D" parent="NPCs/NPC_SpkieMan2" index="0"]
 
 editor/display_folded = true
+
+[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan2/Area2D" index="1"]
+
+frame = 0
 
 [node name="AnimationPlayer" parent="NPCs/NPC_SpkieMan2" index="1"]
 
