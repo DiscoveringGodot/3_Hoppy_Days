@@ -1,11 +1,9 @@
 extends Area2D
 
-func _physics_process(delta):
-	var bodies = get_overlapping_bodies()
-	for body in bodies:
-		if body.name == "Player": # again really search all overlapping bodies every frame?
-			$AnimatedSprite.animation = "launch"
-			$Timer.start()
+func _on_JumpPad_body_shape_entered(body_id, body, body_shape, area_shape):
+	$AnimatedSprite.animation = "launch"
+	$Timer.start()
 
 func _on_Timer_timeout():
 	$AnimatedSprite.animation = "idle"
+

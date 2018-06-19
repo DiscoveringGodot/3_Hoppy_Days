@@ -50,6 +50,7 @@ func run():
 	else:
 		motion.x = lerp(motion.x, 0, FRICTION)
 
+
 func jump():
 	if is_on_floor() == true && Input.is_action_pressed("ui_up"):
 		motion.y = JUMP_SPEED

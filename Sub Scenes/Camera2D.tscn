@@ -38,7 +38,7 @@ tracks/0/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1.5, 1.5 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 
 resource_name = "LifeDown"
 length = 0.25
@@ -57,9 +57,8 @@ tracks/0/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 0.5, 0.5 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 
-resource_name = "LifePulse"
 length = 0.25
 loop = false
 step = 0.1
@@ -105,7 +104,6 @@ _sections_unfolded = [ "Limit", "Smoothing" ]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." index="0"]
 
-editor/display_folded = true
 layer = -1
 offset = Vector2( 1024, 0 )
 rotation = 0.0
@@ -170,7 +168,7 @@ _sections_unfolded = [ "Animation" ]
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground" index="3"]
 
-motion_scale = Vector2( 0.9, 0.9 )
+motion_scale = Vector2( 0.8, 0.8 )
 motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 2048, 0 )
 _sections_unfolded = [ "Motion", "Transform" ]
@@ -186,6 +184,7 @@ _sections_unfolded = [ "Animation", "Offset", "Region" ]
 
 [node name="GUI" type="CanvasLayer" parent="." index="1"]
 
+editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -335,8 +334,8 @@ playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
 anims/CoinPulse = SubResource( 2 )
-anims/LifeDown = SubResource( 4 )
-anims/LifePulse = SubResource( 3 )
+anims/LifeDown = SubResource( 3 )
+anims/LifePulse = SubResource( 4 )
 blend_times = [  ]
 
 
