@@ -26,6 +26,16 @@ public class Player : KinematicBody2D
         
     }
 
+    public override void _PhysicsProcess(float delta)
+    {
+        GD.Print(delta);
+    }
+
+    public override void _Process(float delta)
+    {
+        
+    }
+
 //    public override void _Process(float delta)
 //    {
 //        // Called every frame. Delta is time since last frame.
