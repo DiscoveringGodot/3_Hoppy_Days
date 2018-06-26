@@ -10,7 +10,7 @@ const FRICTION = 0.2
 
 var motion = Vector2()
 var coin_count = 0
-var coin_target = 20 #how many coins for an extra life?
+var coin_target = 20   # How many coins for an extra life?
 var lives = 3
 
 signal life_up

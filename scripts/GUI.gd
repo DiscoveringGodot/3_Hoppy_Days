@@ -10,8 +10,7 @@ func update_GUI():
 	$GUI/Banner/LivesText.text = str(lives)
 	$GUI/Banner/CoinText.text = str(coins)
 
-
-func _on_Player_coin_up(): 
+func _on_Player_CoinUp():
 	coins +=1
 	animate("CoinPulse")
 	update_GUI()
@@ -21,7 +20,7 @@ func _on_Player_life_down():
 	animate("LifeDown")
 	update_GUI()
 
-func _on_Player_life_up():
+func _on_Player_LifeUp():
 	lives +=1
 	animate("LifePulse")
 	update_GUI()

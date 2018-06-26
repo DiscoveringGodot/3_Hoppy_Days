@@ -16,6 +16,7 @@ public class Player : KinematicBody2D
      
     // private instance variables for state
     Vector2 motion = new Vector2();
+    int coinCount;
 
     // cached references for readability
 
@@ -32,6 +33,20 @@ public class Player : KinematicBody2D
         Run();
         Jump();
         MoveAndSlide(motion, FLOOR_DIRECTION);
+    }
+
+    [Signal]
+    delegate void LifeUp();
+
+    [Signal]
+    delegate void CoinUp();
+
+    public void OnCoinPickup()
+    {
+        GD.Print("OnCoinPickup() called");
+        coinCount += 1;
+        // $Coin_sfx.play()
+        EmitSignal(nameof(CoinUp));  // note is refactorable with nameof
     }
 
     private void Fall(float delta)
