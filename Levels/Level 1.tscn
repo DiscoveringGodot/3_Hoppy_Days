@@ -271,10 +271,6 @@ position = Vector2( 1600.45, 755.259 )
 
 editor/display_folded = true
 
-[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan/Area2D" index="1"]
-
-frame = 1
-
 [node name="NPC_SpkieMan2" parent="NPCs" index="3" instance=ExtResource( 8 )]
 
 editor/display_folded = true
@@ -283,10 +279,6 @@ position = Vector2( 2802.8, -206 )
 [node name="Area2D" parent="NPCs/NPC_SpkieMan2" index="0"]
 
 editor/display_folded = true
-
-[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan2/Area2D" index="1"]
-
-frame = 1
 
 [node name="AnimationPlayer" parent="NPCs/NPC_SpkieMan2" index="1"]
 

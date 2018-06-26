@@ -15,6 +15,7 @@ public class Player : KinematicBody2D
     // configuration parameters, consider SO
      
     // private instance variables for state
+    Vector2 motion = new Vector2();
 
     // cached references for readability
 
@@ -28,7 +29,8 @@ public class Player : KinematicBody2D
 
     public override void _PhysicsProcess(float delta)
     {
-        GD.Print(delta);
+        motion.x = SPEED;
+        MoveAndSlide(motion, FLOOR_DIRECTION);
     }
 
     public override void _Process(float delta)
