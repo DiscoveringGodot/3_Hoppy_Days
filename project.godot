@@ -17,7 +17,6 @@ run/main_scene="res://Levels/Level 1.tscn"
 
 window/size/width=1920
 window/size/height=1080
-window/size/resizable=false
 window/size/test_width=1920
 window/size/test_height=1080
 window/dpi/allow_hidpi=true

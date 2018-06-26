@@ -4,7 +4,6 @@
 [ext_resource path="res://gfx/Particles/lighting_yellow.png" type="Texture" id=2]
 [ext_resource path="res://gfx/Particles/lighting_blue.png" type="Texture" id=3]
 
-
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
@@ -20,7 +19,7 @@ custom_solver_bias = 0.0
 radius = 24.4478
 height = 77.4797
 
-[node name="Lightning" type="Area2D"]
+[node name="Lightning" type="Area2D" index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -38,7 +37,6 @@ _sections_unfolded = [ "Collision", "Z Index" ]
 
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]

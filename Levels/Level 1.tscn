@@ -1,8 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Tiles/platforms.tres" type="TileSet" id=1]
 [ext_resource path="res://Sub Scenes/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scripts/Player.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=3]
 [ext_resource path="res://Sub Scenes/Camera2D.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Sub Scenes/SpikesTop.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Sub Scenes/Coin.tscn" type="PackedScene" id=6]
@@ -10,49 +10,6 @@
 [ext_resource path="res://NPCs/NPC_SpkieMan.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Sub Scenes/JumpPad.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Sub Scenes/Portal.tscn" type="PackedScene" id=10]
-
-[sub_resource type="Animation" id=1]
-
-resource_name = "Spikeman"
-length = 6.0
-loop = true
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("Area2D/AnimatedSprite:flip_h")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1.9, 2, 5, 6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ true, true, false, true, true ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Area2D:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 1, 2, 4, 5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 0, 0 ), Vector2( -100, 0 ), Vector2( -100, 0 ), Vector2( 100, 0 ), Vector2( 100, 0 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("Area2D/AnimatedSprite:animation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0, 1, 2, 4, 5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ "walk", "stand", "walk", "stand", "walk" ]
-}
 
 [node name="Level 1" type="Node2D" index="0"]
 
@@ -89,14 +46,17 @@ position = Vector2( 0, 3.05176e-05 )
 
 [node name="Spikes" type="Node2D" parent="." index="2"]
 
+editor/display_folded = true
+
 [node name="SpikesTop" parent="Spikes" index="0" instance=ExtResource( 5 )]
 
 position = Vector2( 1100.24, 488.118 )
-collision_mask = 8
 script = null
 _sections_unfolded = [ "Collision", "Pickable", "Z Index" ]
 
 [node name="Coins" type="Node2D" parent="." index="3"]
+
+editor/display_folded = true
 
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 6 )]
 
@@ -262,57 +222,28 @@ position = Vector2( 3770.13, -587.711 )
 
 [node name="NPC_SpkieMan" parent="NPCs" index="2" instance=ExtResource( 8 )]
 
-editor/display_folded = true
 position = Vector2( 1600.45, 755.259 )
-
-[node name="Area2D" parent="NPCs/NPC_SpkieMan" index="0"]
-
-editor/display_folded = true
-
-[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan/Area2D" index="1"]
-
-frame = 1
 
 [node name="NPC_SpkieMan2" parent="NPCs" index="3" instance=ExtResource( 8 )]
 
 editor/display_folded = true
 position = Vector2( 2802.8, -206 )
 
-[node name="Area2D" parent="NPCs/NPC_SpkieMan2" index="0"]
-
-editor/display_folded = true
-
-[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan2/Area2D" index="1"]
-
-frame = 1
-
-[node name="AnimationPlayer" parent="NPCs/NPC_SpkieMan2" index="1"]
-
-anims/Spikeman = SubResource( 1 )
-
 [node name="JumpPads" type="Node2D" parent="." index="5"]
-
-editor/display_folded = true
 
 [node name="JumpPad" parent="JumpPads" index="0" instance=ExtResource( 9 )]
 
 position = Vector2( 2366.08, 813.406 )
-collision_layer = 2
 
 [node name="JumpPad2" parent="JumpPads" index="1" instance=ExtResource( 9 )]
 
 position = Vector2( 4423.5, 807.827 )
-collision_layer = 2
 
 [node name="Portal" parent="." index="6" instance=ExtResource( 10 )]
 
 position = Vector2( 7331.85, -95.6841 )
 
 [connection signal="body_shape_entered" from="Spikes/SpikesTop" to="Player" method="take_damage"]
-
-[connection signal="body_shape_entered" from="NPCs/NPC_SpkieMan/Area2D" to="Player" method="take_damage"]
-
-[connection signal="body_shape_entered" from="NPCs/NPC_SpkieMan2/Area2D" to="Player" method="take_damage"]
 
 [connection signal="body_shape_entered" from="JumpPads/JumpPad" to="Player" method="_on_JumpPad_body_shape_entered"]
 
@@ -321,5 +252,3 @@ position = Vector2( 7331.85, -95.6841 )
 [connection signal="body_shape_entered" from="Portal" to="Player" method="_on_Portal_body_shape_entered"]
 
 
-[editable path="NPCs/NPC_SpkieMan"]
-[editable path="NPCs/NPC_SpkieMan2"]
