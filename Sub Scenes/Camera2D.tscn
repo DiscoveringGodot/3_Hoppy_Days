@@ -184,7 +184,6 @@ _sections_unfolded = [ "Animation", "Offset", "Region" ]
 
 [node name="GUI" type="CanvasLayer" parent="." index="1"]
 
-editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -320,7 +319,7 @@ _sections_unfolded = [ "Anchor", "Grow Direction", "Rect", "Size Flags" ]
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GUI" index="1"]
 
 stream = ExtResource( 10 )
-volume_db = 0.0
+volume_db = -29.48
 pitch_scale = 1.0
 autoplay = true
 mix_target = 0

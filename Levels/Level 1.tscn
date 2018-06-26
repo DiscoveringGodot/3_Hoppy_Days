@@ -85,6 +85,8 @@ script = ExtResource( 3 )
 
 [node name="Camera2D" parent="Player" index="4" instance=ExtResource( 4 )]
 
+position = Vector2( 0, 3.05176e-05 )
+
 [node name="Spikes" type="Node2D" parent="." index="2"]
 
 [node name="SpikesTop" parent="Spikes" index="0" instance=ExtResource( 5 )]
@@ -96,15 +98,13 @@ _sections_unfolded = [ "Collision", "Pickable", "Z Index" ]
 
 [node name="Coins" type="Node2D" parent="." index="3"]
 
-editor/display_folded = true
-
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 6 )]
 
 position = Vector2( 705.815, 360.76 )
 
 [node name="Coin2" parent="Coins" index="1" instance=ExtResource( 6 )]
 
-position = Vector2( 1414.35, 595.079 )
+position = Vector2( 1417.41, 592.017 )
 
 [node name="Coin3" parent="Coins" index="2" instance=ExtResource( 6 )]
 
@@ -252,8 +252,6 @@ position = Vector2( 5662.12, -615.756 )
 
 [node name="NPCs" type="Node2D" parent="." index="4"]
 
-editor/display_folded = true
-
 [node name="NPC_Cloud" parent="NPCs" index="0" instance=ExtResource( 7 )]
 
 position = Vector2( 1417.37, -98.184 )
@@ -271,6 +269,10 @@ position = Vector2( 1600.45, 755.259 )
 
 editor/display_folded = true
 
+[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan/Area2D" index="1"]
+
+frame = 1
+
 [node name="NPC_SpkieMan2" parent="NPCs" index="3" instance=ExtResource( 8 )]
 
 editor/display_folded = true
@@ -279,6 +281,10 @@ position = Vector2( 2802.8, -206 )
 [node name="Area2D" parent="NPCs/NPC_SpkieMan2" index="0"]
 
 editor/display_folded = true
+
+[node name="AnimatedSprite" parent="NPCs/NPC_SpkieMan2/Area2D" index="1"]
+
+frame = 1
 
 [node name="AnimationPlayer" parent="NPCs/NPC_SpkieMan2" index="1"]
 

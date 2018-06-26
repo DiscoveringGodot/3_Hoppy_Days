@@ -36,10 +36,10 @@ func update_motion(delta):
 
 
 func fall(delta):
-	if is_on_floor() == false:
-		motion.y += GRAVITY * delta
-	else:
+	if is_on_floor():
 		motion.y = 0
+	else:
+		motion.y += GRAVITY * delta
 
 
 func run():
@@ -52,7 +52,7 @@ func run():
 
 
 func jump():
-	if is_on_floor() == true && Input.is_action_pressed("ui_up"):
+	if is_on_floor() && Input.is_action_pressed("ui_up"):
 		motion.y = JUMP_SPEED
 		$Jump_sfx.play()
 

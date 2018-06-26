@@ -24,19 +24,51 @@ public class Player : KinematicBody2D
     {
         // Called every time the node is added to the scene.
         // Initialization here
-        
     }
 
     public override void _PhysicsProcess(float delta)
     {
-        if (Input.IsActionPressed("ui_right") && ! Input.IsActionPressed("ui_left")) {
-            motion.x = SPEED; } 
-        else if (Input.IsActionPressed("ui_left") && ! Input.IsActionPressed("ui_right")) {
-            motion.x = -SPEED; }
-        else {
-            motion.x = Mathf.Lerp(motion.x, 0f, FRICTION); }
-            
+        Run();
+        Jump();
+        Fall(delta);
         MoveAndSlide(motion, FLOOR_DIRECTION);
+    }
+
+    private void Fall(float delta)
+    {
+        if (IsOnFloor())
+        {
+            motion.y = 0f;
+        }
+        else
+        {
+            motion.y = GRAVITY * delta;
+        }
+    }
+
+    private void Jump()
+    {
+        if (IsOnFloor() && Input.IsActionPressed("ui_up"))
+        {
+            motion.y = JUMP_SPEED;
+            // TODO play SFX 
+        }
+    }
+
+    private void Run()
+    {
+        if (Input.IsActionPressed("ui_right") && !Input.IsActionPressed("ui_left"))
+        {
+            motion.x = SPEED;
+        }
+        else if (Input.IsActionPressed("ui_left") && !Input.IsActionPressed("ui_right"))
+        {
+            motion.x = -SPEED;
+        }
+        else
+        {
+            motion.x = Mathf.Lerp(motion.x, 0f, FRICTION);
+        }
     }
 
     public override void _Process(float delta)
