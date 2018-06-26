@@ -29,7 +29,13 @@ public class Player : KinematicBody2D
 
     public override void _PhysicsProcess(float delta)
     {
-        motion.x = SPEED;
+        if (Input.IsActionPressed("ui_right") && ! Input.IsActionPressed("ui_left")) {
+            motion.x = SPEED; } 
+        else if (Input.IsActionPressed("ui_left") && ! Input.IsActionPressed("ui_right")) {
+            motion.x = -SPEED; }
+        else {
+            motion.x = Mathf.Lerp(motion.x, 0f, FRICTION); }
+            
         MoveAndSlide(motion, FLOOR_DIRECTION);
     }
 
