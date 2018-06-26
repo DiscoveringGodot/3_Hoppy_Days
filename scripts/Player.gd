@@ -4,7 +4,7 @@ const SPEED = 750
 const GRAVITY = 3600
 const JUMP_SPEED = -1750
 const JUMP_BOOST = 2
-const FLOOR_DIRECTION = Vector2(0,-1)
+const FLOOR_DIRECTION = Vector2(0, -1)
 const LEVEL_HEIGHT = 2500
 const FRICTION = 0.2
 

@@ -8,7 +8,7 @@ public class Player : KinematicBody2D
     float GRAVITY = 3600;
     float JUMP_SPEED = -1750f;
     float JUMP_BOOST = 2f;
-    Vector2 FLOOR_DIRECTION = new Vector2(0,-1);
+    Vector2 FLOOR_DIRECTION = new Vector2(0, -1);
     int LEVEL_HEIGHT = 2500;  // in pixels
     float FRICTION = 0.2f;
 
@@ -28,9 +28,9 @@ public class Player : KinematicBody2D
 
     public override void _PhysicsProcess(float delta)
     {
+        Fall(delta);  // fall to floor first, frame-rate independent
         Run();
         Jump();
-        Fall(delta);
         MoveAndSlide(motion, FLOOR_DIRECTION);
     }
 
@@ -42,7 +42,7 @@ public class Player : KinematicBody2D
         }
         else
         {
-            motion.y = GRAVITY * delta;
+            motion.y += GRAVITY * delta;  // note accelerate down
         }
     }
 
@@ -50,6 +50,7 @@ public class Player : KinematicBody2D
     {
         if (IsOnFloor() && Input.IsActionPressed("ui_up"))
         {
+            GD.Print("Jump");
             motion.y = JUMP_SPEED;
             // TODO play SFX 
         }

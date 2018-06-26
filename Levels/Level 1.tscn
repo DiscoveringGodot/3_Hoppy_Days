@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Tiles/platforms.tres" type="TileSet" id=1]
 [ext_resource path="res://Sub Scenes/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scripts/Player.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Player.cs" type="Script" id=3]
 [ext_resource path="res://Sub Scenes/Camera2D.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Sub Scenes/SpikesTop.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Sub Scenes/Coin.tscn" type="PackedScene" id=6]
