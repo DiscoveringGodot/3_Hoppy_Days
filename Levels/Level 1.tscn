@@ -10,7 +10,7 @@
 [ext_resource path="res://Sub Scenes/JumpPad.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Sub Scenes/Portal.tscn" type="PackedScene" id=9]
 
-[node name="Level 1" type="Node2D" index="0"]
+[node name="Level1" type="Node2D" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -53,8 +53,6 @@ script = null
 _sections_unfolded = [ "Collision", "Pickable", "Z Index" ]
 
 [node name="Coins" type="Node2D" parent="." index="3"]
-
-editor/display_folded = true
 
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 5 )]
 
@@ -240,10 +238,6 @@ position = Vector2( 4423.5, 807.827 )
 [node name="Portal" parent="." index="6" instance=ExtResource( 9 )]
 
 position = Vector2( 7331.85, -95.6841 )
-
-[connection signal="CoinUp" from="Player" to="Player/Camera2D" method="_on_Player_CoinUp"]
-
-[connection signal="LifeUp" from="Player" to="Player/Camera2D" method="_on_Player_LifeUp"]
 
 [connection signal="body_shape_entered" from="Spikes/SpikesTop" to="Player" method="take_damage"]
 
