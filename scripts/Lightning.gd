@@ -5,7 +5,7 @@ signal hurt
 
 func _ready():
 	xpos = global_position.x
-	connect("body_shape_entered", get_node("/root/Level 1/Player"), "take_damage")
+	connect("body_shape_entered", get_node("/root/Level1/Player"), "take_damage")
 	
 func _physics_process(delta):
 	global_position.y -= SPEED * delta

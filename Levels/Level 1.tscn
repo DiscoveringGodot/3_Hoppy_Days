@@ -44,11 +44,9 @@ position = Vector2( 0, 3.05176e-05 )
 
 [node name="Spikes" type="Node2D" parent="." index="2"]
 
-editor/display_folded = true
-
 [node name="SpikesTop" parent="Spikes" index="0" instance=ExtResource( 4 )]
 
-position = Vector2( 1100.24, 488.118 )
+position = Vector2( 1102.61, 485.744 )
 script = null
 _sections_unfolded = [ "Collision", "Pickable", "Z Index" ]
 
@@ -239,7 +237,13 @@ position = Vector2( 4423.5, 807.827 )
 
 position = Vector2( 7331.85, -95.6841 )
 
-[connection signal="body_shape_entered" from="Spikes/SpikesTop" to="Player" method="take_damage"]
+[connection signal="CoinUp" from="Player" to="Player/Camera2D" method="_on_Player_CoinUp"]
+
+[connection signal="LifeDown" from="Player" to="Player/Camera2D" method="_on_Player_LifeDown"]
+
+[connection signal="LifeUp" from="Player" to="Player/Camera2D" method="_on_Player_LifeUp"]
+
+[connection signal="body_shape_entered" from="Spikes/SpikesTop" to="Player" method="TakeDamage"]
 
 [connection signal="body_shape_entered" from="JumpPads/JumpPad" to="Player" method="_on_JumpPad_body_shape_entered"]
 

@@ -27,3 +27,6 @@ func _on_Player_LifeUp():
 
 func animate(icon):
 	$GUI/AnimationPlayer.play(icon)
+
+func _on_Player_LifeDown():
+	pass # replace with function body

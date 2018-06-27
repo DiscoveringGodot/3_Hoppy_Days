@@ -23,8 +23,7 @@ public class Player : KinematicBody2D
     // messages, then public methods, then private methods...
     public override void _Ready()
     {
-        // Called every time the node is added to the scene.
-        // Initialization here
+        
     }
 
     public override void _PhysicsProcess(float delta)
@@ -39,11 +38,13 @@ public class Player : KinematicBody2D
     delegate void LifeUp();
 
     [Signal]
+    delegate void LifeDown();
+
+    [Signal]
     delegate void CoinUp();
 
     public void OnCoinPickup()
     {
-        GD.Print("OnCoinPickup() called");
         coinCount += 1;
         // $Coin_sfx.play()
         EmitSignal(nameof(CoinUp));  // note is refactorable with nameof
@@ -86,16 +87,12 @@ public class Player : KinematicBody2D
             motion.x = Mathf.Lerp(motion.x, 0f, FRICTION);
         }
     }
-
-    public override void _Process(float delta)
-    {
-        
-    }
-
-//    public override void _Process(float delta)
-//    {
-//        // Called every frame. Delta is time since last frame.
-//        // Update game logic here.
-//        
-//    }
+	
+	private void TakeDamage(int bodyID, Godot.Object body, int bodyShape, int areaShape)
+	{
+	    GD.Print("Spikes impact ouchies");
+	}
 }
+
+
+
