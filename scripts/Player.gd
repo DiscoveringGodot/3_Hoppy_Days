@@ -72,11 +72,11 @@ func _on_coin_pickup(body):
 
 
 func take_damage(body_id, body, body_shape, area_shape):
-	if body == self:
-		motion.y = JUMP_SPEED
-		emit_signal("life_down")
-		$Pain_sfx.play()
-		lives -= 1
+	motion.y = JUMP_SPEED
+	emit_signal("life_down")
+	$Pain_sfx.play()
+	lives -= 1
+	
 	if lives < 0:
 		_end_game()
 

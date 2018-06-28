@@ -1,5 +1,6 @@
 using Godot;
 using System;
+//using System.Reflection;
 
 public class SpikesTop : Area2D
 {
@@ -11,7 +12,7 @@ public class SpikesTop : Area2D
     public override void _Ready()
     {
         player = GetNode("/root/Level1/Player") as Player;  // string-reference spit
-        this.Connect("Hurt", player, "TakeDamage");
+        this.Connect(nameof(Hurt), player, nameof(player.TakeDamage));
     }
 
     public override void _Process(float delta)

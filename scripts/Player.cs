@@ -17,6 +17,7 @@ public class Player : KinematicBody2D
     // private instance variables for state
     Vector2 motion = new Vector2();
     int coinCount;
+    int lives = 3;
 
     // cached references for readability
 
@@ -34,14 +35,16 @@ public class Player : KinematicBody2D
         MoveAndSlide(motion, FLOOR_DIRECTION);
     }
 
-    [Signal]
-    delegate void LifeUp();
+    public void TakeDamage()
+	{
+	    motion.y = JUMP_SPEED;
+        EmitSignal(nameof(LifeDown));  // :-)
+        //$Pain_sfx.play()
+	    lives -= 1;
 
-    [Signal]
-    delegate void LifeDown();
-
-    [Signal]
-    delegate void CoinUp();
+        // 	if lives < 0:
+		// _end_game()  // could be a signal to the Game
+	}
 
     public void OnCoinPickup()
     {
@@ -87,11 +90,15 @@ public class Player : KinematicBody2D
             motion.x = Mathf.Lerp(motion.x, 0f, FRICTION);
         }
     }
-	
-	private void TakeDamage()
-	{
-	    GD.Print("Spikes impact ouchies");
-	}
+
+    [Signal]
+    delegate void LifeUp();
+
+    [Signal]
+    delegate void LifeDown();
+
+    [Signal]
+    delegate void CoinUp();
 }
 
 
