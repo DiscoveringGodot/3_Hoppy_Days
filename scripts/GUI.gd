@@ -1,7 +1,7 @@
 extends Camera2D
 
 var lives = 3  # TODO remove this here or Player
-var coins = 00
+var coins = 00 # TODO remove this here or Player
 
 func _ready():
 	update_GUI()

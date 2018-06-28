@@ -16,7 +16,8 @@ public class Player : KinematicBody2D
      
     // private instance variables for state
     Vector2 motion = new Vector2();
-    int coinCount;
+    int coinCount = 0;
+    int coinTarget = 20;
     int lives = 3;
 
     // cached references for readability
@@ -51,6 +52,17 @@ public class Player : KinematicBody2D
         coinCount += 1;
         // $Coin_sfx.play()
         EmitSignal(nameof(CoinUp));  // note is refactorable with nameof
+        if (coinCount >= coinTarget)
+        {
+            GrantExtraLife();
+        }
+    }
+
+    private void GrantExtraLife()
+    {
+        lives += 1; // Why not just a signal?
+        coinCount = 0;
+        EmitSignal(nameof(LifeUp));
     }
 
     private void Fall(float delta)

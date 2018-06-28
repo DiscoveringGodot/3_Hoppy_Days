@@ -27,11 +27,4 @@ public class SpikesTop : Area2D
             }
         }
     }
-
-//    public override void _Process(float delta)
-//    {
-//        // Called every frame. Delta is time since last frame.
-//        // Update game logic here.
-//        
-//    }
 }

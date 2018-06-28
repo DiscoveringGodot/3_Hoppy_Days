@@ -9,7 +9,7 @@ const LEVEL_HEIGHT = 2500
 const FRICTION = 0.2
 
 var motion = Vector2()
-var coin_count = 0
+var coin_count = 0 # TODO here XOR in the UI
 var coin_target = 20   # How many coins for an extra life?
 var lives = 3
 
