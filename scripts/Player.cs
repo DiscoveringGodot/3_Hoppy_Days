@@ -35,7 +35,7 @@ public class Player : KinematicBody2D
         MoveAndSlide(motion, FLOOR_DIRECTION);
     }
 
-    public void TakeDamage()
+    public void RequestDamage()
 	{
 	    motion.y = JUMP_SPEED;
         EmitSignal(nameof(LifeDown));  // :-)

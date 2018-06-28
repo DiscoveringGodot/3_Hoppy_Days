@@ -7,17 +7,17 @@ public class SpikesTop : Area2D
     Player player;
 
     [Signal]
-    delegate void Hurt();
+    delegate void DealDamage();
 
     public override void _Ready()
     {
-        player = GetNode("/root/Level1/Player") as Player;  // string-reference spit
-        this.Connect(nameof(Hurt), player, nameof(player.TakeDamage));
+        player = GetNode("/root/Level1/Player") as Player;  // string-reference - spit
+        this.Connect(nameof(DealDamage), player, nameof(player.RequestDamage));  // no strings - smile
     }
 
     public override void _Process(float delta)
     {
-        EmitSignal(nameof(Hurt));  // :-) no strings
+        EmitSignal(nameof(DealDamage));  // :-) no strings
     }
 
 //    public override void _Process(float delta)
