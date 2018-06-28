@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="Hoppy Days Prototype"
-run/main_scene="res://Levels/Level 1.tscn"
+run/main_scene="res://Scenes/Levels/Level 1.tscn"
 
 [display]
 

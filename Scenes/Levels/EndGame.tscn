@@ -5,10 +5,6 @@
 [ext_resource path="res://Fonts/candles_.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://GFX/HUD/lifes.png" type="Texture" id=4]
 
-
-
-
-
 [sub_resource type="DynamicFont" id=1]
 
 size = 350
@@ -25,9 +21,10 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="EndGame" type="Node2D"]
+[node name="EndGame" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
+starting_level = NodePath("")
 
 [node name="TextureRect" type="TextureRect" parent="." index="0"]
 
