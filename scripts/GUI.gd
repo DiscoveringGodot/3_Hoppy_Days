@@ -11,12 +11,13 @@ func update_GUI():
 	$GUI/Banner/CoinText.text = str(coins)
 
 func _on_Player_CoinUp():
-	coins +=1
+	coins += 1
 	animate("CoinPulse")
 	update_GUI()
 
 func _on_Player_life_down():
-	lives -=1
+	print("Life down called on GUI")  # TODO remove
+	lives -= 1
 	animate("LifeDown")
 	update_GUI()
 

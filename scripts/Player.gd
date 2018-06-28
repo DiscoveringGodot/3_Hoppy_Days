@@ -15,8 +15,9 @@ var lives = 3
 
 signal life_up
 signal life_down
-signal coin_up
 
+signal coin_up
+const var COIN_UP_NAME = "coin_up"
 
 func _physics_process(delta):
 	update_motion(delta)
@@ -64,7 +65,7 @@ func update_animation(motion):
 func _on_coin_pickup(body):
 	coin_count += 1
 	$Coin_sfx.play()
-	emit_signal("coin_up")
+	emit_signal(COIN_UP_NAME)
 	if coin_count >= coin_target:
 		lives +=1
 		coin_count = 0
@@ -77,7 +78,7 @@ func take_damage(body_id, body, body_shape, area_shape):
 	$Pain_sfx.play()  # TODO find way of wiring in editor
 	lives -= 1
 	
-	if lives < 0:
+	if lives < 0: # TODO isn't this off by one?
 		_end_game()
 
 

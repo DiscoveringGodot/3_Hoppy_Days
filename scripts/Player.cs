@@ -3,6 +3,11 @@ using System;
 
 public class Player : KinematicBody2D
 {
+    // outbound signals
+    [Signal] delegate void LifeUp();
+    [Signal] delegate void LifeDown();
+    [Signal] delegate void CoinUp();
+
     // configuration parameters
     const float SPEED = 750f;
     const float GRAVITY = 3600;
@@ -20,6 +25,15 @@ public class Player : KinematicBody2D
 
     public override void _PhysicsProcess(float delta)
     {
+        UpdateMotion(delta);
+        bool fallOffWorld = GetPosition().y > LEVEL_HEIGHT;
+        if (fallOffWorld) {
+		    EndGame();
+        }
+    }
+
+    private void UpdateMotion(float delta)
+    {
         Fall(delta);  // fall to floor first, frame-rate independent
         Run();
         Jump();
@@ -33,17 +47,22 @@ public class Player : KinematicBody2D
         (GetNode("Pain_sfx") as AudioStreamPlayer).Play();
 	    lives -= 1;
 
-        // 	if lives < 0:
-		// _end_game()  // could be a signal to the Game
+        if (lives < 0) {
+           EndGame();
+        }
 	}
+
+    private void EndGame()
+    {
+        GetTree().ChangeScene("res://Levels/EndGame.tscn");
+    }
 
     public void OnCoinPickup()
     {
         coinCount += 1;
         (GetNode("Coin_sfx") as AudioStreamPlayer).Play();
         EmitSignal(nameof(CoinUp));  // note is refactorable with nameof
-        if (coinCount >= coinTarget)
-        {
+        if (coinCount >= coinTarget) {
             GrantExtraLife();
         }
     }
@@ -57,20 +76,17 @@ public class Player : KinematicBody2D
 
     private void Fall(float delta)
     {
-        if (IsOnFloor())
-        {
+        if (IsOnFloor()) {
             motion.y = 0f;
         }
-        else
-        {
+        else {
             motion.y += GRAVITY * delta;  // note accelerate down
         }
     }
 
     private void Jump()
     {
-        if (IsOnFloor() && Input.IsActionPressed("ui_up"))
-        {
+        if (IsOnFloor() && Input.IsActionPressed("ui_up")) {
             GD.Print("Jump");
             motion.y = JUMP_SPEED;
             (GetNode("Jump_sfx") as AudioStreamPlayer).Play();
@@ -79,29 +95,14 @@ public class Player : KinematicBody2D
 
     private void Run()
     {
-        if (Input.IsActionPressed("ui_right") && !Input.IsActionPressed("ui_left"))
-        {
+        if (Input.IsActionPressed("ui_right") && !Input.IsActionPressed("ui_left")) {
             motion.x = SPEED;
         }
-        else if (Input.IsActionPressed("ui_left") && !Input.IsActionPressed("ui_right"))
-        {
+        else if (Input.IsActionPressed("ui_left") && !Input.IsActionPressed("ui_right")) {
             motion.x = -SPEED;
         }
-        else
-        {
+        else {
             motion.x = Mathf.Lerp(motion.x, 0f, FRICTION);
         }
     }
-
-    [Signal]
-    delegate void LifeUp();
-
-    [Signal]
-    delegate void LifeDown();
-
-    [Signal]
-    delegate void CoinUp();
 }
-
-
-
