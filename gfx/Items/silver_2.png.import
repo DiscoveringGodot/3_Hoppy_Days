@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/silver_2.png-bbff50f8c0ff00d503252b1c18571828.stex"
+path="res://.import/silver_2.png-01d393c84cdc97380ed1f6ffab09efaa.stex"
 
 [deps]
 
-source_file="res://gfx/Items/silver_2.png"
-dest_files=[ "res://.import/silver_2.png-bbff50f8c0ff00d503252b1c18571828.stex" ]
+source_file="res://GFX/Items/silver_2.png"
+dest_files=[ "res://.import/silver_2.png-01d393c84cdc97380ed1f6ffab09efaa.stex" ]
 
 [params]
 

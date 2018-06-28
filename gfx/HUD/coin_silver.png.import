@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coin_silver.png-8547287bbfac562f514365816291f197.stex"
+path="res://.import/coin_silver.png-22b73943f990be346953c52618d2760a.stex"
 
 [deps]
 
-source_file="res://gfx/HUD/coin_silver.png"
-dest_files=[ "res://.import/coin_silver.png-8547287bbfac562f514365816291f197.stex" ]
+source_file="res://GFX/HUD/coin_silver.png"
+dest_files=[ "res://.import/coin_silver.png-22b73943f990be346953c52618d2760a.stex" ]
 
 [params]
 

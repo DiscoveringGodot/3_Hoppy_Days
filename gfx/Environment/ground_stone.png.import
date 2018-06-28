@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ground_stone.png-1251cc07b5fd4cf915c4ae073016476c.stex"
+path="res://.import/ground_stone.png-19cfaec48b3368b89ac07ecaabdf287f.stex"
 
 [deps]
 
-source_file="res://gfx/Environment/ground_stone.png"
-dest_files=[ "res://.import/ground_stone.png-1251cc07b5fd4cf915c4ae073016476c.stex" ]
+source_file="res://GFX/Environment/ground_stone.png"
+dest_files=[ "res://.import/ground_stone.png-19cfaec48b3368b89ac07ecaabdf287f.stex" ]
 
 [params]
 

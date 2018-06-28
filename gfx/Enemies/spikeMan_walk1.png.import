@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spikeMan_walk1.png-f469c559acf5b31964672ac54d1f7fd9.stex"
+path="res://.import/spikeMan_walk1.png-8cfabea2e324939be0196d013962b5a0.stex"
 
 [deps]
 
-source_file="res://gfx/Enemies/spikeMan_walk1.png"
-dest_files=[ "res://.import/spikeMan_walk1.png-f469c559acf5b31964672ac54d1f7fd9.stex" ]
+source_file="res://GFX/Enemies/spikeMan_walk1.png"
+dest_files=[ "res://.import/spikeMan_walk1.png-8cfabea2e324939be0196d013962b5a0.stex" ]
 
 [params]
 

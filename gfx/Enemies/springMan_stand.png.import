@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/springMan_stand.png-e5145163681a9b810f267c22e6cc6b37.stex"
+path="res://.import/springMan_stand.png-c236074d9fd7c601fcb8b408d13f436d.stex"
 
 [deps]
 
-source_file="res://gfx/Enemies/springMan_stand.png"
-dest_files=[ "res://.import/springMan_stand.png-e5145163681a9b810f267c22e6cc6b37.stex" ]
+source_file="res://GFX/Enemies/springMan_stand.png"
+dest_files=[ "res://.import/springMan_stand.png-c236074d9fd7c601fcb8b408d13f436d.stex" ]
 
 [params]
 

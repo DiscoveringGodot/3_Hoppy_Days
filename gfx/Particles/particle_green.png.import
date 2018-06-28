@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/particle_green.png-b23e735ce47715b5a25ed5c14144f565.stex"
+path="res://.import/particle_green.png-f4e5ab0572474287f4be540f4475410f.stex"
 
 [deps]
 
-source_file="res://gfx/Particles/particle_green.png"
-dest_files=[ "res://.import/particle_green.png-b23e735ce47715b5a25ed5c14144f565.stex" ]
+source_file="res://GFX/Particles/particle_green.png"
+dest_files=[ "res://.import/particle_green.png-f4e5ab0572474287f4be540f4475410f.stex" ]
 
 [params]
 

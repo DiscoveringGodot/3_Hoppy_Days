@@ -1,9 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/EndGame.gd" type="Script" id=1]
-[ext_resource path="res://gfx/Background/bg_layer1.png" type="Texture" id=2]
+[ext_resource path="res://GFX/Background/bg_layer1.png" type="Texture" id=2]
 [ext_resource path="res://Fonts/candles_.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://gfx/HUD/lifes.png" type="Texture" id=4]
+[ext_resource path="res://GFX/HUD/lifes.png" type="Texture" id=4]
+
+
 
 
 

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flyMan_still_fly.png-899cfe094eba67cb32684ea01ab03398.stex"
+path="res://.import/flyMan_still_fly.png-51d20e9ee79fe4c96b78ebfd3d3044a9.stex"
 
 [deps]
 
-source_file="res://gfx/Enemies/flyMan_still_fly.png"
-dest_files=[ "res://.import/flyMan_still_fly.png-899cfe094eba67cb32684ea01ab03398.stex" ]
+source_file="res://GFX/Enemies/flyMan_still_fly.png"
+dest_files=[ "res://.import/flyMan_still_fly.png-51d20e9ee79fe4c96b78ebfd3d3044a9.stex" ]
 
 [params]
 

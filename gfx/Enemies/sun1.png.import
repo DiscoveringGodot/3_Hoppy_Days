@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sun1.png-fd11189900345d82fe76c00a6c5bc66c.stex"
+path="res://.import/sun1.png-7992043cb85780ac432197b83e608057.stex"
 
 [deps]
 
-source_file="res://gfx/Enemies/sun1.png"
-dest_files=[ "res://.import/sun1.png-fd11189900345d82fe76c00a6c5bc66c.stex" ]
+source_file="res://GFX/Enemies/sun1.png"
+dest_files=[ "res://.import/sun1.png-7992043cb85780ac432197b83e608057.stex" ]
 
 [params]
 

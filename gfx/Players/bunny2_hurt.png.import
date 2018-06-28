@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bunny2_hurt.png-fd8c3a22748938422d479fee6320f005.stex"
+path="res://.import/bunny2_hurt.png-33c0f6f2dc2e8a78e4be87b3031824b5.stex"
 
 [deps]
 
-source_file="res://gfx/Players/bunny2_hurt.png"
-dest_files=[ "res://.import/bunny2_hurt.png-fd8c3a22748938422d479fee6320f005.stex" ]
+source_file="res://GFX/Players/bunny2_hurt.png"
+dest_files=[ "res://.import/bunny2_hurt.png-33c0f6f2dc2e8a78e4be87b3031824b5.stex" ]
 
 [params]
 

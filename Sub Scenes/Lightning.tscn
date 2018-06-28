@@ -1,8 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/Lightning.gd" type="Script" id=1]
-[ext_resource path="res://gfx/Particles/lighting_yellow.png" type="Texture" id=2]
-[ext_resource path="res://gfx/Particles/lighting_blue.png" type="Texture" id=3]
+[ext_resource path="res://GFX/Particles/lighting_yellow.png" type="Texture" id=2]
+[ext_resource path="res://GFX/Particles/lighting_blue.png" type="Texture" id=3]
+
+
 
 [sub_resource type="SpriteFrames" id=1]
 

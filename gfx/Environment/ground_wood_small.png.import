@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ground_wood_small.png-bcfeefda39740ab00bd4d8bfc748a690.stex"
+path="res://.import/ground_wood_small.png-5c2df2960067f5192bc1035f7076aa22.stex"
 
 [deps]
 
-source_file="res://gfx/Environment/ground_wood_small.png"
-dest_files=[ "res://.import/ground_wood_small.png-bcfeefda39740ab00bd4d8bfc748a690.stex" ]
+source_file="res://GFX/Environment/ground_wood_small.png"
+dest_files=[ "res://.import/ground_wood_small.png-5c2df2960067f5192bc1035f7076aa22.stex" ]
 
 [params]
 

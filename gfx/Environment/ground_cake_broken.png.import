@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ground_cake_broken.png-6da330c3a3ddf16f8bf670349603264b.stex"
+path="res://.import/ground_cake_broken.png-0ac55cf81808b05be55b6ab9ef022931.stex"
 
 [deps]
 
-source_file="res://gfx/Environment/ground_cake_broken.png"
-dest_files=[ "res://.import/ground_cake_broken.png-6da330c3a3ddf16f8bf670349603264b.stex" ]
+source_file="res://GFX/Environment/ground_cake_broken.png"
+dest_files=[ "res://.import/ground_cake_broken.png-0ac55cf81808b05be55b6ab9ef022931.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jetpack.png-09032613be540215029d39806ba22d35.stex"
+path="res://.import/jetpack.png-ebcdda27a267468c36c223d6f8a12fff.stex"
 
 [deps]
 
-source_file="res://gfx/Items/jetpack.png"
-dest_files=[ "res://.import/jetpack.png-09032613be540215029d39806ba22d35.stex" ]
+source_file="res://GFX/Items/jetpack.png"
+dest_files=[ "res://.import/jetpack.png-ebcdda27a267468c36c223d6f8a12fff.stex" ]
 
 [params]
 

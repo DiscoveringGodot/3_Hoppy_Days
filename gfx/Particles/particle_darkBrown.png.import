@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/particle_darkBrown.png-7bd0e9e81d553a43906f56db04a2f3a2.stex"
+path="res://.import/particle_darkBrown.png-e9c683c5c01c26fa8e0eb8826d6b59d7.stex"
 
 [deps]
 
-source_file="res://gfx/Particles/particle_darkBrown.png"
-dest_files=[ "res://.import/particle_darkBrown.png-7bd0e9e81d553a43906f56db04a2f3a2.stex" ]
+source_file="res://GFX/Particles/particle_darkBrown.png"
+dest_files=[ "res://.import/particle_darkBrown.png-e9c683c5c01c26fa8e0eb8826d6b59d7.stex" ]
 
 [params]
 

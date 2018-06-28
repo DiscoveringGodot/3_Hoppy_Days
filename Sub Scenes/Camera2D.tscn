@@ -1,15 +1,17 @@
 [gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scripts/GUI.gd" type="Script" id=1]
-[ext_resource path="res://gfx/Background/bg_layer1.png" type="Texture" id=2]
-[ext_resource path="res://gfx/Background/bg_layer2.png" type="Texture" id=3]
-[ext_resource path="res://gfx/Background/bg_layer3.png" type="Texture" id=4]
-[ext_resource path="res://gfx/Background/bg_layer4.png" type="Texture" id=5]
-[ext_resource path="res://gfx/HUD/bannerHanging.png" type="Texture" id=6]
+[ext_resource path="res://GFX/Background/bg_layer1.png" type="Texture" id=2]
+[ext_resource path="res://GFX/Background/bg_layer2.png" type="Texture" id=3]
+[ext_resource path="res://GFX/Background/bg_layer3.png" type="Texture" id=4]
+[ext_resource path="res://GFX/Background/bg_layer4.png" type="Texture" id=5]
+[ext_resource path="res://GFX/HUD/bannerHanging.png" type="Texture" id=6]
 [ext_resource path="res://Fonts/candles_.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://gfx/HUD/lifes.png" type="Texture" id=8]
-[ext_resource path="res://gfx/HUD/coin_bronze.png" type="Texture" id=9]
+[ext_resource path="res://GFX/HUD/lifes.png" type="Texture" id=8]
+[ext_resource path="res://GFX/HUD/coin_bronze.png" type="Texture" id=9]
 [ext_resource path="res://SFX/happy.ogg" type="AudioStream" id=10]
+
+
 
 [sub_resource type="DynamicFont" id=1]
 
