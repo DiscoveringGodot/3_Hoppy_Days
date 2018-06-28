@@ -1,8 +1,8 @@
 using Godot;
 using System;
 
-public class Player : KinematicBody2D
-{
+public class Player : KinematicBody2D {
+    
     // outbound signals
     [Signal] delegate void LifeUp();
     [Signal] delegate void LifeDown();
@@ -23,8 +23,7 @@ public class Player : KinematicBody2D
     int coinTarget = 20;
     int lives = 3;
 
-    public override void _PhysicsProcess(float delta)
-    {
+    public override void _PhysicsProcess(float delta) {
         UpdateMotion(delta);
         bool fallOffWorld = GetPosition().y > LEVEL_HEIGHT;
         if (fallOffWorld) {
@@ -32,16 +31,14 @@ public class Player : KinematicBody2D
         }
     }
 
-    private void UpdateMotion(float delta)
-    {
+    private void UpdateMotion(float delta) {
         Fall(delta);  // fall to floor first, frame-rate independent
         Run();
         Jump();
         MoveAndSlide(motion, FLOOR_DIRECTION);
     }
 
-    public void RequestDamage()
-	{
+    public void RequestDamage() {
 	    motion.y = JUMP_SPEED;
         EmitSignal(nameof(LifeDown));  // :-)
         (GetNode("Pain_sfx") as AudioStreamPlayer).Play();
@@ -52,13 +49,11 @@ public class Player : KinematicBody2D
         }
 	}
 
-    private void EndGame()
-    {
+    private void EndGame() {
         GetTree().ChangeScene("res://Levels/EndGame.tscn");
     }
 
-    public void OnCoinPickup()
-    {
+    public void OnCoinPickup() {
         coinCount += 1;
         (GetNode("Coin_sfx") as AudioStreamPlayer).Play();
         EmitSignal(nameof(CoinUp));  // note is refactorable with nameof
@@ -67,15 +62,13 @@ public class Player : KinematicBody2D
         }
     }
 
-    private void GrantExtraLife()
-    {
+    private void GrantExtraLife() {
         lives += 1; // Why not just a signal?
         coinCount = 0;
         EmitSignal(nameof(LifeUp));
     }
 
-    private void Fall(float delta)
-    {
+    private void Fall(float delta) {
         if (IsOnFloor()) {
             motion.y = 0f;
         }
@@ -84,8 +77,7 @@ public class Player : KinematicBody2D
         }
     }
 
-    private void Jump()
-    {
+    private void Jump() {
         if (IsOnFloor() && Input.IsActionPressed("ui_up")) {
             GD.Print("Jump");
             motion.y = JUMP_SPEED;
@@ -93,8 +85,7 @@ public class Player : KinematicBody2D
         }
     }
 
-    private void Run()
-    {
+    private void Run() {
         if (Input.IsActionPressed("ui_right") && !Input.IsActionPressed("ui_left")) {
             motion.x = SPEED;
         }
