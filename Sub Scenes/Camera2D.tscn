@@ -319,7 +319,7 @@ _sections_unfolded = [ "Anchor", "Grow Direction", "Rect", "Size Flags" ]
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GUI" index="1"]
 
 stream = ExtResource( 10 )
-volume_db = -29.48
+volume_db = 0.0
 pitch_scale = 1.0
 autoplay = true
 mix_target = 0

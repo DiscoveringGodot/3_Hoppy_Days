@@ -7,5 +7,3 @@ func _process(delta):
 	for body in bodies:
 		if body.name == "Player":
 			emit_signal("hurt") # really string-referenced?
-		else:
-			return
