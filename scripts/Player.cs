@@ -3,30 +3,20 @@ using System;
 
 public class Player : KinematicBody2D
 {
-    // constants
-    float SPEED = 750f;
-    float GRAVITY = 3600;
-    float JUMP_SPEED = -1750f;
-    float JUMP_BOOST = 2f;
+    // configuration parameters
+    const float SPEED = 750f;
+    const float GRAVITY = 3600;
+    const float JUMP_SPEED = -1750f;
+    const float JUMP_BOOST = 2f;
+    const int LEVEL_HEIGHT = 2500;  // in pixels
+    const float FRICTION = 0.2f;
     Vector2 FLOOR_DIRECTION = new Vector2(0, -1);
-    int LEVEL_HEIGHT = 2500;  // in pixels
-    float FRICTION = 0.2f;
-
-    // configuration parameters, consider SO
      
     // private instance variables for state
     Vector2 motion = new Vector2();
     int coinCount = 0;
     int coinTarget = 20;
     int lives = 3;
-
-    // cached references for readability
-
-    // messages, then public methods, then private methods...
-    public override void _Ready()
-    {
-
-    }
 
     public override void _PhysicsProcess(float delta)
     {
@@ -40,7 +30,7 @@ public class Player : KinematicBody2D
 	{
 	    motion.y = JUMP_SPEED;
         EmitSignal(nameof(LifeDown));  // :-)
-        //$Pain_sfx.play()
+        (GetNode("Pain_sfx") as AudioStreamPlayer).Play();
 	    lives -= 1;
 
         // 	if lives < 0:
@@ -50,7 +40,7 @@ public class Player : KinematicBody2D
     public void OnCoinPickup()
     {
         coinCount += 1;
-        // $Coin_sfx.play()
+        (GetNode("Coin_sfx") as AudioStreamPlayer).Play();
         EmitSignal(nameof(CoinUp));  // note is refactorable with nameof
         if (coinCount >= coinTarget)
         {
@@ -83,7 +73,7 @@ public class Player : KinematicBody2D
         {
             GD.Print("Jump");
             motion.y = JUMP_SPEED;
-            // TODO play SFX 
+            (GetNode("Jump_sfx") as AudioStreamPlayer).Play();
         }
     }
 

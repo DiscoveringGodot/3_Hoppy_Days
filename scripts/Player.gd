@@ -54,7 +54,7 @@ func run():
 func jump():
 	if is_on_floor() && Input.is_action_pressed("ui_up"):
 		motion.y = JUMP_SPEED
-		$Jump_sfx.play()
+		$Jump_.play()
 
 
 func update_animation(motion):
@@ -74,7 +74,7 @@ func _on_coin_pickup(body):
 func take_damage(body_id, body, body_shape, area_shape):
 	motion.y = JUMP_SPEED
 	emit_signal("life_down")
-	$Pain_sfx.play()
+	$Pain_sfx.play()  # TODO find way of wiring in editor
 	lives -= 1
 	
 	if lives < 0:
