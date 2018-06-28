@@ -23,7 +23,7 @@ public class Player : KinematicBody2D
     // messages, then public methods, then private methods...
     public override void _Ready()
     {
-        
+
     }
 
     public override void _PhysicsProcess(float delta)
@@ -88,7 +88,7 @@ public class Player : KinematicBody2D
         }
     }
 	
-	private void TakeDamage(int bodyID, Godot.Object body, int bodyShape, int areaShape)
+	private void TakeDamage()
 	{
 	    GD.Print("Spikes impact ouchies");
 	}
