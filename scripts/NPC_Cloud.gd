@@ -1,8 +1,6 @@
 extends Node2D
 
 var timeout = false
-var lightning = preload(global.Lightning)
-
 
 func _ready():
 	$Sprite/AnimationPlayer.current_animation = "float"
@@ -16,7 +14,7 @@ func _physics_process(delta):
 
 func fire():
 	if not timeout:
-		$Sprite/RayCast2D.add_child(lightning.instance(), true)
+		$Sprite/RayCast2D.add_child(load(global.LIGHTNING).instance(), true)
 		$Timer.start()
 		timeout = true
 

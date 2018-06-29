@@ -45,4 +45,4 @@ func game_over():
 	get_tree().change_scene(global.EndGame)
 
 func update_gui():
-	get_node(global.GUI).update_gui(coins, lives)	
+	gui.update_gui(coins, lives)	
