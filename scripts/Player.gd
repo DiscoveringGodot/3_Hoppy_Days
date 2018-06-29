@@ -9,13 +9,11 @@ const LEVEL_HEIGHT = 2500
 const FRICTION = 0.2
 
 var motion = Vector2()
-var gamestate = ""
 
-export(NodePath) var GameStateRef
-
+onready var gamestate = get_node(global.GameState)
 
 func _ready():
-	gamestate = get_node(str(GameStateRef))
+	global.Player = self.get_path()
 
 func _physics_process(delta):
 	update_motion(delta)
@@ -62,7 +60,7 @@ func update_animation(motion):
 
 
 func OnCoinPickup():
-	Node.get_node(gamestate).coin_up()
+	gamestate.coin_up()
 	
 
 func take_damage(body_id, body, body_shape, area_shape):
