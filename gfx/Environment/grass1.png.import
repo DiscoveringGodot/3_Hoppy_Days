@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grass1.png-9ffe4f04b626b91b616a27911b9c86e5.stex"
+path="res://.import/grass1.png-a8a42af1056442076fdd5241ab0648e7.stex"
 
 [deps]
 
-source_file="res://GFX/Environment/grass1.png"
-dest_files=[ "res://.import/grass1.png-9ffe4f04b626b91b616a27911b9c86e5.stex" ]
+source_file="res://gfx/Environment/grass1.png"
+dest_files=[ "res://.import/grass1.png-a8a42af1056442076fdd5241ab0648e7.stex" ]
 
 [params]
 

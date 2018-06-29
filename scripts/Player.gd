@@ -9,15 +9,13 @@ const LEVEL_HEIGHT = 2500
 const FRICTION = 0.2
 
 var motion = Vector2()
-var coin_count = 0 # TODO here XOR in the UI
-var coin_target = 20   # How many coins for an extra life?
-var lives = 3
+var gamestate = ""
 
-signal life_up
-signal life_down
+export(NodePath) var GameStateRef
 
-signal coin_up
-const var COIN_UP_NAME = "coin_up"
+
+func _ready():
+	gamestate = get_node(str(GameStateRef))
 
 func _physics_process(delta):
 	update_motion(delta)
@@ -55,31 +53,21 @@ func run():
 func jump():
 	if is_on_floor() && Input.is_action_pressed("ui_up"):
 		motion.y = JUMP_SPEED
-		$Jump_.play()
+		$Jump_sfx.play()
+		
 
 
 func update_animation(motion):
 	$Animation.update(motion) 
 
 
-func _on_coin_pickup(body):
-	coin_count += 1
-	$Coin_sfx.play()
-	emit_signal(COIN_UP_NAME)
-	if coin_count >= coin_target:
-		lives +=1
-		coin_count = 0
-		emit_signal("life_up")
-
+func OnCoinPickup():
+	Node.get_node(gamestate).coin_up()
+	
 
 func take_damage(body_id, body, body_shape, area_shape):
 	motion.y = JUMP_SPEED
-	emit_signal("life_down")
-	$Pain_sfx.play()  # TODO find way of wiring in editor
-	lives -= 1
-	
-	if lives < 0: # TODO isn't this off by one?
-		_end_game()
+	gamestate.life_down()
 
 
 func _end_game():

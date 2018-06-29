@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/carrot_gold.png-d5aaced91f8aabc32a51bbb024216ac4.stex"
+path="res://.import/carrot_gold.png-c66702f79d307797e2c00446d9f80093.stex"
 
 [deps]
 
-source_file="res://GFX/Items/carrot_gold.png"
-dest_files=[ "res://.import/carrot_gold.png-d5aaced91f8aabc32a51bbb024216ac4.stex" ]
+source_file="res://gfx/Items/carrot_gold.png"
+dest_files=[ "res://.import/carrot_gold.png-c66702f79d307797e2c00446d9f80093.stex" ]
 
 [params]
 

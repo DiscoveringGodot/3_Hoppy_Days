@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cactus.png-9bf91e8761d559508740e9e5e9292671.stex"
+path="res://.import/cactus.png-311855b3993cfad562c429ac17b76cbc.stex"
 
 [deps]
 
-source_file="res://GFX/Environment/cactus.png"
-dest_files=[ "res://.import/cactus.png-9bf91e8761d559508740e9e5e9292671.stex" ]
+source_file="res://gfx/Environment/cactus.png"
+dest_files=[ "res://.import/cactus.png-311855b3993cfad562c429ac17b76cbc.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/powerup_wings.png-77fefd7b81c6e75958ebd2df476c4b7c.stex"
+path="res://.import/powerup_wings.png-5b1587a2cea0887bc13f6eff4f17dad2.stex"
 
 [deps]
 
-source_file="res://GFX/Items/powerup_wings.png"
-dest_files=[ "res://.import/powerup_wings.png-77fefd7b81c6e75958ebd2df476c4b7c.stex" ]
+source_file="res://gfx/Items/powerup_wings.png"
+dest_files=[ "res://.import/powerup_wings.png-5b1587a2cea0887bc13f6eff4f17dad2.stex" ]
 
 [params]
 

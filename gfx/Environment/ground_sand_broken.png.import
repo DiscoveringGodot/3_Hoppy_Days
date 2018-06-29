@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ground_sand_broken.png-40387c6becfc08d8e7a4e4cc8ad61350.stex"
+path="res://.import/ground_sand_broken.png-7f792b238e83603d137a086f75a52e9e.stex"
 
 [deps]
 
-source_file="res://GFX/Environment/ground_sand_broken.png"
-dest_files=[ "res://.import/ground_sand_broken.png-40387c6becfc08d8e7a4e4cc8ad61350.stex" ]
+source_file="res://gfx/Environment/ground_sand_broken.png"
+dest_files=[ "res://.import/ground_sand_broken.png-7f792b238e83603d137a086f75a52e9e.stex" ]
 
 [params]
 

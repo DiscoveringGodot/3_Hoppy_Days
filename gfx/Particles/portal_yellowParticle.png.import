@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/portal_yellowParticle.png-be677bbd73e1377d329ce790d7ee999c.stex"
+path="res://.import/portal_yellowParticle.png-266408db339a462459f2f4b2d8111a8e.stex"
 
 [deps]
 
-source_file="res://GFX/Particles/portal_yellowParticle.png"
-dest_files=[ "res://.import/portal_yellowParticle.png-be677bbd73e1377d329ce790d7ee999c.stex" ]
+source_file="res://gfx/Particles/portal_yellowParticle.png"
+dest_files=[ "res://.import/portal_yellowParticle.png-266408db339a462459f2f4b2d8111a8e.stex" ]
 
 [params]
 

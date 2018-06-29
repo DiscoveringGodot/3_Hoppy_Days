@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lighting_yellow.png-527280fe4efc3061f9f1bcc43d11bdb3.stex"
+path="res://.import/lighting_yellow.png-e54c74c0339adc1544b5c26855122f51.stex"
 
 [deps]
 
-source_file="res://GFX/Particles/lighting_yellow.png"
-dest_files=[ "res://.import/lighting_yellow.png-527280fe4efc3061f9f1bcc43d11bdb3.stex" ]
+source_file="res://gfx/Particles/lighting_yellow.png"
+dest_files=[ "res://.import/lighting_yellow.png-e54c74c0339adc1544b5c26855122f51.stex" ]
 
 [params]
 

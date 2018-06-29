@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wingMan2.png-747064d9205e8079bbc8f9981c2b5b97.stex"
+path="res://.import/wingMan2.png-fc7bdd87754451dbe9548fea31a55b0b.stex"
 
 [deps]
 
-source_file="res://GFX/Enemies/wingMan2.png"
-dest_files=[ "res://.import/wingMan2.png-747064d9205e8079bbc8f9981c2b5b97.stex" ]
+source_file="res://gfx/Enemies/wingMan2.png"
+dest_files=[ "res://.import/wingMan2.png-fc7bdd87754451dbe9548fea31a55b0b.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wing_left.png-c120db02fd2f2dcb26a34ba48b0910c9.stex"
+path="res://.import/wing_left.png-1a126f4413dbae2f33aafe126a8cd1ce.stex"
 
 [deps]
 
-source_file="res://GFX/Items/wing_left.png"
-dest_files=[ "res://.import/wing_left.png-c120db02fd2f2dcb26a34ba48b0910c9.stex" ]
+source_file="res://gfx/Items/wing_left.png"
+dest_files=[ "res://.import/wing_left.png-1a126f4413dbae2f33aafe126a8cd1ce.stex" ]
 
 [params]
 

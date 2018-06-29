@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ground_snow_small_broken.png-88b9ba30741ff09dd5cfb440aee687e7.stex"
+path="res://.import/ground_snow_small_broken.png-4409426f498ea175d49df1fa872424c9.stex"
 
 [deps]
 
-source_file="res://GFX/Environment/ground_snow_small_broken.png"
-dest_files=[ "res://.import/ground_snow_small_broken.png-88b9ba30741ff09dd5cfb440aee687e7.stex" ]
+source_file="res://gfx/Environment/ground_snow_small_broken.png"
+dest_files=[ "res://.import/ground_snow_small_broken.png-4409426f498ea175d49df1fa872424c9.stex" ]
 
 [params]
 

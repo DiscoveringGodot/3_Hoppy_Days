@@ -6,8 +6,6 @@
 [ext_resource path="res://GFX/Items/bronze_3.png" type="Texture" id=4]
 [ext_resource path="res://GFX/Items/bronze_4.png" type="Texture" id=5]
 
-
-
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
@@ -94,6 +92,7 @@ __meta__ = {
 
 frames = SubResource( 1 )
 animation = "default"
+frame = 2
 playing = true
 _sections_unfolded = [ "Transform" ]
 
@@ -112,5 +111,7 @@ playback_speed = 1.0
 anims/die = SubResource( 3 )
 anims/idle = SubResource( 4 )
 blend_times = [  ]
+
+[connection signal="body_entered" from="." to="." method="_on_Coin_body_entered"]
 
 

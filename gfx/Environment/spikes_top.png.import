@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spikes_top.png-d5e9e3f055104596f5aea77a4a0e1d39.stex"
+path="res://.import/spikes_top.png-f7dae387700d30ddc9332d154a246030.stex"
 
 [deps]
 
-source_file="res://GFX/Environment/spikes_top.png"
-dest_files=[ "res://.import/spikes_top.png-d5e9e3f055104596f5aea77a4a0e1d39.stex" ]
+source_file="res://gfx/Environment/spikes_top.png"
+dest_files=[ "res://.import/spikes_top.png-f7dae387700d30ddc9332d154a246030.stex" ]
 
 [params]
 

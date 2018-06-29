@@ -11,8 +11,6 @@
 [ext_resource path="res://GFX/HUD/coin_bronze.png" type="Texture" id=9]
 [ext_resource path="res://SFX/happy.ogg" type="AudioStream" id=10]
 
-
-
 [sub_resource type="DynamicFont" id=1]
 
 size = 30
@@ -237,7 +235,7 @@ visible_characters = -1
 percent_visible = 1.0
 meta_underlined = true
 tab_size = 4
-text = "3"
+text = "99"
 scroll_active = true
 scroll_following = false
 selection_enabled = false
@@ -268,7 +266,7 @@ visible_characters = -1
 percent_visible = 1.0
 meta_underlined = true
 tab_size = 4
-text = "00"
+text = "99"
 scroll_active = true
 scroll_following = false
 selection_enabled = false

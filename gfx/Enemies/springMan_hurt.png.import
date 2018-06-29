@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/springMan_hurt.png-a1f145b83d935b315d1e14fb86b2bdb6.stex"
+path="res://.import/springMan_hurt.png-88164e6cd09ef3b8785b822ebb806b11.stex"
 
 [deps]
 
-source_file="res://GFX/Enemies/springMan_hurt.png"
-dest_files=[ "res://.import/springMan_hurt.png-a1f145b83d935b315d1e14fb86b2bdb6.stex" ]
+source_file="res://gfx/Enemies/springMan_hurt.png"
+dest_files=[ "res://.import/springMan_hurt.png-88164e6cd09ef3b8785b822ebb806b11.stex" ]
 
 [params]
 
