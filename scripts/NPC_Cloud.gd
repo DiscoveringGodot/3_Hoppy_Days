@@ -1,7 +1,7 @@
 extends Node2D
 
 var timeout = false
-var lightning = preload("res://Scenes/Lightning.tscn")
+var lightning = preload(global.Lightning)
 
 
 func _ready():

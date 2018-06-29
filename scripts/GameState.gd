@@ -7,13 +7,13 @@ var endgame = global.EndGame
 
 export var coin_target = 20   # How many coins for an extra life?
 export var starting_lives = 3
+
 onready var gui = get_node(global.GUI)
 
 func _ready():
+	global.GameState = self.get_path()
 	lives = starting_lives
 	update_gui()
-	global.GameState = self.get_path()
-	print (global.GameState)
 	
 func coin_up():
 	coins += 1
@@ -32,17 +32,17 @@ func life_down():
 	gui.animate("LifeDown")
 	update_gui()
 	if lives < 0: # TODO isn't this off by one? # No - you can have no lives left and play - y
-		_end_game()
+		game_over()
 
 
 func life_up():
 	lives +=1
 	coin_count = 0
 	gui.animate("LifePulse")
-	update_gui(coins, lives)
+	update_gui()
 
 func game_over():
-	change_scene(endgame)
+	get_tree().change_scene(global.EndGame)
 
 func update_gui():
-	gui.update_gui(coins, lives)	
+	get_node(global.GUI).update_gui(coins, lives)	

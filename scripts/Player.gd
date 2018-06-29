@@ -10,8 +10,6 @@ const FRICTION = 0.2
 
 var motion = Vector2()
 
-onready var gamestate = get_node(global.GameState)
-
 func _ready():
 	global.Player = self.get_path()
 
@@ -54,23 +52,18 @@ func jump():
 		$Jump_sfx.play()
 		
 
-
 func update_animation(motion):
 	$Animation.update(motion) 
 
 
-func OnCoinPickup():
-	gamestate.coin_up()
-	
-
-func take_damage(body_id, body, body_shape, area_shape):
+func take_damage():
+	get_node(global.GameState).life_down()
 	motion.y = JUMP_SPEED
 	$Pain_sfx.play()
-	gamestate.life_down()
 
 
 func _end_game():
-	get_tree().change_scene("res://Levels/EndGame.tscn")
+	get_node(global.GameState).game_over()
 
 
 func _on_JumpPad_body_shape_entered(body_id, body, body_shape, area_shape):

@@ -247,8 +247,6 @@ position = Vector2( 4423.5, 807.827 )
 
 position = Vector2( 7331.85, -95.6841 )
 
-[connection signal="body_shape_entered" from="Spikes/SpikesTop" to="Player" method="TakeDamage"]
-
 [connection signal="body_shape_entered" from="JumpPads/JumpPad" to="Player" method="_on_JumpPad_body_shape_entered"]
 
 [connection signal="body_shape_entered" from="JumpPads/JumpPad2" to="Player" method="_on_JumpPad_body_shape_entered"]
