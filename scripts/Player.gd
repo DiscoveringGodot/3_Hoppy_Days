@@ -67,6 +67,7 @@ func OnCoinPickup():
 
 func take_damage(body_id, body, body_shape, area_shape):
 	motion.y = JUMP_SPEED
+	$Pain_sfx.play()
 	gamestate.life_down()
 
 

@@ -24,7 +24,6 @@ _sections_unfolded = [ "Font", "Settings" ]
 [node name="EndGame" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
-starting_level = NodePath("")
 
 [node name="TextureRect" type="TextureRect" parent="." index="0"]
 
