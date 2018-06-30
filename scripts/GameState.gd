@@ -2,7 +2,6 @@ extends Node2D
 
 var coins = 0
 var lives = 0
-var endgame = global.EndGame
 
 export var coin_target = 20  # How many coins for an extra life?
 export var starting_lives = 3
