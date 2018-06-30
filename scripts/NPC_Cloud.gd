@@ -7,7 +7,6 @@ func _ready():
 
 
 func _physics_process(delta):
-	var body = $Sprite/RayCast2D.get_collider()
 	if $Sprite/RayCast2D.is_colliding():
 		fire()
 

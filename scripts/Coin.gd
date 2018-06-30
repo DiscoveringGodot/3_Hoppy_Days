@@ -7,6 +7,7 @@ var taken = false # ensure the coin doesn't increment while despawning
 func _ready():
 	$AnimationPlayer.play("idle")
 
+	
 func _on_Coin_body_entered(body):
 	var bodies = get_overlapping_bodies()
 	if body in bodies && not taken:

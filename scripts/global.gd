@@ -1,4 +1,5 @@
 extends Node
+# Simple data class to keep all "magic strings" in one place
 
 # Scene paths (must be updated MANUALLY)
 const EndGame = "res://Scenes/Levels/EndGame.tscn"
@@ -10,6 +11,7 @@ const LIGHTNING = "res://Scenes/Lightning.tscn"
 var GameState = ""
 var Player =""
 var GUI = ""
+
 
 # Asset references (must be updated MANUALLY)
 var coin_sfx = "res://SFX/coin_SFX.wav"

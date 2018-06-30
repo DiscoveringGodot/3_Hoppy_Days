@@ -1,7 +1,9 @@
 extends Area2D
+
 const SPEED = -200
+
 var xpos = Vector2()
-signal hurt
+
 
 func _ready():
 	xpos = global_position.x
