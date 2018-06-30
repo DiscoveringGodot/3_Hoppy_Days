@@ -10,7 +10,8 @@
 [ext_resource path="res://Scripts/Animation.gd" type="Script" id=8]
 [ext_resource path="res://SFX/coin_SFX.wav" type="AudioStream" id=9]
 [ext_resource path="res://SFX/jump1.ogg" type="AudioStream" id=10]
-[ext_resource path="res://SFX/lose5.ogg" type="AudioStream" id=11]
+[ext_resource path="res://SFX/pain.ogg" type="AudioStream" id=11]
+
 
 [sub_resource type="SpriteFrames" id=1]
 

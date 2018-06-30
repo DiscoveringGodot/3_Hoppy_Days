@@ -1,7 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scripts/SpikesTop.gd" type="Script" id=1]
+[ext_resource path="res://scripts/DamageDetection.gd" type="Script" id=1]
 [ext_resource path="res://GFX/Environment/spikes_top.png" type="Texture" id=2]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -35,5 +36,7 @@ _sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Visibility"
 
 visible = false
 shape = SubResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="body_entered"]
 
 

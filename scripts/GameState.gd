@@ -19,6 +19,7 @@ func coin_up():
 	coins += 1
 	coin_count += 1
 	#$Coin_sfx.play()
+	gui.play_sound(global.coin_sfx)
 	gui.animate("CoinPulse")
 	update_gui()
 	if coin_count >= coin_target:

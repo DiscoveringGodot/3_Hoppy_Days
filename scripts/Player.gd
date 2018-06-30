@@ -49,7 +49,7 @@ func run():
 func jump():
 	if is_on_floor() && Input.is_action_pressed("ui_up"):
 		motion.y = JUMP_SPEED
-		$Jump_sfx.play()
+		get_node(global.GUI).play_sound(global.jump_sfx)
 		
 
 func update_animation(motion):
@@ -59,7 +59,6 @@ func update_animation(motion):
 func take_damage():
 	get_node(global.GameState).life_down()
 	motion.y = JUMP_SPEED
-	$Pain_sfx.play()
 
 
 func _end_game():
@@ -67,8 +66,8 @@ func _end_game():
 
 
 func _on_JumpPad_body_shape_entered(body_id, body, body_shape, area_shape):
-	if body == self:
-		motion.y = JUMP_SPEED * JUMP_BOOST
+	#if body == self:
+	motion.y = JUMP_SPEED * JUMP_BOOST
 
 
 func _on_Portal_body_shape_entered(body_id, body, body_shape, area_shape):

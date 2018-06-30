@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://scripts/GUI.gd" type="Script" id=1]
 [ext_resource path="res://GFX/Background/bg_layer1.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://GFX/HUD/lifes.png" type="Texture" id=8]
 [ext_resource path="res://GFX/HUD/coin_bronze.png" type="Texture" id=9]
 [ext_resource path="res://SFX/happy.ogg" type="AudioStream" id=10]
+[ext_resource path="res://SFX/coin_SFX.wav" type="AudioStream" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -336,5 +337,14 @@ anims/CoinPulse = SubResource( 2 )
 anims/LifeDown = SubResource( 3 )
 anims/LifePulse = SubResource( 4 )
 blend_times = [  ]
+
+[node name="sfx_player" type="AudioStreamPlayer" parent="." index="2"]
+
+stream = ExtResource( 11 )
+volume_db = -10.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
 
 

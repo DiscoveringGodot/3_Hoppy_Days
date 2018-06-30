@@ -10,3 +10,7 @@ func update_gui(coins, lives):
 func animate(icon):
 	$GUI/AnimationPlayer.play(icon)
 
+func play_sound(sfx):
+	$sfx_player.stream = load(sfx)
+	$sfx_player.play() 
+	
