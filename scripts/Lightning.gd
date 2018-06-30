@@ -10,16 +10,22 @@ func _ready():
 	
 
 func _physics_process(delta):
-	global_position.y -= SPEED * delta
-	global_position.x = xpos
+	move_down_screen(delta)
 	manage_collision()
+
 	if not $VisibilityNotifier2D.is_on_screen():
 		queue_free()
+
+
+func move_down_screen(delta):
+	global_position.y -= SPEED * delta
+	global_position.x = xpos
 
 
 func manage_collision():
 	var bodies = get_overlapping_bodies()
 	for body in bodies:
-		if body.name == "Player":  # Remove magic string
+		if body.name == "Player":
 			get_node(global.Player).take_damage()
 		queue_free()
+

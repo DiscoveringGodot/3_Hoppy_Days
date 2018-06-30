@@ -13,4 +13,3 @@ func animate(icon):
 func play_sound(sfx):
 	$sfx_player.stream = load(sfx)
 	$sfx_player.play() 
-	

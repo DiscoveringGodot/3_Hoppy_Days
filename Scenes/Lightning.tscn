@@ -4,8 +4,6 @@
 [ext_resource path="res://GFX/Particles/lighting_yellow.png" type="Texture" id=2]
 [ext_resource path="res://GFX/Particles/lighting_blue.png" type="Texture" id=3]
 
-
-
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
@@ -49,5 +47,7 @@ shape = SubResource( 2 )
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="." index="2"]
 
 rect = Rect2( -10, -10, 20, 20 )
+
+[connection signal="body_shape_entered" from="." to="." method="_on_Lightning_body_shape_entered"]
 
 

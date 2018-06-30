@@ -9,14 +9,14 @@ const LEVEL_HEIGHT = 2500
 const FRICTION = 0.2
 
 var motion = Vector2()
-
+ 
 func _ready():
 	global.Player = self.get_path()
 
 func _physics_process(delta):
 	update_motion(delta)
 	if get_position().y > LEVEL_HEIGHT:
-		_end_game()
+		get_node(global.GameState).game_over()
 
 
 func _process(delta):
@@ -61,14 +61,9 @@ func take_damage():
 	motion.y = JUMP_SPEED
 
 
-func _end_game():
-	get_node(global.GameState).game_over()
-
-
 func _on_JumpPad_body_shape_entered(body_id, body, body_shape, area_shape):
-	#if body == self:
 	motion.y = JUMP_SPEED * JUMP_BOOST
 
 
 func _on_Portal_body_shape_entered(body_id, body, body_shape, area_shape):
-	_end_game() #create a victory screen or level 2
+	get_node(global.GameState).game_over()
