@@ -9,7 +9,7 @@
 [ext_resource path="res://Fonts/candles_.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://GFX/HUD/lifes.png" type="Texture" id=8]
 [ext_resource path="res://GFX/HUD/coin_bronze.png" type="Texture" id=9]
-[ext_resource path="res://SFX/happy.ogg" type="AudioStream" id=10]
+[ext_resource path="res://SFX/Chiptune_Adventures_1.ogg" type="AudioStream" id=10]
 [ext_resource path="res://SFX/coin_SFX.wav" type="AudioStream" id=11]
 
 [sub_resource type="DynamicFont" id=1]
