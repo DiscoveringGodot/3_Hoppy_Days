@@ -10,7 +10,7 @@ config_version=3
 
 [application]
 
-config/name="2_HD"
+config/name="2_Hoppy_Days"
 config/icon="res://icon.png"
 
 [rendering]

@@ -24,3 +24,13 @@ Here are the lectures of the course for this section...
 
 #### After watching (learning outcomes)…
 Plan out the central mechanics and feeling of our 2D platformer game!
+
+
+### 2 Downloading the Assets for Hoppy Days
+#### In this video (objectives)…
+1 Download and Import the game assets
+2 Create a Scripts folder
+3 Tour the file structure for Hoppy Days
+
+#### After watching (learning outcomes)…
+Understand how to plan the file system for a new project
