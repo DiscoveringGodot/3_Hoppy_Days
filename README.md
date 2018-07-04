@@ -36,7 +36,6 @@ Plan out the central mechanics and feeling of our 2D platformer game!
 Understand how to plan the file system for a new project
 
 
-
 ### 3 PhysicsBody2D - Making a Character
 #### In this video (objectives)…
 1 Create a ``KinematicBody2D`` character
@@ -45,3 +44,13 @@ Understand how to plan the file system for a new project
 
 #### After watching (learning outcomes)…
 Know the different kinds of ``PlayerBody2D`` nodes, Understand when to use ``move_and_collide()`` and ``move_and_slide()`` and how to use ``and`` and ``not`` in if statements
+
+### 4 -AnimatedSprite - Making Bunny Run
+#### In this video (objectives)…
+1 Create an `AnimatedSprite`` node
+2 Set up animations
+3 Call animations based on which way the player is going
+4 Flip the sprite to match the direction to player is heading in
+
+#### After watching (learning outcomes)…
+Learn about ``AnimatedSprite`` nodes, how to set up and call animations in them and how to flip the sprite in the script
