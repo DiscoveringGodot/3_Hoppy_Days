@@ -45,7 +45,7 @@ Understand how to plan the file system for a new project
 #### After watching (learning outcomes)…
 Know the different kinds of ``PlayerBody2D`` nodes, Understand when to use ``move_and_collide()`` and ``move_and_slide()`` and how to use ``and`` and ``not`` in if statements
 
-### 4 -AnimatedSprite - Making Bunny Run
+### 4 AnimatedSprite - Making Bunny Run
 #### In this video (objectives)…
 1 Create an `AnimatedSprite`` node
 2 Set up animations
