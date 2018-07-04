@@ -34,3 +34,14 @@ Plan out the central mechanics and feeling of our 2D platformer game!
 
 #### After watching (learning outcomes)…
 Understand how to plan the file system for a new project
+
+
+
+### 3 PhysicsBody2D - Making a Character
+#### In this video (objectives)…
+1 Create a ``KinematicBody2D`` character
+2 Define custom player inputs
+3 Move the character left and right using player inputs
+
+#### After watching (learning outcomes)…
+Know the different kinds of ``PlayerBody2D`` nodes, Understand when to use ``move_and_collide()`` and ``move_and_slide()`` and how to use ``and`` and ``not`` in if statements
