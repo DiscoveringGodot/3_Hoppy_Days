@@ -45,7 +45,7 @@ Understand how to plan the file system for a new project
 #### After watching (learning outcomes)…
 Know the different kinds of ``PlayerBody2D`` nodes, Understand when to use ``move_and_collide()`` and ``move_and_slide()`` and how to use ``and`` and ``not`` in if statements
 
-### 4 -AnimatedSprite - Making Bunny Run
+### 4 AnimatedSprite - Making Bunny Run
 #### In this video (objectives)…
 1 Create an `AnimatedSprite`` node
 2 Set up animations
@@ -54,3 +54,12 @@ Know the different kinds of ``PlayerBody2D`` nodes, Understand when to use ``mov
 
 #### After watching (learning outcomes)…
 Learn about ``AnimatedSprite`` nodes, how to set up and call animations in them and how to flip the sprite in the script
+
+### 5 Jumping
+#### In this video (objectives)…
+1 Instance a scene
+2 Apply gravity to the player
+3 Allow the player to jump
+
+#### After watching (learning outcomes)…
+Learn how to instance a scene, change the main scene of the game, make the player fall and let the player jump!

@@ -1,0 +1,87 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://GFX/Environment/ground_grass.png" type="Texture" id=2]
+
+[node name="Level1" type="Node2D" index="0"]
+
+[node name="Player" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 564.997, 494.65 )
+
+[node name="Platform" type="StaticBody2D" parent="." index="1"]
+
+editor/display_folded = true
+position = Vector2( 489.635, 964.297 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Platform" index="0"]
+
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform" index="1"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -190, -30, -190, -40, -180, -50, 170, -50, 190, -40, 190, -10, 160, 40, -160, 50, -190, -10 )
+
+[node name="Platform2" type="StaticBody2D" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 1378.17, 498.316 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Platform2" index="0"]
+
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform2" index="1"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -190, -30, -190, -40, -180, -50, 170, -50, 190, -40, 190, -10, 160, 40, -160, 50, -190, -10 )
+
+[node name="Platform3" type="StaticBody2D" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 977.328, 677.025 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Platform3" index="0"]
+
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platform3" index="1"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -190, -30, -190, -40, -180, -50, 170, -50, 190, -40, 190, -10, 160, 40, -160, 50, -190, -10 )
+
+
