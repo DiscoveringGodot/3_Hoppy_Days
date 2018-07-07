@@ -13,6 +13,13 @@ func _physics_process(delta):
 	jump()
 	move_and_slide(motion, UP)
 
+func _process(delta):
+	update_animation(motion)
+
+
+func update_animation(motion):
+	$AnimatedSprite.update(motion)
+
 
 func fall(delta):
 	if is_on_floor():
@@ -23,16 +30,10 @@ func fall(delta):
 func run():
 	if Input.is_action_pressed("ui_right") and not Input.is_action_pressed("ui_left"):
 		motion.x = SPEED
-		$AnimatedSprite.play("run")
-		$AnimatedSprite.flip_h = false
 	elif Input.is_action_pressed("ui_left") and not Input.is_action_pressed("ui_right"):
 		motion.x = -SPEED
-		$AnimatedSprite.play("run")
-		$AnimatedSprite.flip_h = true
 	else:
 		motion.x = 0
-		$AnimatedSprite.play("idle")
-		$AnimatedSprite.flip_h = false
 
 
 func jump():

@@ -63,3 +63,11 @@ Learn about ``AnimatedSprite`` nodes, how to set up and call animations in them 
 
 #### After watching (learning outcomes)…
 Learn how to instance a scene, change the main scene of the game, make the player fall and let the player jump!
+
+### 6 Cleaning Up The Player Code
+#### In this video (objectives)…
+1 Move the animation logic to the `AnimatedSprite` node
+2 Explore the concept of Elegant Code
+
+#### After watching (learning outcomes)…
+Understand the principle of one script being in charge of one thing
