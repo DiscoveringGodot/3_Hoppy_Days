@@ -43,10 +43,10 @@ height = 32.0
 
 input_pickable = false
 collision_layer = 1
-collision_mask = 1
+collision_mask = 2
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Collision", "Transform" ]
 __meta__ = {
 "_edit_group_": true
 }
@@ -55,6 +55,7 @@ __meta__ = {
 
 frames = SubResource( 1 )
 animation = "idle"
+frame = 1
 playing = true
 script = ExtResource( 8 )
 _sections_unfolded = [ "Transform" ]
