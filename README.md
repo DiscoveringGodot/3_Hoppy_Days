@@ -89,8 +89,19 @@ Learn the awesome power of Tilemaps
 ### 8 is_on_ceiling()
 #### In this video (objectives)…
 
-1 Stop Bunny from floating along the ceiling
+Stop Bunny from floating along the ceiling
 
 #### After watching (learning outcomes)…
 
 How to use ``is_on_ceiling()``
+
+### 9 Parallax Backgrounds
+#### In this video (objectives)…
+
+1 Create a ``ParralaxBackground`` node
+2 Make multiple ``ParralaxLayer`` nodes
+3 Tweak the values to fit our game
+
+#### After watching (learning outcomes)…
+
+Learn the secrets of Parallax Background in Godot!
