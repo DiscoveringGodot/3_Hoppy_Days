@@ -71,3 +71,26 @@ Learn how to instance a scene, change the main scene of the game, make the playe
 
 #### After watching (learning outcomes)…
 Understand the principle of one script being in charge of one thing
+
+### 7 Tilemaps - Making a Level
+
+#### In this video (objectives)…
+
+1 Make a Tilemap
+
+2 Make a Camera2D
+
+
+
+#### After watching (learning outcomes)…
+
+Learn the awesome power of Tilemaps 
+
+### 8 is_on_ceiling()
+#### In this video (objectives)…
+
+1 Stop Bunny from floating along the ceiling
+
+#### After watching (learning outcomes)…
+
+How to use ``is_on_ceiling()``
