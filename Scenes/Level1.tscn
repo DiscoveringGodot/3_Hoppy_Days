@@ -4,11 +4,12 @@
 [ext_resource path="res://Scenes/Camera2D.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/PlatformTiles.tres" type="TileSet" id=3]
 
-[node name="Level1" type="Node2D"]
+[node name="Level1" type="Node2D" index="0"]
 
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 
 position = Vector2( 564.997, 494.65 )
+world_limit = 3000
 
 [node name="Camera2D" parent="Player" index="2" instance=ExtResource( 2 )]
 

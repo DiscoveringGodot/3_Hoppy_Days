@@ -105,3 +105,15 @@ How to use ``is_on_ceiling()``
 #### After watching (learning outcomes)…
 
 Learn the secrets of Parallax Background in Godot!
+
+
+### 10 The Game Over Screen
+#### In this video (objectives)…
+
+1 Create a Game Over Screen
+2 Trigger Game OVer when Bunny falls too far
+3 Allow the player to start again
+
+#### After watching (learning outcomes)…
+
+Create a game over screen and get a brief introduction to control nodes!
