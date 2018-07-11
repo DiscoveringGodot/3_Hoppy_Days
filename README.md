@@ -111,9 +111,21 @@ Learn the secrets of Parallax Background in Godot!
 #### In this video (objectives)…
 
 1 Create a Game Over Screen
-2 Trigger Game OVer when Bunny falls too far
+2 Trigger Game Over when Bunny falls too far
 3 Allow the player to start again
 
 #### After watching (learning outcomes)…
 
 Create a game over screen and get a brief introduction to control nodes!
+
+
+### 11 Area2D - Making Spike Hazards
+#### In this video (objectives)…
+
+1 Make an Area2D
+2 Instance a Spike Scene
+3 Make the level challenging
+
+#### After watching (learning outcomes)…
+
+How to use Area2D to make level hazards
