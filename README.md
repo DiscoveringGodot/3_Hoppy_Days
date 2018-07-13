@@ -129,3 +129,15 @@ Create a game over screen and get a brief introduction to control nodes!
 #### After watching (learning outcomes)…
 
 How to use Area2D to make level hazards
+
+
+### 12 Control Nodes - Making a GUI
+#### In this video (objectives)…
+
+1 Use Anchors and Control nodes 
+2 Make a flexible GUI
+3 Change the way Hoppy Days deals with Aspect Ratio
+
+#### After watching (learning outcomes)…
+
+Understand the basics of ``Control`` nodes and some easy tips for flexible GUI
