@@ -81,7 +81,6 @@ Understand the principle of one script being in charge of one thing
 2 Make a Camera2D
 
 
-
 #### After watching (learning outcomes)…
 
 Learn the awesome power of Tilemaps 
@@ -141,3 +140,14 @@ How to use Area2D to make level hazards
 #### After watching (learning outcomes)…
 
 Understand the basics of ``Control`` nodes and some easy tips for flexible GUI
+
+### 13 GameState.gd
+#### In this video (objectives)…
+
+1 The Single Responsibility Principle
+2 Create a script to handle the game's rules
+3 Call a function from a child node
+
+#### After watching (learning outcomes)…
+
+Learn the Single Responsibility Principle and how to organize your game around it.
