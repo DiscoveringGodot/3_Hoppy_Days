@@ -186,3 +186,18 @@ Learn how to use a global script to solve the script referencing problem!
 
 
 Add lives to our game!
+
+### 16 Updating the GUI
+#### In this video (objectives)…
+
+
+
+1 Create an update_GUI() function
+2 Display the current number of lives to the player
+3 Update the GUI when hurt
+
+#### After watching (learning outcomes)…
+
+
+
+Keep the GUI up to date
