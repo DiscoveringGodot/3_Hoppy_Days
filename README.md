@@ -77,7 +77,6 @@ Understand the principle of one script being in charge of one thing
 #### In this video (objectives)…
 
 1 Make a Tilemap
-
 2 Make a Camera2D
 
 
@@ -171,3 +170,19 @@ Learn the Single Responsibility Principle and how to organize your game around i
 
 
 Learn how to use a global script to solve the script referencing problem!
+
+### 15 Adding Lives
+
+#### In this video (objectives)…
+
+
+
+1 Create a ``starting_lives`` variable and a ``lives`` variable
+2 Update ``lives`` when Bunny is hurt
+3 Make bunny jump up when hurt
+
+#### After watching (learning outcomes)…
+
+
+
+Add lives to our game!
