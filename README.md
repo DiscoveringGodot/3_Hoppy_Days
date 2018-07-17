@@ -151,3 +151,23 @@ Understand the basics of ``Control`` nodes and some easy tips for flexible GUI
 #### After watching (learning outcomes)…
 
 Learn the Single Responsibility Principle and how to organize your game around it.
+
+### 14 Global Scripts
+
+#### In this video (objectives)…
+
+
+
+1 Create a singleton
+
+2 Move node paths to the singleton
+
+3 Allow nodes to be moved and renamed without breaking anything
+
+
+
+#### After watching (learning outcomes)…
+
+
+
+Learn how to use a global script to solve the script referencing problem!
