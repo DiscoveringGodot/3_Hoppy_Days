@@ -186,3 +186,14 @@ Keep the GUI up to date
 
 #### After watching (learning outcomes)…
 Use AnimationPlayer to make coins work!
+
+
+### 18 Polishing the GUI
+#### In this video (objectives)…
+
+1 Giving the player feedback when coins and lives values change
+2 Allowing Bunny to gain extra lives
+
+#### After watching (learning outcomes)…
+Control multiple animations in a single function by calling arguments
+
