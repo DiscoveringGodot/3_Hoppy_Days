@@ -125,7 +125,6 @@ Create a game over screen and get a brief introduction to control nodes!
 3 Make the level challenging
 
 #### After watching (learning outcomes)…
-
 How to use Area2D to make level hazards
 
 
@@ -137,7 +136,6 @@ How to use Area2D to make level hazards
 3 Change the way Hoppy Days deals with Aspect Ratio
 
 #### After watching (learning outcomes)…
-
 Understand the basics of ``Control`` nodes and some easy tips for flexible GUI
 
 ### 13 GameState.gd
@@ -152,52 +150,39 @@ Understand the basics of ``Control`` nodes and some easy tips for flexible GUI
 Learn the Single Responsibility Principle and how to organize your game around it.
 
 ### 14 Global Scripts
-
 #### In this video (objectives)…
-
-
-
 1 Create a singleton
-
 2 Move node paths to the singleton
-
 3 Allow nodes to be moved and renamed without breaking anything
 
-
-
 #### After watching (learning outcomes)…
-
-
-
 Learn how to use a global script to solve the script referencing problem!
 
 ### 15 Adding Lives
-
 #### In this video (objectives)…
-
-
-
 1 Create a ``starting_lives`` variable and a ``lives`` variable
 2 Update ``lives`` when Bunny is hurt
 3 Make bunny jump up when hurt
 
 #### After watching (learning outcomes)…
-
-
-
 Add lives to our game!
 
 ### 16 Updating the GUI
 #### In this video (objectives)…
-
-
 
 1 Create an update_GUI() function
 2 Display the current number of lives to the player
 3 Update the GUI when hurt
 
 #### After watching (learning outcomes)…
-
-
-
 Keep the GUI up to date
+
+### 17 AnimationPlayer - Making Coins
+#### In this video (objectives)…
+
+1 About the ``AnimationPlayer`` Node
+2 Introducing Keyframes
+3 Calling functions in ``AnimationPlayer``
+
+#### After watching (learning outcomes)…
+Use AnimationPlayer to make coins work!

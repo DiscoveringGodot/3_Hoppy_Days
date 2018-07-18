@@ -43,7 +43,7 @@ height = 32.0
 
 input_pickable = false
 collision_layer = 1
-collision_mask = 6
+collision_mask = 14
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Transform" ]
@@ -56,7 +56,6 @@ world_limit = 3000
 
 frames = SubResource( 1 )
 animation = "idle"
-frame = 1
 playing = true
 script = ExtResource( 8 )
 _sections_unfolded = [ "Transform" ]
