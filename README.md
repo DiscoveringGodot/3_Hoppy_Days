@@ -187,7 +187,6 @@ Keep the GUI up to date
 #### After watching (learning outcomes)…
 Use AnimationPlayer to make coins work!
 
-
 ### 18 Polishing the GUI
 #### In this video (objectives)…
 
@@ -197,3 +196,11 @@ Use AnimationPlayer to make coins work!
 #### After watching (learning outcomes)…
 Control multiple animations in a single function by calling arguments
 
+### 19 AudioStreamPlayer - Bring the Noise!
+#### In this video (objectives)…
+
+1 Add background music to our game
+2 Add sound effects for jumping, coin pickup and pain
+
+#### After watching (learning outcomes)…
+Learn to use ``AudioStreamPlayer`` nodes!

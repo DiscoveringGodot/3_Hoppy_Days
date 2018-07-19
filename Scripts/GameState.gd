@@ -26,6 +26,7 @@ func hurt():
 	Global.Player.hurt()
 	update_GUI()
 	animate_GUI("Hurt")
+	Global.pain_sfx.play()
 	if lives < 0:
 		end_game()
 
