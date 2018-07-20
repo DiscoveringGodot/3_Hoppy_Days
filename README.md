@@ -204,3 +204,12 @@ Control multiple animations in a single function by calling arguments
 
 #### After watching (learning outcomes)…
 Learn to use ``AudioStreamPlayer`` nodes!
+
+### 20 Jump Pads
+#### In this video (objectives)…
+
+1 Create Jump Pads
+2 Use a ``Timer`` node to reset Jump Pads
+
+#### After watching (learning outcomes)…
+How to use Timer nodes to trigger events
