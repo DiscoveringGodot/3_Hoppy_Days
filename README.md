@@ -213,3 +213,12 @@ Learn to use ``AudioStreamPlayer`` nodes!
 
 #### After watching (learning outcomes)…
 How to use Timer nodes to trigger events
+
+### 21 Enter the Spikeman
+#### In this video (objectives)…
+
+1 Create a Spikeman NPC
+2 Use ``AnimationPlayer`` to bring Spikeman to life
+
+#### After watching (learning outcomes)…
+How to use Animaitn Player to create NPC behaviours

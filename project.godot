@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="2_Hoppy_Days"
-run/main_scene="res://Scenes/Level1.tscn"
+run/main_scene="res://Scenes/Levels/Level1.tscn"
 config/icon="res://icon.png"
 
 [autoload]
