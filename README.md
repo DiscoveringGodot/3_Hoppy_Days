@@ -222,3 +222,11 @@ How to use Timer nodes to trigger events
 
 #### After watching (learning outcomes)…
 How to use Animaitn Player to create NPC behaviours
+
+### 22 Fixing the Coin Bug
+#### In this video (objectives)…
+
+1 Stop the Player from picking up the same coin multiple times
+
+#### After watching (learning outcomes)…
+How to stop something triggering repeatedly
