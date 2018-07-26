@@ -4,7 +4,7 @@
 [ext_resource path="res://GFX/Items/bronze_2.png" type="Texture" id=2]
 [ext_resource path="res://GFX/Items/bronze_3.png" type="Texture" id=3]
 [ext_resource path="res://GFX/Items/bronze_4.png" type="Texture" id=4]
-[ext_resource path="res://Scripts/Coin.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/Coin.cs" type="Script" id=5]
 [ext_resource path="res://SFX/coin_SFX.wav" type="AudioStream" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -58,6 +58,7 @@ tracks/1/keys = {
 
 frames = SubResource( 1 )
 animation = "default"
+frame = 3
 playing = true
 script = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
@@ -101,6 +102,6 @@ autoplay = false
 mix_target = 0
 bus = "Master"
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="OnArea2DBodyEntered"]
 
 
