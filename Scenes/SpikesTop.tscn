@@ -3,7 +3,7 @@
 [ext_resource path="res://Scripts/hazards.gd" type="Script" id=1]
 [ext_resource path="res://GFX/Environment/spikes_top.png" type="Texture" id=2]
 
-[node name="SpikesTop" type="Area2D" index="0"]
+[node name="SpikesTop" type="Area2D"]
 
 position = Vector2( -0.78891, -1.10445 )
 input_pickable = true
