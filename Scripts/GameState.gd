@@ -26,7 +26,7 @@ func hurt():
 	Global.Player.hurt()
 	update_GUI()
 	animate_GUI("Hurt")
-	Global.pain_sfx.play()
+	Global.pain_sfx.play() // TODO child to player, eliminate global, FindNode() from Player.gd
 	if lives < 0:
 		end_game()
 

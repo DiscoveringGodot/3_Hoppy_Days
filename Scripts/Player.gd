@@ -58,8 +58,7 @@ func boost():
 
 public func hurt():
 	motion.y = JUMP_SPEED
-
-
+	// TODO find_node with string constant from Global
 
 
 
