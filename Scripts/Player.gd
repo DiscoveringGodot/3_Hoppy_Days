@@ -56,7 +56,7 @@ func boost():
 	motion.y = JUMP_SPEED * JUMP_BOOST
 
 
-func hurt():
+public func hurt():
 	motion.y = JUMP_SPEED
 
 

@@ -49,7 +49,7 @@ public class Player : KinematicBody2D {
         }
 	}
 
-    void Hurt()
+    public void Hurt()
     {
         motion.y = JUMP_SPEED;
     }

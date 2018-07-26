@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Scripts/hazards.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Hazard.cs" type="Script" id=1]
 [ext_resource path="res://GFX/Enemies/spikeMan_stand.png" type="Texture" id=2]
 [ext_resource path="res://GFX/Enemies/spikeMan_walk1.png" type="Texture" id=3]
 [ext_resource path="res://GFX/Enemies/spikeMan_walk2.png" type="Texture" id=4]
@@ -68,7 +68,7 @@ tracks/2/keys = {
 "values": [ true, false, true ]
 }
 
-[node name="Spikeman" type="Node2D" index="0"]
+[node name="Spikeman" type="Node2D"]
 
 [node name="Area2D" type="Area2D" parent="." index="0"]
 
@@ -87,7 +87,6 @@ _sections_unfolded = [ "Collision", "Transform" ]
 
 frames = SubResource( 1 )
 animation = "walk"
-frame = 1
 playing = true
 flip_h = true
 
@@ -106,6 +105,6 @@ playback_speed = 1.0
 anims/Spikeman = SubResource( 3 )
 blend_times = [  ]
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="OnBodyEntered"]
 
 
