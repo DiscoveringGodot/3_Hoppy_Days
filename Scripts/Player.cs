@@ -16,6 +16,8 @@ public class Player : KinematicBody2D {
     const int LEVEL_HEIGHT = 2500;  // in pixels
     const float FRICTION = 0.2f;
     Vector2 FLOOR_DIRECTION = new Vector2(0, -1);
+
+    const string PAIN_SFX = "Pain_SFX"; // todo export node
      
     // private instance variables for state
     Vector2 motion = new Vector2();
@@ -51,7 +53,9 @@ public class Player : KinematicBody2D {
 
     public void Hurt()
     {
+        GD.Print("Player hurt");
         motion.y = JUMP_SPEED;
+        (FindNode(PAIN_SFX) as AudioStreamPlayer).Play();
     }
 
     private void EndGame() {
