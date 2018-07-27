@@ -12,4 +12,9 @@ public class Coin : AnimatedSprite
         (FindNode("AnimationPlayer") as AnimationPlayer).Play("die");
         (FindNode("AudioStreamPlayer") as AudioStreamPlayer).Play();
     }
+
+    void Die()
+    {
+        QueueFree();
+    }
 }

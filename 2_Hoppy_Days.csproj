@@ -55,6 +55,17 @@
     <Compile Include="Scripts\Hazard.cs" />
     <Compile Include="Scripts\JumpPad.cs" />
     <Compile Include="Scripts\Player.cs" />
+    <Content Include="Scripts\Global.gd" />
+    <Content Include="Scripts\Pain_SFX.gd" />
+    <Content Include="Scripts\Coin_SFX.gd" />
+    <Content Include="Scripts\Coin.gd" />
+    <Content Include="Scenes\Coin.tscn" />
+    <Content Include="Scripts\GameOver.gd" />
+    <Content Include="Scripts\GameState.gd" />
+    <Content Include="Scripts\GUI.gd" />
+    <Content Include="Scripts\JumpPad.gd" />
+    <Content Include="Scripts\Player.gd" />
+    <Content Include="Scripts\Jump_SFX.gd" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

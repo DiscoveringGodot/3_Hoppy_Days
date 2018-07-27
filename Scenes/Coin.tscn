@@ -50,15 +50,15 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "die"
+"method": "Die"
 } ]
 }
 
-[node name="Coin" type="AnimatedSprite"]
+[node name="Coin" type="AnimatedSprite" index="0"]
 
 frames = SubResource( 1 )
 animation = "default"
-frame = 5
+frame = 4
 playing = true
 script = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
