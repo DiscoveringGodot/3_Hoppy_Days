@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/GameState.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -14,15 +14,18 @@
 [ext_resource path="res://Scripts/Pain_SFX.gd" type="Script" id=12]
 [ext_resource path="res://Scenes/JumpPad.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/Spikeman.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Cloud.tscn" type="PackedScene" id=15]
 
 [node name="Level1" type="Node2D" index="0"]
 
+position = Vector2( 80.5613, 133.43 )
 script = ExtResource( 1 )
 starting_lives = 3
 coin_target = 20
 
 [node name="Player" parent="." index="0" instance=ExtResource( 2 )]
 
+editor/display_folded = true
 position = Vector2( 564.997, 494.65 )
 
 [node name="Camera2D" parent="Player" index="2" instance=ExtResource( 3 )]
@@ -401,6 +404,8 @@ position = Vector2( 5280, 1374.99 )
 
 [node name="NPCs" type="Node2D" parent="." index="6"]
 
+_sections_unfolded = [ "Transform" ]
+
 [node name="Spikeman" parent="NPCs" index="0" instance=ExtResource( 14 )]
 
 position = Vector2( 1034.71, 1264.86 )
@@ -416,6 +421,18 @@ position = Vector2( 4739.5, 817.385 )
 [node name="Spikeman4" parent="NPCs" index="3" instance=ExtResource( 14 )]
 
 position = Vector2( 3081.18, 369.6 )
+
+[node name="Cloud" parent="NPCs" index="4" instance=ExtResource( 15 )]
+
+position = Vector2( 1356.95, 709.946 )
+
+[node name="Cloud2" parent="NPCs" index="5" instance=ExtResource( 15 )]
+
+position = Vector2( 5646.85, 193.713 )
+
+[node name="Cloud3" parent="NPCs" index="6" instance=ExtResource( 15 )]
+
+position = Vector2( 3886.5, 544.752 )
 
 [connection signal="body_entered" from="Spikes/SpikesBottom" to="Spikes/SpikesBottom" method="_on_SpikesTop_body_entered"]
 

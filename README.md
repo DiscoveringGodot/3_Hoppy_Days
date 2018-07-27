@@ -230,3 +230,13 @@ How to use Animaitn Player to create NPC behaviours
 
 #### After watching (learning outcomes)…
 How to stop something triggering repeatedly
+
+### 23 Making the Cloud NPC
+#### In this video (objectives)…
+
+1 Create an NPC that can fire a projectile
+2 Use ``Raycast2D`` nodes
+3 Check what body is in an ``Area2D``
+
+#### After watching (learning outcomes)…
+How to detect if a player is being aimed at and spawn a projectile at the player
