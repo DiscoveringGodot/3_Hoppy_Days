@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/Player.cs" type="Script" id=1]
 [ext_resource path="res://GFX/Players/bunny2_stand.png" type="Texture" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://GFX/Players/bunny2_walk1.png" type="Texture" id=5]
 [ext_resource path="res://GFX/Players/bunny2_walk2.png" type="Texture" id=6]
 [ext_resource path="res://GFX/Players/bunny2_jump.png" type="Texture" id=7]
-[ext_resource path="res://Scripts/PlayerAnimation.gd" type="Script" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -55,8 +54,8 @@ __meta__ = {
 
 frames = SubResource( 1 )
 animation = "idle"
+frame = 1
 playing = true
-script = ExtResource( 8 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]

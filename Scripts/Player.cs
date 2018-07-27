@@ -20,12 +20,18 @@ public class Player : KinematicBody2D {
     // todo export node?
     const string PAIN_SFX = "Pain_SFX"; 
     const string JUMP_SFX = "Jump_SFX";
+    AnimatedSprite animatedSprite;
 
     // private instance variables for state
     Vector2 motion = new Vector2();
     int coinCount = 0;
     int coinTarget = 20;
     int lives = 3;
+
+    public override void _Ready()
+    {
+        animatedSprite = FindNode("AnimatedSprite") as AnimatedSprite;
+    }
 
     public override void _PhysicsProcess(float delta) {
         UpdateMotion(delta);
@@ -36,11 +42,18 @@ public class Player : KinematicBody2D {
         }
     }
 
-    private void UpdateMotion(float delta) {
-        Fall(delta);  // fall to floor first, frame-rate independent
-        Run();
-        Jump();
-        MoveAndSlide(motion, FLOOR_DIRECTION);
+    public override void _Process(float delta)
+    {
+        UpdateAnimation();
+    }
+
+    public void OnCoinPickup() {
+        coinCount += 1;
+        //(GetNode("Coin_sfx") as AudioStreamPlayer).Play();
+        EmitSignal(nameof(CoinUp));  // note is refactorable with nameof
+        if (coinCount >= coinTarget) {
+            GrantExtraLife();
+        }
     }
 
     public void Hurt()
@@ -50,12 +63,30 @@ public class Player : KinematicBody2D {
         (GetNode("/root/GameState") as GameState).PlayerHurt();
     }
 
-    public void OnCoinPickup() {
-        coinCount += 1;
-        //(GetNode("Coin_sfx") as AudioStreamPlayer).Play();
-        EmitSignal(nameof(CoinUp));  // note is refactorable with nameof
-        if (coinCount >= coinTarget) {
-            GrantExtraLife();
+    private void UpdateMotion(float delta) {
+        Fall(delta);  // fall to floor first, frame-rate independent
+        Run();
+        Jump();
+        MoveAndSlide(motion, FLOOR_DIRECTION);
+    }
+
+    private void UpdateAnimation()
+    {
+        if (motion.y < 0)
+        { 
+            animatedSprite.Play("jump");
+        }
+        else if (motion.x > 0)
+        {
+            animatedSprite.Play("run");
+        }
+        else if (motion.x < 0)
+        {
+            animatedSprite.Play("run");
+        }
+        else
+        {
+            animatedSprite.Play("idle");
         }
     }
 

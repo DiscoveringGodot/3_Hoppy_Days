@@ -56,6 +56,7 @@
     <Compile Include="Scripts\Hazard.cs" />
     <Compile Include="Scripts\JumpPad.cs" />
     <Compile Include="Scripts\Player.cs" />
+    <Compile Include="Scripts\PlayerAnimation.cs" />
     <Content Include="Scripts\Global.gd" />
     <Content Include="Scripts\Pain_SFX.gd" />
     <Content Include="Scripts\Coin_SFX.gd" />
