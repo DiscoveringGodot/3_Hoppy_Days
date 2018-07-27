@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Scripts/GameOver.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/GameOver.cs" type="Script" id=1]
 [ext_resource path="res://GFX/Background/bg_layer1.png" type="Texture" id=2]
 [ext_resource path="res://Fonts/candles_.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://GFX/HUD/lifes.png" type="Texture" id=4]
@@ -21,7 +21,7 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="GameOver" type="Control"]
+[node name="GameOver" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -141,6 +141,6 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="OnTextureButtonPressed"]
 
 
