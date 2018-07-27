@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Scripts/hazards.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Hazard.cs" type="Script" id=1]
 [ext_resource path="res://GFX/Environment/spikes_top.png" type="Texture" id=2]
 
 [node name="SpikesTop" type="Area2D"]
@@ -32,6 +32,6 @@ visible = false
 build_mode = 0
 polygon = PoolVector2Array( -47.477, 26.0986, -33.7502, -27.2308, 32.6748, -26.9153, 46.2439, 25.783 )
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]
 
 

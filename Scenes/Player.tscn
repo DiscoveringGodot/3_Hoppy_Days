@@ -39,7 +39,7 @@ custom_solver_bias = 0.0
 radius = 60.0
 height = 32.0
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -55,7 +55,6 @@ __meta__ = {
 
 frames = SubResource( 1 )
 animation = "idle"
-frame = 1
 playing = true
 script = ExtResource( 8 )
 _sections_unfolded = [ "Transform" ]

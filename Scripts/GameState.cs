@@ -6,20 +6,31 @@ public class GameState : Node2D
     [Export] int startingLives = 3;
     int lives;
 
-    public void Hurt()
-    {
-        GD.Print("GameState Hurt() called");
-	    lives -= 1;
-	    //(GetNode("Player") as Player).Hurt(); // todo architecture?
-	// update_GUI()
-	// animate_GUI("Hurt")
-	// Global.pain_sfx.play()
-	// if lives < 0:
-	// 	end_game()
-    }
-
     public override void _Ready()
     {
         lives = startingLives;
     }
+
+    public void PlayerHurt()
+    {
+	    lives -= 1;
+        GD.Print("GameState PlayerHurt() called, lives = " + lives);
+
+        // update_GUI()
+        // animate_GUI("PlayerHurt")
+        if (lives < 0)
+        {
+            EndGame();
+        }
+    }
+
+    public void EndGame()
+    {
+        GetTree().ChangeScene("res://Scenes/Levels/GameOver.tscn");
+    }
+
+    private void UpdateGUI(){
+
+    }
+
 }

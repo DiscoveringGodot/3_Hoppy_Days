@@ -17,6 +17,7 @@ func _ready():
 func update_GUI():
 	GUI.update_GUI(coins, lives)
 
+	
 func animate_GUI(animation):
 	GUI.animate(animation)
 

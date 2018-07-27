@@ -54,7 +54,7 @@ tracks/1/keys = {
 } ]
 }
 
-[node name="Coin" type="AnimatedSprite"]
+[node name="Coin" type="AnimatedSprite" index="0"]
 
 frames = SubResource( 1 )
 animation = "default"

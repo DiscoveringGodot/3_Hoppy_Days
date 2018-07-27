@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 func _ready():
-	Global.GUI = self
+	Global.GUI = self  # Singleton pattern
 
 func update_GUI(coins, lives):
 	$Banner/HBoxContainer/CoinCount.text = str(coins)

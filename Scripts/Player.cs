@@ -17,8 +17,10 @@ public class Player : KinematicBody2D {
     const float FRICTION = 0.2f;
     Vector2 FLOOR_DIRECTION = new Vector2(0, -1);
 
-    const string PAIN_SFX = "Pain_SFX"; // todo export node
-     
+    // todo export node?
+    const string PAIN_SFX = "Pain_SFX"; 
+    const string JUMP_SFX = "Jump_SFX";
+
     // private instance variables for state
     Vector2 motion = new Vector2();
     int coinCount = 0;
@@ -28,8 +30,9 @@ public class Player : KinematicBody2D {
     public override void _PhysicsProcess(float delta) {
         UpdateMotion(delta);
         bool fallOffWorld = GetPosition().y > LEVEL_HEIGHT;
-        if (fallOffWorld) {
-		    EndGame();
+        if (fallOffWorld)
+        {
+		    (GetNode("/root/GameState") as GameState).EndGame();
         }
     }
 
@@ -40,26 +43,11 @@ public class Player : KinematicBody2D {
         MoveAndSlide(motion, FLOOR_DIRECTION);
     }
 
-    public void RequestDamage() {
-	    motion.y = JUMP_SPEED;
-        EmitSignal(nameof(LifeDown));  // :-)
-        //(GetNode("Pain_sfx") as AudioStreamPlayer).Play();
-	    lives -= 1;
-
-        if (lives < 0) {
-           EndGame();
-        }
-	}
-
     public void Hurt()
     {
-        GD.Print("Player hurt");
         motion.y = JUMP_SPEED;
         (FindNode(PAIN_SFX) as AudioStreamPlayer).Play();
-    }
-
-    private void EndGame() {
-        GetTree().ChangeScene("res://Scenes/Levels/GameOver.tscn");
+        (GetNode("/root/GameState") as GameState).PlayerHurt();
     }
 
     public void OnCoinPickup() {
@@ -88,9 +76,8 @@ public class Player : KinematicBody2D {
 
     private void Jump() {
         if (IsOnFloor() && Input.IsActionPressed("ui_up")) {
-            GD.Print("Jump");
             motion.y = JUMP_SPEED;
-           // (GetNode("Jump_sfx") as AudioStreamPlayer).Play();
+            (FindNode(JUMP_SFX) as AudioStreamPlayer).Play();
         }
     }
 

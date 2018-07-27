@@ -69,6 +69,7 @@
     <Content Include="Scripts\Jump_SFX.gd" />
     <Content Include=".gitignore" />
     <Content Include="Scripts\GameOver.cs" />
+    <Content Include="Scenes\Levels\Level1.tscn" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
