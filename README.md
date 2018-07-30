@@ -240,3 +240,13 @@ How to stop something triggering repeatedly
 
 #### After watching (learning outcomes)…
 How to detect if a player is being aimed at and spawn a projectile at the player
+
+### 24 Particles and a Portal
+#### In this video (objectives)…
+
+1 Create a Portal to let Bunny win the game
+2 Link the Portal to a Victory scene
+3 Decorate the Portal with the ``Particles2D`` node
+
+#### After watching (learning outcomes)…
+A quick introduction to the ``Particles2D`` node!

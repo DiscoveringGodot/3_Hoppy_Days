@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Scripts/GameState.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Scenes/JumpPad.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/Spikeman.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Scenes/Cloud.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scenes/Portal.tscn" type="PackedScene" id=16]
 
 [node name="Level1" type="Node2D" index="0"]
 
@@ -98,8 +99,6 @@ position = Vector2( 4240.79, 374.59 )
 position = Vector2( 4751.27, 1007.36 )
 
 [node name="Coins" type="Node2D" parent="." index="3"]
-
-editor/display_folded = true
 
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 7 )]
 
@@ -349,7 +348,7 @@ position = Vector2( 5279.89, 1276.78 )
 
 [node name="Coin33" parent="Coins" index="51" instance=ExtResource( 7 )]
 
-position = Vector2( 5974.33, 1622.11 )
+position = Vector2( 5985.71, 1261.61 )
 frame = 5
 
 [node name="Sounds" type="Node2D" parent="." index="4"]
@@ -404,6 +403,7 @@ position = Vector2( 5280, 1374.99 )
 
 [node name="NPCs" type="Node2D" parent="." index="6"]
 
+editor/display_folded = true
 _sections_unfolded = [ "Transform" ]
 
 [node name="Spikeman" parent="NPCs" index="0" instance=ExtResource( 14 )]
@@ -434,6 +434,10 @@ position = Vector2( 5646.85, 193.713 )
 
 position = Vector2( 3886.5, 544.752 )
 
+[node name="Portal" parent="." index="7" instance=ExtResource( 16 )]
+
+position = Vector2( 5977.34, 1591.01 )
+
 [connection signal="body_entered" from="Spikes/SpikesBottom" to="Spikes/SpikesBottom" method="_on_SpikesTop_body_entered"]
 
 [connection signal="body_entered" from="Spikes/SpikesBottom3" to="Spikes/SpikesBottom3" method="_on_SpikesTop_body_entered"]
@@ -441,5 +445,7 @@ position = Vector2( 3886.5, 544.752 )
 [connection signal="body_entered" from="Spikes/SpikesBottom4" to="Spikes/SpikesBottom4" method="_on_SpikesTop_body_entered"]
 
 [connection signal="body_entered" from="Spikes/SpikesBottom5" to="Spikes/SpikesBottom5" method="_on_SpikesTop_body_entered"]
+
+[connection signal="body_entered" from="Portal" to="." method="_on_Portal_body_entered"]
 
 
