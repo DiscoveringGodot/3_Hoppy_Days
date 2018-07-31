@@ -36,6 +36,8 @@ func fall(delta):
 	
 	if position.y > world_limit:
 		Global.GameState.end_game()
+	
+	motion.y = clamp(motion.y,(JUMP_SPEED * JUMP_BOOST), -JUMP_SPEED)
 
 func run():
 	if Input.is_action_pressed("ui_right") and not Input.is_action_pressed("ui_left"):

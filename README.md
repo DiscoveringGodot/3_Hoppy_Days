@@ -250,3 +250,12 @@ How to detect if a player is being aimed at and spawn a projectile at the player
 
 #### After watching (learning outcomes)…
 A quick introduction to the ``Particles2D`` node!
+
+### 25 Polishing the Gane: The Jump Pad Bug
+#### In this video (objectives)…
+
+1 Make sure the Jump Pad works consistently
+2 Limit fall speed
+
+#### After watching (learning outcomes)…
+Using ``clamp()`` to keep a value within range
